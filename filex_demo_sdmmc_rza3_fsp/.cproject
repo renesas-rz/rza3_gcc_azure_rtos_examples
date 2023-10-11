@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.toolchainInfo">
+				<option id="toolchain.id" value="gcc-arm-a-profile-aarch64"/>
+				<option id="toolchain.version" value="10.3.1.20210621"/>
+				<option id="toolchain.enable" value="true"/>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664" name="Debug" parent="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug">
+					<folderInfo id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.toolchain.elf.debug.1348436172" name="GCC for Renesas RZ (A-Profile AArch64 bare-metal)" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.toolchain.elf.debug">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.1815150455" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting.1652348938" name="Create extended listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.1912669988" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.showCommand.1937930794" name="Echo tool command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.showCommand"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.2065242705" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.debug" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.364973811" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.signedchar.1774116452" name="'char' is signed (-fsigned-char)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.signedchar" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.functionsection.1256190276" name="Function sections (-ffunction-sections)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.functionsection" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.datasections.79077023" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.1596396650" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.81936009" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.dwarf4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unused.1087827865" name="Warn on various unused elements (-Wunused)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unused" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.uninitialized.1245166546" name="Warn on uninitialized variables (-Wuninitialised)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.uninitialized" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.1761127615" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.867794955" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration.1564870597" name="Warn on undeclared global function (-Wmissing-declaration)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion.85457401" name="Warn on implicit conversions (-Wconversion)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith.1372215421" name="Warn if pointer arithmetic (-Wpointer-arith)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow.2014607904" name="Warn if shadowed variable (-Wshadow)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop.229541068" name="Warn if suspicious logical ops (-Wlogical-op)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn.779866874" name="Warn if struct is returned (-Wagreggate-return)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal.1174199594" name="Warn if floats are compared as equal (-Wfloat-equal)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.deviceName.1350389383" name="Device name" superClass="com.renesas.cdt.managedbuild.gcc.rz.deviceName" value="R9A07G063U02GBG" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.809497020" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.210342782" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.family.1961455818" name="Arm family (-mcpu)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-a55" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.instructionset.1093030463" name="Instruction set" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.default" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.911745191" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.729638660" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.565011467" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.418112848" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1576413464" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.1511051139" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.1678618743" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.489076797" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.467365686" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.otherTarget.1491144266" name="Other target flags" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.otherTarget" valueType="stringList">
+								<listOptionValue builtIn="false" value="-mcmodel=large"/>
+							</option>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1546530181" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/rzfx2305171}/Debug" id="com.renesas.cdt.managedbuild.gcc.rz.builder.1378034446" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GCC for Renesas Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.renesas.cdt.managedbuild.gcc.rz.builder"/>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.assembler.213141150" name="Cross ARM GNU Assembler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.2027639113" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.assembler.include.54777616" name="Include paths (-I)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.assembler.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/rm_threadx_port}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/threadx/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/bsp/mcu/rza3ul}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/tx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/ports}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/filex/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/middleware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/fx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/driver}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.1855096158" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RZA_CORE=CA55_0"/>
+									<listOptionValue builtIn="false" value="_RENESAS_RZA_"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.2072322646" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.466076846" name="Cross ARM C Compiler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.741982569" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.include.41039096" name="Include paths (-I)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.include" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/generate&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/rm_threadx_port}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/threadx/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/bsp/mcu/rza3ul}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/tx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/ports}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/filex/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/middleware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/fx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/driver}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.672408688" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RZA_CORE=CA55_0"/>
+									<listOptionValue builtIn="false" value="_RENESAS_RZA_"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1923019513" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.cpp.2100408683" name="Cross ARM C++ Compiler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.cpp">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language.1474155939" name="Language standard" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language.cpp11" valueType="enumerated"/>
+							</tool>
+							<tool command="aarch64-none-elf-ld" commandLinePattern="${COMMAND} ${OUTPUT_FLAG}${OUTPUT_PREFIX} ${OUTPUT} ${INPUTS} ${FLAGS}" id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.c.1575754318" name="Cross ARM C Linker" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.c">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1510813820" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.gcc.rz.archives.includePath.148533336" name="Standard archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.includePath" valueType="libPaths"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.linkerscript.1570468378" name="Script files (-T)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linkerscript" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/script/rza3ul_smarc_qspi.ld}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludePath.1654586405" name="User defined archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludePath" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${TCINSTALL}lib\gcc\aarch64-none-elf\${GCC_VERSION}&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.entrypoint.455073731" name="Entry Point:" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.entrypoint" useByScannerDiscovery="false" value="" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.gcc.rz.archives.includeFiles.691828720" name="Standard archive (library) files (-l)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.includeFiles" useByScannerDiscovery="false" valueType="stringList"/>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.start.1552034248" name="Search archives repeatedly for undefined references" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.start" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludeFiles.1314998683" name="User defined archive (library) files (-l)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludeFiles" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="c"/>
+									<listOptionValue builtIn="false" value="gcc"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.linkageOrder.1455819134" name="Linkage Order List" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linkageOrder" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;.\src\circular_buffer.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\filex_test_thread_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\hal_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\mmu_page_table.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\new_thread0_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\sections.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\stdio_uart0.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\src\syscalls.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\common_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\hal_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\main.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\new_thread0.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\pin_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza_gen\vector_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_pool_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_block_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_pool_search.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_byte_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_event_flags_set_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_initialize_high_level.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_initialize_kernel_enter.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_initialize_kernel_setup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_priority_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_mutex_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_front_send.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_receive.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_send.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_queue_send_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_ceiling_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_cleanup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_semaphore_put_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_entry_exit_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_identify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_preemption_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_priority_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_relinquish.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_reset.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_resume.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_shell_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_sleep.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_stack_analyze.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_stack_error_handler.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_stack_error_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_suspend.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_system_preempt_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_system_resume.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_system_suspend.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_terminate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_time_slice.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_time_slice_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_timeout.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_thread_wait_abort.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_time_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_time_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_activate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_deactivate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_expiration_process.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_performance_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_performance_system_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_system_activate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_system_deactivate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_timer_thread_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_buffer_full_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_disable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_enable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_event_filter.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_event_unfilter.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_interrupt_control.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_isr_enter_insert.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_isr_exit_insert.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_object_register.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_object_unregister.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\tx_trace_user_event_insert.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_pool_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_pool_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_pool_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_pool_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_block_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_pool_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_pool_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_pool_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_pool_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_byte_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_event_flags_set_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_mutex_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_front_send.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_receive.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_send.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_queue_send_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_ceiling_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_prioritize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_put.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_semaphore_put_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_entry_exit_notify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_preemption_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_priority_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_relinquish.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_reset.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_resume.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_suspend.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_terminate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_time_slice_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_thread_wait_abort.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_activate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_deactivate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/threadx/common/src\txe_timer_info_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_attributes_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_attributes_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_default_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_default_get_copy.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_default_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_entry_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_entry_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_exFAT_entry_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_exFAT_entry_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_exFAT_free_search.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_exFAT_unicode_entry_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_first_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_first_full_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_free_search.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_information_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_local_path_clear.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_local_path_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_local_path_get_copy.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_local_path_restore.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_local_path_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_long_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_long_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_name_extract.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_name_test.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_next_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_next_full_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_search.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_short_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_directory_short_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_add_FAT_log.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_add_bitmap_log.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_add_checksum_log.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_add_dir_log.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_apply_logs.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_calculate_checksum.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_cleanup_FAT_chain.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_create_log_file.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_enable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_read_FAT.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_read_directory_sector.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_read_log_file.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_recover.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_reset_log_file.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_set_FAT_chain.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_transaction_end.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_transaction_fail.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_transaction_start.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_fault_tolerant_write_log_file.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_attributes_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_attributes_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_best_effort_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_close.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_date_time_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_best_effort_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_relative_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_truncate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_extended_truncate_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_open.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_relative_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_truncate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_truncate_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_file_write_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_abort.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_boot_info_extract.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_cache_invalidate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_check_FAT_chain_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_check_lost_cluster_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_close.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_close_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_exFAT_format.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_extended_space_available.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_format.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_format_oem_name_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_format_type_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_format_volume_id_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_open.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_open_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_space_available.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_volume_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_volume_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_volume_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_media_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_partition_offset_calculate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_ram_driver.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_date_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_date_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_time_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_time_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_system_timer_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_trace_event_insert.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_trace_event_update.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_trace_object_register.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_trace_object_unregister.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_directory_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_directory_entry_change.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_directory_entry_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_directory_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_directory_search.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_file_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_file_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_length_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_length_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_short_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_unicode_short_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_16_unsigned_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_16_unsigned_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_32_unsigned_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_32_unsigned_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_64_unsigned_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_64_unsigned_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_FAT_entry_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_FAT_entry_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_FAT_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_FAT_map_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_FAT_sector_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_absolute_path_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_allocate_new_cluster.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_cache_prepare.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_cache_update.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_free_cluster_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_initialize.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_bitmap_start_sector_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_cluster_free.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_cluster_state_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_cluster_state_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_geometry_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_name_hash_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_size_calculate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_system_area_checksum_verify.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_system_area_checksum_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_system_area_format.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_system_sector_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_unicode_name_hash_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_exFAT_upcase_table.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_logical_sector_cache_entry_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_logical_sector_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_logical_sector_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_logical_sector_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_memory_copy.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_memory_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_string_length_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fx_utility_token_length_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_attributes_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_attributes_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_default_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_default_get_copy.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_default_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_first_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_first_full_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_information_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_local_path_clear.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_local_path_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_local_path_get_copy.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_local_path_restore.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_local_path_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_long_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_long_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_name_test.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_next_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_next_full_entry_find.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_short_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_directory_short_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_fault_tolerant_enable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_attributes_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_attributes_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_best_effort_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_close.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_date_time_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_delete.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_best_effort_allocate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_relative_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_truncate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_extended_truncate_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_open.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_relative_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_seek.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_truncate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_truncate_release.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_file_write_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_abort.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_cache_invalidate.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_check.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_close.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_close_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_exFAT_format.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_extended_space_available.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_flush.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_format.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_open.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_open_notify_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_read.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_space_available.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_volume_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_volume_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_volume_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_media_write.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_system_date_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_system_date_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_system_time_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_system_time_set.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_directory_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_directory_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_file_create.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_file_rename.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_short_name_get.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/microsoft/azure-rtos/filex/common/src\fxe_unicode_short_name_get_extended.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_initialize_low_level.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_isr_end.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_isr_start.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_context_restore.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_context_save.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_fp_disable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_fp_enable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_interrupt_control.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_interrupt_disable.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_interrupt_restore.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_schedule.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_stack_build.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_thread_system_return.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_timer_interrupt.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_threadx_port\tx_vector_table.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_filex_block_media\rm_filex_block_media.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/rm_block_media_sdmmc\rm_block_media_sdmmc.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/r_sdhi\r_sdhi.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/r_scif_uart\r_scif_uart.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/r_mmu\r_mmu.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/r_ioport\r_ioport.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/r_gtm\r_gtm.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/rza3ul\bsp_clocks_setup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/rza3ul\bsp_irq_sense.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_clocks.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_common.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_delay.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_delay_asm.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_gicv3.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_group_irq.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_guard.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_io.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_irq.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_rom_registers.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_sbrk.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/mcu/all\bsp_security.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\cache.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\default_handler.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\initsect.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\irq.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\irqfiq_handler.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\mmu.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\program_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\startup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\system.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/fsp/src/bsp/cmsis/Device/RENESAS/Source\vector_table.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/board/rza3ul_smarc_qspi\board_init.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rza/board/rza3ul_smarc_qspi\board_leds.o&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.c.option.linker.nostart.1573681460" name="Do not use standard start files (-nostartfiles)" superClass="com.renesas.cdt.managedbuild.gcc.rz.c.option.linker.nostart" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.mapfilename.871212848" name="Generate map" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.mapfilename" useByScannerDiscovery="false" value="" valueType="string"/>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.semihosting.1806849509" name="Use semihosting (--specs=rdimon.specs)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.semihosting" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.userDefined.1138644125" name="Other linker flags" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.userDefined" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="--gc-sections"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.gcc.rz.inputType.linker.c.189926651" superClass="com.renesas.cdt.managedbuild.gcc.rz.inputType.linker.c">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LINKER_SCRIPT)"/>
+								</inputType>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.cpp.2042442946" name="Cross ARM C++ Linker" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.cpp">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.1971398746" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.gcc.rz.archives.cpp.includePath.2124345676" name="Standard archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.cpp.includePath" valueType="libPaths"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.cpp.linkerscript.1283048411" name="Script files (-T)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.cpp.linkerscript" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;rza3ul_smarc_qspi.ld&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.cpp.entrypoint.2067654954" name="Entry Point:" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.cpp.entrypoint" useByScannerDiscovery="false" value="" valueType="string"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.archiver.1716301785" name="Cross ARM GNU Archiver" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.archiver"/>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.flash.260021595" name="Cross ARM GNU Create Flash Image" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.flash">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.flash.choice.2043493318" name="Output file format (-O)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.flash.choice" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.srec" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.listing.728608046" name="Cross ARM GNU Create Listing" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.listing">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.2146233830" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.819051294" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.732433629" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.1613708068" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.1965300076" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.size.228084561" name="Cross ARM GNU Print Size" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.size">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.220678331" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.tool.libgen.1229443568" name="Library Generator" superClass="com.renesas.cdt.managedbuild.gcc.rz.tool.libgen">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.libraryType.1938090420" name="Library type" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.libraryType" value="com.renesas.cdt.managedbuild.gcc.core.option.librarygenerator.settings.libraryType.preBuilt" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.selectlibrary.1880356995" name="Select Library" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.selectlibrary" value="com.renesas.cdt.managedbuild.gcc.core.option.librarygenerator.settings.selectLibrary.newLib" valueType="enumerated"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.boardInfo"/>
+		</cconfiguration>
+		<cconfiguration id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.toolchainInfo">
+				<option id="toolchain.id" value="gcc-arm-a-profile-aarch64"/>
+				<option id="toolchain.version" value="10.3.1.20210621"/>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465" name="Release" parent="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release">
+					<folderInfo id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.toolchain.elf.release.693330275" name="GCC for Renesas RZ (A-Profile AArch64 bare-metal)" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.toolchain.elf.release">
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash.502927789" name="Create flash image" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createflash" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting.822619539" name="Create extended listing" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.createlisting"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize.1436034859" name="Print size" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.printsize" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.showCommand.546932395" name="Echo tool command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.addtools.showCommand"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel.1999603582" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.optimizationLevel" value="ilg.gnuarmeclipse.managedbuild.cross.option.optimization.level.more" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght.1955896987" name="Message length (-fmessage-length=0)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.messagelenght" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.signedchar.1605660296" name="'char' is signed (-fsigned-char)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.signedchar" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.functionsection.102160795" name="Function sections (-ffunction-sections)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.functionsection" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.datasections.611457523" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.datasections" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level.906608641" name="Debug level" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.level"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.1725116796" name="Debug format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format" value="ilg.gnuarmeclipse.managedbuild.cross.option.debugging.format.dwarf4" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unused.174794454" name="Warn on various unused elements (-Wunused)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.unused" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.uninitialized.1521546150" name="Warn on uninitialized variables (-Wuninitialised)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.uninitialized" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn.1366652520" name="Enable all common warnings (-Wall)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn.1383798632" name="Enable extra warnings (-Wextra)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration.366720900" name="Warn on undeclared global function (-Wmissing-declaration)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.missingdeclaration" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion.2103739241" name="Warn on implicit conversions (-Wconversion)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.conversion" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith.476892951" name="Warn if pointer arithmetic (-Wpointer-arith)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.pointerarith" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow.326774298" name="Warn if shadowed variable (-Wshadow)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.shadow" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop.663569246" name="Warn if suspicious logical ops (-Wlogical-op)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.logicalop" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn.1050259773" name="Warn if struct is returned (-Wagreggate-return)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.agreggatereturn" value="true" valueType="boolean"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal.1967049055" name="Warn if floats are compared as equal (-Wfloat-equal)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.warnings.floatequal" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.deviceName.687163791" name="Device name" superClass="com.renesas.cdt.managedbuild.gcc.rz.deviceName" value="R9A07G063U02GBG" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name.889772035" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.toolchain.name" value="GNU Tools for ARM Embedded Processors" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.242837099" name="Architecture" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.architecture" value="ilg.gnuarmeclipse.managedbuild.cross.option.architecture.arm" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.family.1435877245" name="Arm family (-mcpu)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.family" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.mcpu.cortex-a55" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.gcc.rz.option.instructionset.2088436224" name="Instruction set" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.instructionset" value="ilg.gnuarmeclipse.managedbuild.cross.option.arm.target.instructionset.default" valueType="enumerated"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix.1639712589" name="Prefix" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.prefix" value="arm-none-eabi-" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.c.1404883140" name="C compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.c" value="gcc" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp.656293938" name="C++ compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.cpp" value="g++" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar.1873209321" name="Archiver" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.ar" value="ar" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy.1550491127" name="Hex/Bin converter" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objcopy" value="objcopy" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump.775830062" name="Listing generator" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.objdump" value="objdump" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.size.76824381" name="Size command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.size" value="size" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.make.797394923" name="Build command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.make" value="make" valueType="string"/>
+							<option id="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm.2034992405" name="Remove command" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.command.rm" value="rm" valueType="string"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.otherTarget.1875487027" name="Other target flags" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.otherTarget" valueType="stringList">
+								<listOptionValue builtIn="false" value="-mcmodel=large"/>
+							</option>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform.1963382069" isAbstract="false" osList="all" superClass="ilg.gnuarmeclipse.managedbuild.cross.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/rzfx2305171}/Release" id="com.renesas.cdt.managedbuild.gcc.rz.builder.1817335516" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GCC for Renesas Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.renesas.cdt.managedbuild.gcc.rz.builder"/>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.assembler.60913743" name="Cross ARM GNU Assembler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.assembler">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1275195516" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.assembler.include.844654651" name="Include paths (-I)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.assembler.include" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/rm_threadx_port}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/threadx/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/bsp/mcu/rza3ul}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/tx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/ports}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/filex/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/middleware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/fx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/driver}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs.218009855" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.defs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RZA_CORE=CA55_0"/>
+									<listOptionValue builtIn="false" value="_RENESAS_RZA_"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1223845560" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.1657454807" name="Cross ARM C Compiler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.1100438539" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.c99" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.include.1333207554" name="Include paths (-I)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.include" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/generate&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/rm_threadx_port}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/threadx/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/src/bsp/mcu/rza3ul}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/tx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/fsp/inc/ports}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza/microsoft/azure-rtos/filex/common/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/middleware}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/fsp_cfg/azure/fx}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/rza_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rza_cfg/driver}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1587971046" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RZA_CORE=CA55_0"/>
+									<listOptionValue builtIn="false" value="_RENESAS_RZA_"/>
+								</option>
+								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.721562509" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.cpp.1960110938" name="Cross ARM C++ Compiler" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.cpp">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language.1737334631" name="Language standard" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.gcc.rz.option.compiler.cpp.language.cpp11" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.c.326944039" name="Cross ARM C Linker" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.c">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.869106244" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.gcc.rz.archives.includePath.1022707350" name="Standard archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.includePath" valueType="libPaths"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.linkerscript.1512212786" name="Script files (-T)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linkerscript" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;rza3ul_smarc_qspi.ld&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludePath.1346464884" name="User defined archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.userIncludePath" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/script&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.entrypoint.855481593" name="Entry Point:" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.entrypoint" useByScannerDiscovery="false" value="" valueType="string"/>
+								<inputType id="com.renesas.cdt.managedbuild.gcc.rz.inputType.linker.c.1731987226" superClass="com.renesas.cdt.managedbuild.gcc.rz.inputType.linker.c">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LINKER_SCRIPT)"/>
+								</inputType>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.cpp.1800465233" name="Cross ARM C++ Linker" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.linker.cpp">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.394738738" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.gcc.rz.archives.cpp.includePath.895817062" name="Standard archive search directories (-L)" superClass="com.renesas.cdt.managedbuild.gcc.rz.archives.cpp.includePath" valueType="libPaths"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.gcc.rz.option.cpp.linkerscript.1524728542" name="Script files (-T)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.cpp.linkerscript" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;rza3ul_smarc_qspi.ld&quot;"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.linker.cpp.entrypoint.1352368165" name="Entry Point:" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.linker.cpp.entrypoint" useByScannerDiscovery="false" value="" valueType="string"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.archiver.676555541" name="Cross ARM GNU Archiver" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.archiver"/>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.flash.1256174998" name="Cross ARM GNU Create Flash Image" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.flash">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.flash.choice.677369800" name="Output file format (-O)" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.flash.choice" value="ilg.gnuarmeclipse.managedbuild.cross.option.createflash.choice.srec" valueType="enumerated"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.listing.800222442" name="Cross ARM GNU Create Listing" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.listing">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source.1370405400" name="Display source (--source|-S)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.source" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders.1724691804" name="Display all headers (--all-headers|-x)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.allheaders" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle.541996339" name="Demangle names (--demangle|-C)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.demangle" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers.435822603" name="Display line numbers (--line-numbers|-l)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.linenumbers" value="true" valueType="boolean"/>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide.967679100" name="Wide lines (--wide|-w)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.createlisting.wide" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.size.794490916" name="Cross ARM GNU Print Size" superClass="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.size">
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format.2020619177" name="Size format" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.printsize.format"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.gcc.rz.tool.libgen.1002423158" name="Library Generator" superClass="com.renesas.cdt.managedbuild.gcc.rz.tool.libgen">
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.libraryType.909857871" name="Library type" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.libraryType" value="com.renesas.cdt.managedbuild.gcc.core.option.librarygenerator.settings.libraryType.preBuilt" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.gcc.rz.option.selectlibrary.916058193" name="Select Library" superClass="com.renesas.cdt.managedbuild.gcc.rz.option.selectlibrary" value="com.renesas.cdt.managedbuild.gcc.core.option.librarygenerator.settings.selectLibrary.newLib" valueType="enumerated"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="rzfx2305171.com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.target.elf.1987748917" name="実行可能" projectType="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.target.elf"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.465235664.;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.466076846;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1923019513">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1491375465.;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.1657454807;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.721562509">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>
