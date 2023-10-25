@@ -1,0 +1,12 @@
+collapse/module.azure.nxd.azure_iot.725866038=false
+collapse/module.azure.nxd.ip.1431540701=false
+collapse/module.azure.nxd_dhcp_client.1725519140=false
+collapse/module.azure.nxd_dns_client.1391318544=false
+collapse/module.azure.nxd_nx_crypto.961776482=false
+collapse/module.azure.nxd_nx_secure.1520858798=false
+collapse/module.azure.nxd_sntp_client.560229101=false
+collapse/module.driver.ether_on_ether.1243779105=false
+collapse/module.driver.uart_on_scif_uart.666760419=false
+collapse/module.middleware.rm_netxduo_ether.944557568=false
+collapse/module.middleware.rm_threadx_port.0=false
+eclipse.preferences.version=1
