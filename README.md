@@ -75,6 +75,11 @@ License
   The "usbx_demo_huvc_netx_http_server_rza3_fsp" is a sample project of USBX HUVC.  
   This sample project displays the camera image on the HTTP server in real time.  
 
+- **RZA3UL_demo_azure_iot**  
+  The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
+  This sample project supports IoT Plug and Play with multiple components.
+
+
 ## Getting Started
 
 For more information, refer to the following document in the [DOCS](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/tree/main/docs) folder.  
