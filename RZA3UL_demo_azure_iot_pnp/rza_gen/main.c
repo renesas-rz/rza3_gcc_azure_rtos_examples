@@ -2,7 +2,8 @@
 #include "bsp_api.h"
 #include "tx_api.h"
 
-extern void new_thread0_create(void);
+extern void iot_thread_create(void);
+extern void tsu_thread_create(void);
 
 uint32_t g_fsp_common_thread_count;
 bool g_fsp_common_initialized;
@@ -57,7 +58,8 @@ void tx_application_define(void *first_unused_memory)
         tx_startup_err_callback (&g_fsp_common_initialized_semaphore, 0);
     }
 
-    new_thread0_create ();
+    iot_thread_create ();
+    tsu_thread_create ();
 
 #ifdef TX_USER_ENABLE_TRACE
 					TX_USER_ENABLE_TRACE;

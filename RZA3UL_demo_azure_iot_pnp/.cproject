@@ -587,7 +587,7 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rza"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rza_gen"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="sample_azure_iot_embedded_sdk_adu|sample_azure_iot_embedded_sdk_pnp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -936,7 +936,7 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rza"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rza_gen"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="sample_azure_iot_embedded_sdk_adu|sample_azure_iot_embedded_sdk_pnp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -946,24 +946,17 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="rznx2305162.com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.target.elf.1171063429" name="実行可能" projectType="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.target.elf"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1904432931;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.release.1904432931.;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.793109055;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.2079627338">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.2130391065;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.configuration.debug.2130391065.;com.renesas.cdt.managedbuild.gcc.rz.aarch64.none.tool.compiler.c.668982899;ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.993843374">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/RZA3UL_demo_azure_iot"/>
+			<resource resourceType="PROJECT" workspacePath="/RZA3UL_demo_azure_iot_pnp"/>
 		</configuration>
 		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/RZA3UL_demo_azure_iot"/>
+			<resource resourceType="PROJECT" workspacePath="/RZA3UL_azure_demo_pnp"/>
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="scannerConfiguration"/>
 </cproject>

@@ -315,6 +315,18 @@
     <module id="module.azure.nxd_dhcp_client.1725519140">
       <property id="module.azure.nxd_dhcp_client.name" value="g_dhcp_client0"/>
     </module>
+    <module id="module.driver.timer_on_gtm.1537053488">
+      <property id="module.driver.timer.name" value="g_timer1"/>
+      <property id="module.driver.timer.channel" value="1"/>
+      <property id="module.driver.timer.mode" value="module.driver.timer.mode.mode_periodic"/>
+      <property id="module.driver.timer.period" value="100"/>
+      <property id="module.driver.timer.unit" value="module.driver.timer.unit.unit_period_msec"/>
+      <property id="module.driver.timer.count_source" value="module.driver.timer.count_source.clock_p0clk"/>
+      <property id="module.driver.timer.p_callback" value="NULL"/>
+      <property id="module.driver.timer.ipl" value="24"/>
+      <property id="module.driver.timer.int.generateatstart" value="module.driver.timer.int.generateatstart.0"/>
+      <property id="module.driver.timer.direction" value="module.driver.timer.direction.0"/>
+    </module>
     <context id="_hal.0">
       <stack module="module.driver.ioport_on_ioport.0"/>
       <stack module="module.middleware.rm_threadx_port.0">
@@ -324,8 +336,8 @@
       <stack module="module.driver.uart_on_scif_uart.666760419"/>
     </context>
     <context id="rtos.threadx.thread.544071917">
-      <property id="_symbol" value="new_thread0"/>
-      <property id="rtos.threadx.thread.name" value="New Thread"/>
+      <property id="_symbol" value="iot_thread"/>
+      <property id="rtos.threadx.thread.name" value="IoT Thread"/>
       <property id="rtos.threadx.thread.stack" value="16384"/>
       <property id="rtos.threadx.thread.priority" value="3"/>
       <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
@@ -374,6 +386,15 @@
         </stack>
         <stack module="module.azure.nxd.packet_pool.773301914" requires="module.azure.nxd_dhcp_client.requires.nxd.packet_pool"/>
       </stack>
+    </context>
+    <context id="rtos.threadx.thread.1364946736">
+      <property id="_symbol" value="tsu_thread"/>
+      <property id="rtos.threadx.thread.name" value="TSU Thread"/>
+      <property id="rtos.threadx.thread.stack" value="1024"/>
+      <property id="rtos.threadx.thread.priority" value="1"/>
+      <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
+      <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <stack module="module.driver.timer_on_gtm.1537053488"/>
     </context>
     <config id="config.driver.gtm">
       <property id="config.driver.gtm.param_checking_enable" value="config.driver.gtm.param_checking_enable.bsp"/>

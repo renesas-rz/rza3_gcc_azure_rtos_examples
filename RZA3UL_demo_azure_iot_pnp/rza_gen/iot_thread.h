@@ -1,13 +1,13 @@
 /* generated thread header file - do not edit */
-#ifndef NEW_THREAD0_H_
-#define NEW_THREAD0_H_
+#ifndef IOT_THREAD_H_
+#define IOT_THREAD_H_
 #include "bsp_api.h"
 #include "tx_api.h"
 #include "hal_data.h"
 #ifdef __cplusplus
-                extern "C" void new_thread0_entry(void);
+                extern "C" void iot_thread_entry(void);
                 #else
-extern void new_thread0_entry(void);
+extern void iot_thread_entry(void);
 #endif
 #include "nxd_dhcp_client.h"
 #include "nxd_sntp_client.h"
@@ -17,4 +17,4 @@ void g_dhcp_client0_quick_setup();
 
 void g_sntp_client0_quick_setup();
 FSP_FOOTER
-#endif /* NEW_THREAD0_H_ */
+#endif /* IOT_THREAD_H_ */

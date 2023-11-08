@@ -8,7 +8,7 @@
 #ifndef BSP_CFG_RTOS
 #if (FSP_NOT_DEFINED) != (FSP_NOT_DEFINED)
   #define BSP_CFG_RTOS (2)
- #elif (FSP_NOT_DEFINED) != (1)
+ #elif (FSP_NOT_DEFINED) != (2)
 #define BSP_CFG_RTOS (1)
 #else
   #define BSP_CFG_RTOS (0)

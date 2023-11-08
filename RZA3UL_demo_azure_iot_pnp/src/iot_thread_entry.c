@@ -1,4 +1,4 @@
-#include "new_thread0.h"
+#include "iot_thread.h"
 
 #ifdef FEATURE_NX_IPV6
 //#include "../../addons/http/nxd_http_server.h"
@@ -36,7 +36,7 @@ char demo_http_server_stack[4096];
 NX_PACKET Sample_packet;
 NX_PACKET *Sample_packet_ptr;
 /* Startup Thread entry function */
-void new_thread0_entry(void)
+void iot_thread_entry(void)
 {
 //    UINT i;
 //    for(i=0;i<10;i++){

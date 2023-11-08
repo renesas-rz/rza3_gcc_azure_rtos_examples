@@ -3073,9 +3073,9 @@ FSP Configuration
       Interrupts: Receive Interrupt Priority: 24
       Interrupts: Transmit Data Empty Interrupt Priority: 24
       
-  Thread "New Thread"
-    Symbol: new_thread0
-    Name: New Thread
+  Thread "IoT Thread"
+    Symbol: iot_thread
+    Name: IoT Thread
     Stack size (bytes): 16384
     Priority: 3
     Auto start: Enabled
@@ -3261,3 +3261,23 @@ FSP Configuration
         Packet Size (bytes): 1568
         Number of Packets in Pool: 64
         
+  Thread "TSU Thread"
+    Symbol: tsu_thread
+    Name: TSU Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_timer1 Timer (r_gtm)"
+      General: Name: g_timer1
+      General: Channel: 1
+      General: Mode: Periodic
+      General: Period: 100
+      General: Period Unit: Milliseconds
+      General: Count Source: P0CLK
+      Interrupts: Callback: NULL
+      Interrupts: Underflow Interrupt Priority: 24
+      Interrupts: Generate at Start: Disable
+      Extra Features: GTM Mode: Interval timer mode
+      

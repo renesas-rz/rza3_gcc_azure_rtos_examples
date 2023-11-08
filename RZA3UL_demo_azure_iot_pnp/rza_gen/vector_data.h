@@ -3,7 +3,7 @@
 #define VECTOR_DATA_H
 /* Number of interrupts allocated */
 #ifndef VECTOR_DATA_IRQ_COUNT
-#define VECTOR_DATA_IRQ_COUNT    (7)
+#define VECTOR_DATA_IRQ_COUNT    (8)
 #endif
 
 /** Common macro for FSP header files. There is also a corresponding FSP_FOOTER macro at the end of this file. */

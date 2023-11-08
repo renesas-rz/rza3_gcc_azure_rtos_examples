@@ -57,9 +57,7 @@ TODO`s: Configure core settings of application for your IoTHub.
 */
 
 /* Defined, ADU is disabled.  */
-/*
 #define DISABLE_ADU_SAMPLE
-*/
 
 #ifndef ENABLE_DPS_SAMPLE
 
@@ -84,18 +82,18 @@ TODO`s: Configure core settings of application for your IoTHub.
 #endif /* ENDPOINT */
 
 #ifndef ID_SCOPE
-#define ID_SCOPE                                    "{Your ID Scope value}"
+#define ID_SCOPE                                    ""
 #endif /* ID_SCOPE */
 
 #ifndef REGISTRATION_ID
-#define REGISTRATION_ID                             "{Your Registration ID value}"
+#define REGISTRATION_ID                             ""
 #endif /* REGISTRATION_ID */
 
 #endif /* ENABLE_DPS_SAMPLE */
 
 /* Optional SYMMETRIC KEY.  */
 #ifndef DEVICE_SYMMETRIC_KEY
-#define DEVICE_SYMMETRIC_KEY                        "{Your Primary Symmetric Key value}"
+#define DEVICE_SYMMETRIC_KEY                        ""
 #endif /* DEVICE_SYMMETRIC_KEY */
 
 /* Optional module ID.  */

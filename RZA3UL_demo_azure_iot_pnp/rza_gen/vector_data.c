@@ -85,7 +85,7 @@ BSP_PLACE_IN_SECTION (BSP_SECTION_APPLICATION_VECTORS) =
   Default_Handler, /* ID:76 */
   Default_Handler, /* ID:77 */
   gtm_int_isr, /* ID:78 GTM0 INT (GTM0 Interrupt) */
-  Default_Handler, /* ID:79 */
+  gtm_int_isr, /* ID:79 GTM1 INT (GTM1 Interrupt) */
   Default_Handler, /* ID:80 */
   Default_Handler, /* ID:81 */
   Default_Handler, /* ID:82 */

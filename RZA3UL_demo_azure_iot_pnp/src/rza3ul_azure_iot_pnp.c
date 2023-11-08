@@ -22,6 +22,10 @@
 #include "sample_config.h"
 #include "bsp_api.h"
 
+static const UCHAR manufacturer_name[] = "Renesas_Electronics_Corporation";
+static const UCHAR processor_name[] = "RZ/A3UL";
+static const UCHAR fsp_version[] = FSP_VERSION_STRING;
+
 
 #ifdef USE_SAMPLE_AZURE_IOT_EMBEDDED_SDK_PNP
 
@@ -41,13 +45,13 @@
 #define SAMPLE_WRITABLE_PROPERTIES_RECEIVE_EVENT                        ((ULONG)0x00000040)
 #define SAMPLE_REPORTED_PROPERTIES_SEND_EVENT                           ((ULONG)0x00000080)
 
-#define SAMPLE_DEAFULT_START_TEMP_CELSIUS                               (22)
+#define SAMPLE_DEAFULT_START_Tj_CELSIUS                               (22)
 #define DOUBLE_DECIMAL_PLACE_DIGITS                                     (2)
 
 #define SAMPLE_COMMAND_SUCCESS_STATUS                                   (200)
 #define SAMPLE_COMMAND_ERROR_STATUS                                     (500)
 
-#define SAMPLE_PNP_MODEL_ID                                             "dtmi:com:example:Thermostat;1"
+#define SAMPLE_PNP_MODEL_ID                                             "dtmi:renesas:RZ:rza3ulevk;1"
 #define SAMPLE_PNP_DPS_PAYLOAD                                          "{\"modelId\":\"" SAMPLE_PNP_MODEL_ID "\"}"
 
 /* Generally, IoTHub Client and DPS Client do not run at the same time, user can use union as below to
@@ -112,33 +116,41 @@ static volatile UINT sample_connection_status = NX_AZURE_IOT_NOT_INITIALIZED;
 static volatile ULONG sample_periodic_counter = 0;
 
 /* Telemetry.  */
-static const CHAR telemetry_name[] = "temperature";
+static const CHAR telemetry_name[] = "Tj";
 
 /* Device command.  */
 static const CHAR report_command_name[] = "getMaxMinReport";
+static const CHAR ledon_command_name[] = "ledOn";
+static const CHAR ledoff_command_name[] = "ledOff";
 
 /* Device properties.  */
-static const CHAR writable_temp_property_name[] = "targetTemperature";
-static const CHAR reported_max_temp_since_last_reboot[] = "maxTempSinceLastReboot";
-static const CHAR report_max_temp_name[] = "maxTemp";
-static const CHAR report_min_temp_name[] = "minTemp";
-static const CHAR report_avg_temp_name[] = "avgTemp";
+static const CHAR reported_max_Tj_since_last_reboot[] = "maxTjSinceLastReboot";
+static const CHAR reported_manufacturer_name[] = "manufacturerName";
+static const CHAR reported_processor_name[] = "processorName";
+static const CHAR reported_fsp_version[] = "fspVersion";
+static const CHAR report_max_Tj_name[] = "maxTj";
+static const CHAR report_min_Tj_name[] = "minTj";
+static const CHAR report_avg_Tj_name[] = "avgTj";
 static const CHAR report_start_time_name[] = "startTime";
 static const CHAR report_end_time_name[] = "endTime";
-static const CHAR reported_temp_property_name[] = "targetTemperature";
-static const CHAR temp_response_description[] = "success";
 
 /* Fake device data.  */
 static const CHAR fake_start_report_time[] = "2020-01-10T10:00:00Z";
 static const CHAR fake_end_report_time[] = "2023-01-10T10:00:00Z";
-static double current_device_temp = SAMPLE_DEAFULT_START_TEMP_CELSIUS;
-static double last_device_max_tem_reported = 0;
-static double device_temperature_avg_total = SAMPLE_DEAFULT_START_TEMP_CELSIUS;
-static int32_t device_temperature_avg_count = 1;
-static double device_max_temp = SAMPLE_DEAFULT_START_TEMP_CELSIUS;
-static double device_min_temp = SAMPLE_DEAFULT_START_TEMP_CELSIUS;
-static double device_avg_temp = SAMPLE_DEAFULT_START_TEMP_CELSIUS;
+
+static int32_t last_device_max_tem_reported = 0;
+static double device_Tj_avg_total;
+static int32_t device_Tj_avg_count = 1;
+static int32_t device_max_Tj;
+static int32_t device_min_Tj;
+static double device_avg_Tj;
 static UCHAR scratch_buffer[256];
+
+extern int32_t  Tj;
+extern bsp_leds_t g_bsp_leds;
+/* LED type structure */
+bsp_leds_t leds;
+bsp_io_level_t pin_level = BSP_IO_LEVEL_LOW;
 
 /* Include the connection monitor function from sample_azure_iot_embedded_sdk_connect.c.  */
 extern VOID sample_connection_monitor(NX_IP *ip_ptr, NX_AZURE_IOT_HUB_CLIENT *iothub_client_ptr, UINT connection_status,
@@ -148,130 +160,6 @@ extern VOID sample_connection_monitor(NX_IP *ip_ptr, NX_AZURE_IOT_HUB_CLIENT *io
 /* Include the adu start function from sample_azure_iot_embedded_sdk_adu.c.  */
 extern VOID sample_adu_start(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr);
 #endif /* DISABLE_ADU_SAMPLE */
-
-/* Send writable properties response as reported property.  */
-static VOID sample_send_target_temperature_report(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr, double current_device_temp_value,
-                                                  UINT status, ULONG version, UCHAR *description_ptr,
-                                                  UINT description_len)
-{
-NX_AZURE_IOT_JSON_WRITER json_writer;
-NX_PACKET *packet_ptr;
-UINT response_status;
-UINT request_id;
-
-    if (nx_azure_iot_hub_client_reported_properties_create(hub_client_ptr,
-                                                           &packet_ptr, NX_WAIT_FOREVER))
-    {
-        printf("Failed to build reported response\r\n");
-        return;
-    }
-
-    if (nx_azure_iot_json_writer_init(&json_writer, packet_ptr, NX_WAIT_FOREVER))
-    {
-        printf("Failed to build reported response\r\n");
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    if (nx_azure_iot_json_writer_append_begin_object(&json_writer) ||
-        nx_azure_iot_hub_client_reported_properties_status_begin(hub_client_ptr,
-                                                                 &json_writer, (const UCHAR *)reported_temp_property_name,
-                                                                 sizeof(reported_temp_property_name) - 1,
-                                                                 status, version,
-                                                                 description_ptr, description_len) ||
-        nx_azure_iot_json_writer_append_double(&json_writer,
-                                               current_device_temp_value,
-                                               DOUBLE_DECIMAL_PLACE_DIGITS) ||
-        nx_azure_iot_hub_client_reported_properties_status_end(hub_client_ptr, &json_writer) ||
-        nx_azure_iot_json_writer_append_end_object(&json_writer))
-    {
-        printf("Failed to build reported response\r\n");
-        nx_packet_release(packet_ptr);
-    }
-    else
-    {
-        if (nx_azure_iot_hub_client_reported_properties_send(hub_client_ptr,
-                                                             packet_ptr, &request_id,
-                                                             &response_status, NX_NULL,
-                                                             (5 * NX_IP_PERIODIC_RATE)))
-        {
-            printf("Failed to send reported response\r\n");
-            nx_packet_release(packet_ptr);
-        }
-    }
-}
-
-/* Parses writable properties document.  */
-static UINT sample_parse_writable_temp_property(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr,
-                                                NX_AZURE_IOT_JSON_READER *json_reader_ptr,
-                                                UINT message_type, ULONG version)
-{
-double parsed_value;
-UINT status;
-const UCHAR *component_name_ptr;
-USHORT component_length = 0;
-
-    while ((status = nx_azure_iot_hub_client_properties_component_property_next_get(hub_client_ptr,
-                                                                                    json_reader_ptr,
-                                                                                    message_type,
-                                                                                    NX_AZURE_IOT_HUB_CLIENT_PROPERTY_WRITABLE,
-                                                                                    &component_name_ptr, &component_length)) == NX_AZURE_IOT_SUCCESS)
-    {
-        if (nx_azure_iot_json_reader_token_is_text_equal(json_reader_ptr,
-                                                         (UCHAR *)writable_temp_property_name,
-                                                         sizeof(writable_temp_property_name) - 1))
-        {
-            if ((status = nx_azure_iot_json_reader_next_token(json_reader_ptr)) ||
-                (status = nx_azure_iot_json_reader_token_double_get(json_reader_ptr, &parsed_value)))
-            {
-                return(status);
-            }
-
-            break;
-        }
-        else
-        {
-
-            /* The JSON reader must be advanced regardless of whether the property
-               is of interest or not.  */
-            nx_azure_iot_json_reader_next_token(json_reader_ptr);
- 
-            /* Skip children in case the property value is an object.  */
-            if (nx_azure_iot_json_reader_token_type(json_reader_ptr) == NX_AZURE_IOT_READER_TOKEN_BEGIN_OBJECT)
-            {
-                nx_azure_iot_json_reader_skip_children(json_reader_ptr);
-            }
-            nx_azure_iot_json_reader_next_token(json_reader_ptr);
-        }
-    }
-
-    if (status)
-    {
-        return(status);
-    }
-
-    current_device_temp = parsed_value;
-    if (current_device_temp > device_max_temp)
-    {
-        device_max_temp = current_device_temp;
-    }
-
-    if (current_device_temp < device_min_temp)
-    {
-        device_min_temp = current_device_temp;
-    }
-
-    /* Increment the avg count, add the new temp to the total, and calculate the new avg.  */
-    device_temperature_avg_count++;
-    device_temperature_avg_total += current_device_temp;
-    device_avg_temp = device_temperature_avg_total / device_temperature_avg_count;
-
-    sample_send_target_temperature_report(hub_client_ptr, current_device_temp, 200,
-                                          version, (UCHAR *)temp_response_description,
-                                          sizeof(temp_response_description) - 1);
-
-    return(NX_AZURE_IOT_SUCCESS);
-}
 
 /* sample command implementation.  */
 static UINT sample_get_maxmin_report(NX_AZURE_IOT_JSON_READER *json_reader_ptr,
@@ -302,18 +190,18 @@ UCHAR time_buf[32];
     }
     
     if (nx_azure_iot_json_writer_append_begin_object(out_json_writer_ptr) ||
+        nx_azure_iot_json_writer_append_property_with_int32_value(out_json_writer_ptr,
+                                                                   (UCHAR *)report_max_Tj_name,
+                                                                   sizeof(report_max_Tj_name) - 1,
+                                                                   device_max_Tj) ||
+        nx_azure_iot_json_writer_append_property_with_int32_value(out_json_writer_ptr,
+                                                                   (UCHAR *)report_min_Tj_name,
+                                                                   sizeof(report_min_Tj_name) - 1,
+                                                                   device_min_Tj) ||
         nx_azure_iot_json_writer_append_property_with_double_value(out_json_writer_ptr,
-                                                                   (UCHAR *)report_max_temp_name,
-                                                                   sizeof(report_max_temp_name) - 1,
-                                                                   device_max_temp, DOUBLE_DECIMAL_PLACE_DIGITS) ||
-        nx_azure_iot_json_writer_append_property_with_double_value(out_json_writer_ptr,
-                                                                   (UCHAR *)report_min_temp_name,
-                                                                   sizeof(report_min_temp_name) - 1,
-                                                                   device_min_temp, DOUBLE_DECIMAL_PLACE_DIGITS) ||
-        nx_azure_iot_json_writer_append_property_with_double_value(out_json_writer_ptr,
-                                                                   (UCHAR *)report_avg_temp_name,
-                                                                   sizeof(report_avg_temp_name) - 1,
-                                                                   device_avg_temp, DOUBLE_DECIMAL_PLACE_DIGITS) ||
+                                                                   (UCHAR *)report_avg_Tj_name,
+                                                                   sizeof(report_avg_Tj_name) - 1,
+                                                                   device_avg_Tj, DOUBLE_DECIMAL_PLACE_DIGITS) ||
         nx_azure_iot_json_writer_append_property_with_string_value(out_json_writer_ptr,
                                                                    (UCHAR *)report_start_time_name,
                                                                    sizeof(report_start_time_name) - 1,
@@ -590,6 +478,42 @@ NX_AZURE_IOT_JSON_WRITER json_writer;
             }
         }
 
+        if ((command_name_length == (sizeof(ledon_command_name) - 1)) &&
+            (memcmp((VOID *)command_name_ptr, (VOID *)ledon_command_name,
+                    sizeof(ledon_command_name) - 1) == 0))
+        {
+            //LED ON
+            pin_level = BSP_IO_LEVEL_HIGH;
+            dm_status = SAMPLE_COMMAND_SUCCESS_STATUS;
+        }
+
+        if ((command_name_length == (sizeof(ledoff_command_name) - 1)) &&
+            (memcmp((VOID *)command_name_ptr, (VOID *)ledoff_command_name,
+                    sizeof(ledoff_command_name) - 1) == 0))
+        {
+            //LED OFF
+            pin_level = BSP_IO_LEVEL_LOW;
+            dm_status = SAMPLE_COMMAND_SUCCESS_STATUS;
+        }
+
+        /* Enable access to the PFS registers. If using r_ioport module then register protection is automatically
+         * handled. This code uses BSP IO functions to show how it is used.
+         */
+        R_BSP_PinAccessEnable();
+
+        /* Update all board LEDs */
+        for (uint32_t i = 0; i < leds.led_count; i++)
+        {
+            /* Get pin to toggle */
+            uint32_t pin = leds.p_leds[i];
+
+            /* Write to this pin */
+            R_BSP_PinWrite((bsp_io_port_pin_t) pin, pin_level);
+        }
+
+        /* Protect PFS registers */
+        R_BSP_PinAccessDisable();
+
         nx_packet_release(packet_ptr);
 
         if ((status = nx_azure_iot_hub_client_command_message_response(hub_client_ptr, dm_status,
@@ -599,63 +523,6 @@ NX_AZURE_IOT_JSON_WRITER json_writer;
             printf("Command response failed!: error code = 0x%08x\r\n", status);
         }
     }
-}
-
-static void sample_writable_properties_receive_action(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr)
-{
-UINT status = 0;
-NX_PACKET *packet_ptr;
-NX_AZURE_IOT_JSON_READER json_reader;
-ULONG properties_version;
-
-    if (sample_connection_status != NX_SUCCESS)
-    {
-        return;
-    }
-
-    if ((status = nx_azure_iot_hub_client_writable_properties_receive(hub_client_ptr,
-                                                                      &packet_ptr,
-                                                                      NX_WAIT_FOREVER)))
-    {
-        printf("Receive writable property receive failed!: error code = 0x%08x\r\n", status);
-        return;
-    }
-
-    printf("Received writable property");
-    printf("\r\n");
-
-    if ((status = nx_azure_iot_json_reader_init(&json_reader, packet_ptr)))
-    {
-        printf("Init json reader failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    /* Get the version.  */
-    if ((status = nx_azure_iot_hub_client_properties_version_get(hub_client_ptr, &json_reader, 
-                                                                 NX_AZURE_IOT_HUB_WRITABLE_PROPERTIES,
-                                                                 &properties_version)))
-    {
-        printf("Properties version get failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    if ((status = nx_azure_iot_json_reader_init(&json_reader, packet_ptr)))
-    {
-        printf("Init json reader failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    status = sample_parse_writable_temp_property(hub_client_ptr, &json_reader,
-                                                 NX_AZURE_IOT_HUB_WRITABLE_PROPERTIES, properties_version);
-    if (status && (status != NX_AZURE_IOT_NOT_FOUND))
-    {
-        printf("Failed to parse value\r\n");
-    }
-
-    nx_packet_release(packet_ptr);
 }
 
 static void sample_reported_properties_send_action(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr)
@@ -672,8 +539,8 @@ ULONG reported_property_version;
         return;
     }
 
-    if (((last_device_max_tem_reported - 0.01) < device_max_temp) &&
-        ((last_device_max_tem_reported + 0.01) > device_max_temp))
+    if (((last_device_max_tem_reported - 0.01) < device_max_Tj) &&
+        ((last_device_max_tem_reported + 0.01) > device_max_Tj))
     {
         return;
     }
@@ -684,7 +551,7 @@ ULONG reported_property_version;
         printf("Failed create reported properties: error code = 0x%08x\r\n", status);
         return;
     }
-    
+
     if ((status = nx_azure_iot_json_writer_init(&json_writer, packet_ptr, NX_WAIT_FOREVER)))
     {
         printf("Failed init json writer: error code = 0x%08x\r\n", status);
@@ -693,10 +560,22 @@ ULONG reported_property_version;
     }
 
     if ((status = nx_azure_iot_json_writer_append_begin_object(&json_writer)) ||
-        (status = nx_azure_iot_json_writer_append_property_with_double_value(&json_writer,
-                                                                             (const UCHAR *)reported_max_temp_since_last_reboot,
-                                                                             sizeof(reported_max_temp_since_last_reboot) - 1,
-                                                                             device_max_temp, DOUBLE_DECIMAL_PLACE_DIGITS)) ||
+        (status = nx_azure_iot_json_writer_append_property_with_int32_value(&json_writer,
+                                                                             (const UCHAR *)reported_max_Tj_since_last_reboot,
+                                                                             sizeof(reported_max_Tj_since_last_reboot) - 1,
+                                                                             device_max_Tj)) ||
+        (status = nx_azure_iot_json_writer_append_property_with_string_value(&json_writer,
+                                                                             (const UCHAR *)reported_manufacturer_name,
+                                                                             sizeof(reported_manufacturer_name) - 1,
+                                                                             (const UCHAR *)manufacturer_name, sizeof(manufacturer_name) - 1)) ||
+        (status = nx_azure_iot_json_writer_append_property_with_string_value(&json_writer,
+                                                                             (const UCHAR *)reported_processor_name,
+                                                                             sizeof(reported_processor_name) - 1,
+                                                                             (const UCHAR *)processor_name, sizeof(processor_name) - 1)) ||
+        (status = nx_azure_iot_json_writer_append_property_with_string_value(&json_writer,
+                                                                             (const UCHAR *)reported_fsp_version,
+                                                                             sizeof(reported_fsp_version) - 1,
+                                                                             (const UCHAR *)fsp_version, sizeof(fsp_version) - 1)) ||
         (status = nx_azure_iot_json_writer_append_end_object(&json_writer)))
     {
         printf("Build reported property failed: error code = 0x%08x\r\n", status);
@@ -721,63 +600,7 @@ ULONG reported_property_version;
         return;
     }
 
-    last_device_max_tem_reported = device_max_temp;
-}
-
-static void sample_properties_receive_action(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr)
-{
-UINT status = 0;
-NX_PACKET *packet_ptr;
-NX_AZURE_IOT_JSON_READER json_reader;
-ULONG writable_properties_version;
-
-    if (sample_connection_status != NX_SUCCESS)
-    {
-        return;
-    }
-
-    if ((status = nx_azure_iot_hub_client_properties_receive(hub_client_ptr,
-                                                             &packet_ptr,
-                                                             NX_WAIT_FOREVER)))
-    {
-        printf("Get all properties receive failed!: error code = 0x%08x\r\n", status);
-        return;
-    }
-
-    printf("Received all properties");
-    printf("\r\n");
-
-    if ((status = nx_azure_iot_json_reader_init(&json_reader, packet_ptr)))
-    {
-        printf("Init json reader failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    if ((status = nx_azure_iot_hub_client_properties_version_get(hub_client_ptr, &json_reader,
-                                                                 NX_AZURE_IOT_HUB_PROPERTIES,
-                                                                 &writable_properties_version)))
-    {
-        printf("Properties version get failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    if ((status = nx_azure_iot_json_reader_init(&json_reader, packet_ptr)))
-    {
-        printf("Init json reader failed!: error code = 0x%08x\r\n", status);
-        nx_packet_release(packet_ptr);
-        return;
-    }
-
-    status = sample_parse_writable_temp_property(hub_client_ptr, &json_reader,
-                                                 NX_AZURE_IOT_HUB_PROPERTIES, writable_properties_version);
-    if (status && (status != NX_AZURE_IOT_NOT_FOUND))
-    {
-        printf("Failed to parse value\r\n");
-    }
-
-    nx_packet_release(packet_ptr);
+    last_device_max_tem_reported = device_max_Tj;
 }
 
 static void sample_telemetry_action(NX_AZURE_IOT_HUB_CLIENT *hub_client_ptr)
@@ -786,6 +609,7 @@ UINT status = 0;
 NX_PACKET *packet_ptr;
 NX_AZURE_IOT_JSON_WRITER json_writer;
 UINT buffer_length;
+
     if (sample_connection_status != NX_SUCCESS)
     {
         return;
@@ -809,11 +633,10 @@ UINT buffer_length;
     }
 
     if (nx_azure_iot_json_writer_append_begin_object(&json_writer) ||
-        nx_azure_iot_json_writer_append_property_with_double_value(&json_writer,
+        nx_azure_iot_json_writer_append_property_with_int32_value(&json_writer,
                                                                    (UCHAR *)telemetry_name,
                                                                    sizeof(telemetry_name) - 1,
-                                                                   current_device_temp,
-                                                                   DOUBLE_DECIMAL_PLACE_DIGITS) ||
+                                                                   Tj) ||
          nx_azure_iot_json_writer_append_end_object(&json_writer))
     {
         printf("Telemetry message failed to build message\r\n");
@@ -831,6 +654,21 @@ UINT buffer_length;
         return;
     }
     printf("Telemetry message send: %.*s.\r\n", buffer_length, scratch_buffer);
+
+    if (Tj > device_max_Tj)
+    {
+        device_max_Tj = Tj;
+    }
+
+    if (Tj < device_min_Tj)
+    {
+        device_min_Tj = Tj;
+    }
+
+    /* Increment the avg count, add the new Tj to the total, and calculate the new avg.  */
+    device_Tj_avg_count++;
+    device_Tj_avg_total += Tj;
+    device_avg_Tj = device_Tj_avg_total / device_Tj_avg_count;
 }
 
 #ifdef ENABLE_DPS_SAMPLE
@@ -992,6 +830,12 @@ void sample_entry(NX_IP *ip_ptr, NX_PACKET_POOL *pool_ptr, NX_DNS *dns_ptr, UINT
 UINT status = 0;
 UINT loop = NX_TRUE;
 ULONG app_events;
+device_Tj_avg_total = Tj;
+device_max_Tj = Tj;
+device_min_Tj = Tj;
+device_avg_Tj = Tj;
+leds = g_bsp_leds;
+
 
     nx_azure_iot_log_init(log_callback);
 
@@ -1062,16 +906,6 @@ ULONG app_events;
             sample_command_action(&iothub_client);
         }
 
-        if (app_events & SAMPLE_PROPERTIES_RECEIVE_EVENT)
-        {
-            sample_properties_receive_action(&iothub_client);
-        }
-
-        if (app_events & SAMPLE_WRITABLE_PROPERTIES_RECEIVE_EVENT)
-        {
-            sample_writable_properties_receive_action(&iothub_client);
-        }
-
         if (app_events & SAMPLE_REPORTED_PROPERTIES_SEND_EVENT)
         {
             sample_reported_properties_send_action(&iothub_client);
@@ -1088,4 +922,6 @@ ULONG app_events;
     nx_azure_iot_hub_client_deinitialize(&iothub_client);
     nx_azure_iot_delete(&nx_azure_iot);
 }
+
+
 #endif /*USE_SAMPLE_AZURE_IOT_EMBEDDED_SDK_PNP*/
