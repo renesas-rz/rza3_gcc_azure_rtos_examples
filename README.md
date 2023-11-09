@@ -79,7 +79,7 @@ License
   The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
   This sample project supports IoT Plug and Play with multiple components.
 
-  > Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is liited in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).
+  > Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is listed in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).
 
 ## Getting Started
 
