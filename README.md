@@ -84,4 +84,4 @@ License
 ## Getting Started
 
 For more information, refer to the following document in the [DOCS](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/tree/main/docs) folder.  
-- EPSD-IMB-23-0089_01_RZA3UL_AzureRTOS_SampleProjects_1.1.pdf
+- EPSD-IMB-23-0089_01_RZA3UL_AzureRTOS_SampleProjects_1.3.pdf
