@@ -38,12 +38,38 @@ License
 
   As part of the NetxDuo the Azure IoT Cloud connectivity is included.  
 
+
+
+## Getting Started
+### Sample Projects
+|No.|Program File|Descriptions|
+|----|----|----|
+|1|filex_demo_sdmmc_rza3_fsp_1.0|Sample project to check the function of FileX.
+|2|guix_demo_usbx_hhid_mouse_rza3_fsp_1.1|Sample project to check the function of GUIX and USBX.
+|3|netx_demo_http_server_rza3_fsp_1.0|Sample project to check the function of NetX duo.
+|4|usbx_demo_hcdc_rza3_fsp_1.0|Sample project to check the function of USBX HCDC.
+|5|usbx_demo_hhid_rza3_fsp_1.0|Sample project to check the function of USBX HHID.
+|6|usbx_demo_hmsc_rza3_fsp_1.0|Sample project to check the function of USBX HMSC.
+|7|usbx_demo_huvc_netx_http_server_rza3_fsp_1.0|Sample project to check the function of USBX HUVC.
+|8|RZA3UL_demo_azure_iot_pnp_ 1.0|Sample project to check the function of Azure IoT Middleware.
+
+### Development Environment  
+|Software|Version|
+|----|----|
+|e<sup>2</sup> studio|2023 04 (23.4.0)<sup>[*1](#note1)</sup>|
+|RZ/A FSP|2.0.1| 
+<small id="note1">*1: It does not work with latest version of e2 studio (e 2 studio 2023 07 ). Please use e2studio 2023-04</small>  
+
+For more information to set up your development environment, refer to the following document.   
+- ["Getting Started with RZ/A Flexible Software Package"](https://www.renesas.com/us/en/document/qsg/getting-started-rza-flexible-software-package-v201)  
+
 ## Microsoft Azure Demos
 
 - **filex_demo_sdmmc_rza3_fsp**  
 
   The "filex_demo_sdmmc_rza3_fsp" is a sample project of FileX.  
   This sample project outputs the status to the console while verifying SD card read/write.  
+  ### How to Excute 
 
 - **demo_usbx_hhid_mouse_rza3_fsp**
 
@@ -81,7 +107,4 @@ License
 
   > Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is listed in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).
 
-## Getting Started
-
-For more information, refer to the following document in the [DOCS](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/tree/main/DOCS) folder.  
-- EPSD-IMB-23-0089_01_RZA3UL_AzureRTOS_SampleProjects_1.3.pdf
+  ![test](https://github.com/Riku-Kiyokawa/test/blob/main/WIN_20230613_16_34_02_Pro.jpg)
