@@ -73,7 +73,7 @@ For more information to set up your development environment, refer to the follow
   2. Start the terminal software.
   3. Download the project and start debugging.
   4. Insert SD card into the board.
-  5. Confirm the following message is displayed on the terminal. 
+  5. Confirm the following message is displayed on the terminal.  
   ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
   ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
 
@@ -85,9 +85,9 @@ For more information to set up your development environment, refer to the follow
   1. Connect the HDMI monitor to the board via Parallel to HDMI Conversion board
   2. Download the project and start debugging.
   3. Connect the USB mouse to the board.
-  4. Confirm that the following screen is displayed on the HDMI monitor.
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  4. Confirm that the following screen is displayed on the HDMI monitor.  
+  ![BoardSetting_sample2](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample2.png)  
+  ![Output_sample2](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample2.png)
 
 - **netx_demo_http_server_rza3_fsp**
 
@@ -97,9 +97,9 @@ For more information to set up your development environment, refer to the follow
   1. Connect the Ethernet connector of the PC and the board.
   2. Configure a static IP address (refer to
   3. Download the project and start debugging.
-  4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.  
+  ![BoardSetting_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample3.png)  
+  ![Output_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample3.png)
 
 - **usbx_demo_hcdc_rza3_fsp**
 
@@ -110,9 +110,9 @@ For more information to set up your development environment, refer to the follow
   2. Start the terminal software.
   3. Download the project and start debugging.
   4. Connect the PCDC device to the board.
-  5. Confirm the following message is displayed on the terminal.
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  5. Confirm the following message is displayed on the terminal.  
+  ![BoardSetting_sample4](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample4.png)  
+  ![Output_sample4](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample4.png)
 
 - **usbx_demo_hhid_rza3_fsp**
 
@@ -122,9 +122,9 @@ For more information to set up your development environment, refer to the follow
   1. Start the terminal software.
   2. Download the project and start debugging.
   3. Connect the USB mouse to the board.
-  4. Confirm the following mouse position information is displayed on the terminal.
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  4. Confirm the following mouse position information is displayed on the terminal.  
+  ![BoardSetting_sample5](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample5.png)  
+  ![Output_sample5](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample5.png)
 
 - **usbx_demo_hmsc_rza3_fsp**
 
@@ -133,9 +133,9 @@ For more information to set up your development environment, refer to the follow
   #### How to Excute
   1. Download the project and start debugging.
   2. Connect the USB memory to the board.
-  3. Confirm that following information of the files in the connected USB memory is displayed on the terminal.
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  3. Confirm that following information of the files in the connected USB memory is displayed on the terminal.  
+  ![BoardSetting_sample6](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample6.png)  
+  ![Output_sample6](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample6.png)
 
 - **usbx_demo_huvc_netx_http_server_rza3_fsp**
 
@@ -146,12 +146,15 @@ For more information to set up your development environment, refer to the follow
   2. Connect the UVC camera to the board.
   3. Configure a static IP address (refer to
   4. Download the project and start debugging.
-  5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser. 
-  ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
-  ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
+  5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser.  
+  ![BoardSetting_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample7.png)  
+  ![Output_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample7.png)
 
 - **RZA3UL_demo_azure_iot**  
   The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
   This sample project supports IoT Plug and Play with multiple components.
 
   > Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is listed in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).
+
+  #### How to Excute
+  Please refer to Get started guide of Azure Certified Device catalog
