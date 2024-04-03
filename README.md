@@ -99,6 +99,7 @@ For more information to set up your development environment, refer to the follow
   3. Download the project and start debugging.
   4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.  
   > Note: If it doesn't work, try to set a static IP address for RZ/A3UL. 
+  
   ![BoardSetting_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample3.png)  
   ![Output_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample3.png)
 
