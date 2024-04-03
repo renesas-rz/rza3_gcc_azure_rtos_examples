@@ -95,11 +95,9 @@ For more information to set up your development environment, refer to the follow
   This sample project works as an HTTP server and responds to HTTP requests from browser.  
   #### How to Excute
   1. Connect the Ethernet connector of the PC and the board.
-  2. Configure a static IP address (refer to
+  2. (optional)Configure a static IP address for RZ/A3UL.
   3. Download the project and start debugging.
   4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.  
-  > Note: If it doesn't work, try to set a static IP address for RZ/A3UL. 
-  
   ![BoardSetting_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample3.png)  
   ![Output_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample3.png)
 
@@ -146,11 +144,9 @@ For more information to set up your development environment, refer to the follow
   #### How to Excute
   1. Connect the Ethernet connector of the PC and the board.
   2. Connect the UVC camera to the board.
-  3. Configure a static IP address (refer to
+  3. (optional)Configure a static IP address for RZ/A3UL.
   4. Download the project and start debugging.
-  5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser.  
-  > Note: If it doesn't work, try to set a static IP address for RZ/A3UL.  
-  
+  5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser.    
   ![BoardSetting_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample7.png)  
   ![Output_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample7.png)
 
