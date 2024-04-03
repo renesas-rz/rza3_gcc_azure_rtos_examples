@@ -51,12 +51,15 @@ License
 |5|usbx_demo_hhid_rza3_fsp_1.1|Sample project to check the function of USBX HHID.
 |6|usbx_demo_hmsc_rza3_fsp_1.1|Sample project to check the function of USBX HMSC.
 |7|usbx_demo_huvc_netx_http_server_rza3_fsp_1.1|Sample project to check the function of USBX HUVC.
-|8|RZA3UL_demo_azure_iot_pnp_ 1.1|Sample project to check the function of Azure IoT Middleware.
+|8|usbx_demo_pcdc_rza3_fsp_1.0|Sample project to check the function of USBX PCDC.
+|9|RZA3UL_demo_azure_iot_pnp_ 1.1|Sample project to check the function of Azure IoT Middleware.
+
 
 ### Development Environment  
 |Software|Version|
 |----|----|
 |e<sup>2</sup> studio|2024-01 (24.1.0)|
+|GCC ARM A-Profile|13.2.1.20231009|
 |RZ/A FSP|2.0.2|  
 
 For more information to set up your development environment, refer to the following document.   
@@ -69,10 +72,10 @@ For more information to set up your development environment, refer to the follow
   The "filex_demo_sdmmc_rza3_fsp" is a sample project of FileX.  
   This sample project outputs the status to the console while verifying SD card read/write.  
   #### How to Excute
-  1. Set the SW1 of the board.
+  1. Set the SW1-2 on the board to ON.
   2. Start the terminal software.
   3. Download the project and start debugging.
-  4. Insert SD card into the board.
+  4. Insert micro SD card into CN2 connector on the board.
   5. Confirm the following message is displayed on the terminal.  
   ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
   ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
@@ -82,9 +85,9 @@ For more information to set up your development environment, refer to the follow
   The "demo_usbx_hhid_mouse_rza3_fsp" is a sample project of GUIX and USBX.  
   This sample project displays the GUI on the HDMI monitor and can be operated with the USB mouse.  
   #### How to Excute
-  1. Connect the HDMI monitor to the board via Parallel to HDMI Conversion board
+  1. Connect the HDMI monitor to CN5 connector on the board via Parallel to HDMI Conversion board.
   2. Download the project and start debugging.
-  3. Connect the USB mouse to the board.
+  3. Connect the USB mouse to CN12 connector on the board.
   4. Confirm that the following screen is displayed on the HDMI monitor.  
   ![BoardSetting_sample2](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample2.png)  
   ![Output_sample2](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample2.png)
@@ -94,7 +97,7 @@ For more information to set up your development environment, refer to the follow
   The "netx_demo_http_server_rza3_fsp" is a sample project of NetX duo.  
   This sample project works as an HTTP server and responds to HTTP requests from browser.  
   #### How to Excute
-  1. Connect the Ethernet connector of the PC and the board.
+  1. Connect the Ethernet connector of the PC and CN8 connector on the board.
   2. Configure a static IP address for the board.
   3. Download the project and start debugging.
   4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.  
@@ -109,7 +112,7 @@ For more information to set up your development environment, refer to the follow
   1. Run RZA3UL_USB_PCDC_2_0_Release project on one RZ/A3UL board to act as PCDC device.
   2. Start the terminal software.
   3. Download the project and start debugging.
-  4. Connect the PCDC device to the board.
+  4. Connect the PCDC device to CN12 connector on the board.
   5. Confirm the following message is displayed on the terminal.  
   ![BoardSetting_sample4](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample4.png)  
   ![Output_sample4](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample4.png)
@@ -121,7 +124,7 @@ For more information to set up your development environment, refer to the follow
   #### How to Excute
   1. Start the terminal software.
   2. Download the project and start debugging.
-  3. Connect the USB mouse to the board.
+  3. Connect the USB mouse to CN12 connector on the board.
   4. Confirm the following mouse position information is displayed on the terminal.  
   ![BoardSetting_sample5](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample5.png)  
   ![Output_sample5](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample5.png)
@@ -132,7 +135,7 @@ For more information to set up your development environment, refer to the follow
   This sample project creates, reads and writes files to the connected USB memory.  
   #### How to Excute
   1. Download the project and start debugging.
-  2. Connect the USB memory to the board.
+  2. Connect the USB memory to CN12 connector on the board.
   3. Confirm that following information of the files in the connected USB memory is displayed on the terminal.  
   ![BoardSetting_sample6](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample6.png)  
   ![Output_sample6](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample6.png)
@@ -142,13 +145,26 @@ For more information to set up your development environment, refer to the follow
   The "usbx_demo_huvc_netx_http_server_rza3_fsp" is a sample project of USBX HUVC.  
   This sample project displays the camera image on the HTTP server in real time.  
   #### How to Excute
-  1. Connect the Ethernet connector of the PC and the board.
-  2. Connect the UVC camera to the board.
+  1. Connect the Ethernet connector of the PC and CN8 connector on the board.
+  2. Connect the UVC camera to CN12 connector on the board.
   3. Configure a static IP address for the board.
   4. Download the project and start debugging.
   5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser.    
   ![BoardSetting_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample7.png)  
   ![Output_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample7.png)
+
+- **usbx_demo_pcdc_rza3_fsp**
+
+  The "usbx_demo_pcdc_rza3_fsp" is a sample project of USBX PCDC.  
+  This sample project echoes back the input characters on the terminal.  
+  #### How to Excute
+  1. Connect the PC and CN11 connector on the board.
+  2. Download the project and start debugging.
+  3. Start the terminal software and connect to newly recognized COM port.
+  4. Comfirm that input characters are echoed back on the terminal.  
+  ![BoardSetting_sample8](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample8.png)  
+  ![Output_sample8](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample8.png)
+  demo_pcdc_rza3_fsp
 
 - **RZA3UL_demo_azure_iot**  
   The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
@@ -159,3 +175,5 @@ For more information to set up your development environment, refer to the follow
 
   #### How to Excute
   Please refer to [Get started guide](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/blob/main/rza3ul_evk_plug-and-play.pdf).
+
+
