@@ -57,7 +57,7 @@ License
 |Software|Version|
 |----|----|
 |e<sup>2</sup> studio|2024-01 (24.1.0)|
-|RZ/A FSP|2.0.1|  
+|RZ/A FSP|2.0.2|  
 
 For more information to set up your development environment, refer to the following document.   
 - ["Getting Started with RZ/A Flexible Software Package"](https://www.renesas.com/us/en/document/qsg/getting-started-rza-flexible-software-package-v202)  
@@ -98,6 +98,7 @@ For more information to set up your development environment, refer to the follow
   2. Configure a static IP address (refer to
   3. Download the project and start debugging.
   4. Access the IP address “192.168.2.182” and confirm that following browser is displayed in the browser.  
+  > Note: If it doesn't work, try to set a static IP address for RZ/A3UL. 
   ![BoardSetting_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample3.png)  
   ![Output_sample3](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample3.png)
 
@@ -147,6 +148,8 @@ For more information to set up your development environment, refer to the follow
   3. Configure a static IP address (refer to
   4. Download the project and start debugging.
   5. Access the IP address “192.168.2.182” and confirm that camera image is displayed in the browser.  
+  > Note: If it doesn't work, try to set a static IP address for RZ/A3UL.  
+  
   ![BoardSetting_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample7.png)  
   ![Output_sample7](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample7.png)
 
@@ -154,7 +157,8 @@ For more information to set up your development environment, refer to the follow
   The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
   This sample project supports IoT Plug and Play with multiple components.
 
-  > Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is listed in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).
+  > **Azure Certified Device is no longer in servise.**  
+  ~~Note: RZ/A3UL EVK is certified ["Azure Certified Device"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-azure-certified-device) and ["IoT Plug and Play"](https://learn.microsoft.com/en-us/azure/certification/program-requirements-pnp) certifications, and is listed in ["Azure Certified Device catalog"](https://devicecatalog.azure.com/devices/5848d87b-5d3e-4c11-ad76-90612639b025).~~
 
   #### How to Excute
-  Please refer to Get started guide of Azure Certified Device catalog
+  Please refer to [Get started guide](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/blob/main/rza3ul_evk_plug-and-play.pdf).
