@@ -164,7 +164,6 @@ For more information to set up your development environment, refer to the follow
   4. Comfirm that input characters are echoed back on the terminal.  
   ![BoardSetting_sample8](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample8.png)  
   ![Output_sample8](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample8.png)
-  demo_pcdc_rza3_fsp
 
 - **RZA3UL_demo_azure_iot**  
   The "RZA3UL_demo_azure_iot" is a sample project to connect to Azure IoT Hub using Azure IoT Middleware for Azure RTOS.  
