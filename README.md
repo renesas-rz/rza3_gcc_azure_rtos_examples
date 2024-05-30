@@ -44,23 +44,23 @@ License
 ### Sample Projects
 |No.|Program File|Descriptions|
 |----|----|----|
-|1|filex_demo_sdmmc_rza3_fsp_1.1|Sample project to check the function of FileX.
-|2|guix_demo_usbx_hhid_mouse_rza3_fsp_1.2|Sample project to check the function of GUIX and USBX.
-|3|netx_demo_http_server_rza3_fsp_1.1|Sample project to check the function of NetX duo.
-|4|usbx_demo_hcdc_rza3_fsp_1.1|Sample project to check the function of USBX HCDC.
-|5|usbx_demo_hhid_rza3_fsp_1.1|Sample project to check the function of USBX HHID.
-|6|usbx_demo_hmsc_rza3_fsp_1.1|Sample project to check the function of USBX HMSC.
-|7|usbx_demo_huvc_netx_http_server_rza3_fsp_1.1|Sample project to check the function of USBX HUVC.
-|8|usbx_demo_pcdc_rza3_fsp_1.0|Sample project to check the function of USBX PCDC.
-|9|RZA3UL_demo_azure_iot_pnp_ 1.1|Sample project to check the function of Azure IoT Middleware.
+|1|filex_demo_sdmmc_rza3_fsp|Sample project to check the function of FileX.
+|2|guix_demo_usbx_hhid_mouse_rza3_fsp|Sample project to check the function of GUIX and USBX.
+|3|netx_demo_http_server_rza3_fsp|Sample project to check the function of NetX duo.
+|4|usbx_demo_hcdc_rza3_fsp|Sample project to check the function of USBX HCDC.
+|5|usbx_demo_hhid_rza3_fsp|Sample project to check the function of USBX HHID.
+|6|usbx_demo_hmsc_rza3_fsp|Sample project to check the function of USBX HMSC.
+|7|usbx_demo_huvc_netx_http_server_rza3_fsp|Sample project to check the function of USBX HUVC.
+|8|usbx_demo_pcdc_rza3_fsp|Sample project to check the function of USBX PCDC.
+|9|RZA3UL_demo_azure_iot_pnp|Sample project to check the function of Azure IoT Middleware.
 
 
 ### Development Environment  
 |Software|Version|
 |----|----|
-|e<sup>2</sup> studio|2024-01 (24.1.0)|
+|e<sup>2</sup> studio|2024-04 (24.4.0)|
 |GCC ARM A-Profile|13.2.1.20231009|
-|RZ/A FSP|2.0.2|  
+|RZ/A FSP|3.0.0|  
 
 For more information to set up your development environment, refer to the following document.   
 - ["Getting Started with RZ/A Flexible Software Package"](https://www.renesas.com/us/en/document/qsg/getting-started-rza-flexible-software-package-v202)  
@@ -174,5 +174,7 @@ For more information to set up your development environment, refer to the follow
 
   #### How to Excute
   Please refer to [Get started guide](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/blob/main/rza3ul_evk_plug-and-play.pdf).
+
+
 
 
