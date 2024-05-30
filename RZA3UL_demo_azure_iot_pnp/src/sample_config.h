@@ -82,18 +82,18 @@ TODO`s: Configure core settings of application for your IoTHub.
 #endif /* ENDPOINT */
 
 #ifndef ID_SCOPE
-#define ID_SCOPE                                    "0ne00B30841"
+#define ID_SCOPE                                    ""
 #endif /* ID_SCOPE */
 
 #ifndef REGISTRATION_ID
-#define REGISTRATION_ID                             "rza3ul-dps"
+#define REGISTRATION_ID                             ""
 #endif /* REGISTRATION_ID */
 
 #endif /* ENABLE_DPS_SAMPLE */
 
 /* Optional SYMMETRIC KEY.  */
 #ifndef DEVICE_SYMMETRIC_KEY
-#define DEVICE_SYMMETRIC_KEY                        "/J9jESw6k2dtuV1djoWRTRcz2gjZ+58TvO/jKW0gHLuxVjtocfasfyftH0s0gUWetv1Sb5KR2pQnLPnRTOL+BQ=="
+#define DEVICE_SYMMETRIC_KEY                        ""
 #endif /* DEVICE_SYMMETRIC_KEY */
 
 /* Optional module ID.  */
