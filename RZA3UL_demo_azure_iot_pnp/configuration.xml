@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<raConfiguration version="7">
+<raConfiguration version="9">
   <generalSettings>
     <option key="#Board#" value="board.rza3ul_smarc_qspi"/>
     <option key="CPU" value="RZA3UL"/>
@@ -9,7 +9,7 @@
     <option key="#DeviceCommand#" value="R9A07G063U02GBG"/>
     <option key="#RTOS#" value="rtos.threadx"/>
     <option key="#pinconfiguration#" value="R9A07G063U02GBG.pincfg"/>
-    <option key="#FSPVersion#" value="2.0.1"/>
+    <option key="#FSPVersion#" value="3.0.0"/>
     <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##rza3ul_smarc_qspi##"/>
     <option key="#SELECTED_TOOLCHAIN#" value="gcc-arm-a-profile-aarch64"/>
     <option key="#ToolchainVersion#" value="10.3.1.20210621"/>
@@ -26,8 +26,6 @@
       <property id="config.bsp.series" value="config.bsp.series.value"/>
     </config>
     <config id="config.bsp.rza3ul.fsp">
-      <property id="config.bsp.fsp.mcu.sci_uart.max_baud" value="12500000"/>
-      <property id="config.bsp.fsp.mcu.spi.max_bitrate" value="25000000"/>
       <property id="config.bsp.fsp.mcu.canfd.max_data_rate_hz" value="4"/>
       <property id="config.bsp.fsp.mcu.canfd.min_nominal_timeseg1" value="4"/>
       <property id="config.bsp.fsp.mcu.canfd.max_nominal_timeseg1" value="128"/>
@@ -37,6 +35,10 @@
       <property id="config.bsp.fsp.mcu.canfd.max_data_timeseg1" value="16"/>
       <property id="config.bsp.fsp.mcu.canfd.max_data_timeseg2" value="8"/>
       <property id="config.bsp.fsp.mcu.canfd.max_data_sync_jump_width" value="8"/>
+      <property id="config.bsp.fsp.mcu.sci_uart.max_baud" value="12500000"/>
+      <property id="config.bsp.fsp.mcu.spi.max_bitrate" value="25000000"/>
+      <property id="config.bsp.fsp.mstp_change_delays" value="config.bsp.fsp.mstp_change_delays.enabled"/>
+      <property id="config.bsp.fsp.settling_delay_us" value="150"/>
     </config>
     <config id="config.bsp.rz">
       <property id="config.bsp.common.secure_stack" value="0x200"/>
@@ -127,81 +129,81 @@
     <node id="board.clock.hpclk.display" option="board.clock.hpclk.display.value"/>
   </raClockConfiguration>
   <raComponentSelection>
-    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nxd" variant="" vendor="Microsoft" version="6.2.1+fsp.2.0.1">
-      <description>Azure RTOS NetX Duo</description>
-      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nx_crypto" variant="" vendor="Microsoft" version="6.2.1+fsp.2.0.1">
-      <description>Azure RTOS NetX Crypto</description>
-      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_netx_secure_crypto_sw_port" variant="" vendor="Renesas" version="6.2.1+fsp.2.0.1">
-      <description>NetX Secure Crypto Software Port</description>
-      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nx_secure" variant="" vendor="Microsoft" version="6.2.1+fsp.2.0.1">
-      <description>Azure RTOS NetX Secure</description>
-      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="azure_iot" variant="" vendor="Microsoft" version="6.2.1+fsp.2.0.1">
-      <description>Azure IoT Middleware for Azure RTOS</description>
-      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="device" variant="R9A07G063U02GBG" vendor="Renesas" version="2.0.1">
-      <description>Board support package for R9A07G063U02GBG</description>
-      <originalPack>Renesas.RZA_mcu_rza3ul.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="device" variant="" vendor="Renesas" version="2.0.1">
-      <description>Board support package for RZA3UL</description>
-      <originalPack>Renesas.RZA_mcu_rza3ul.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="fsp" variant="" vendor="Renesas" version="2.0.1">
-      <description>Board support package for RZ/A3UL (RZ/A3UL) - FSP Data</description>
-      <originalPack>Renesas.RZA_mcu_rza3ul.2.0.1.pack</originalPack>
-    </component>
-    <component apiversion="" class="RTOS" condition="" group="Azure" subgroup="ThreadX" variant="" vendor="Microsoft" version="6.2.1+fsp.2.0.1">
+    <component apiversion="" class="RTOS" condition="" group="Azure" subgroup="ThreadX" variant="" vendor="Microsoft" version="6.2.1+fsp.3.0.0">
       <description>Azure RTOS ThreadX</description>
-      <originalPack>Microsoft.ThreadX.6.2.1+fsp.2.0.1.pack</originalPack>
+      <originalPack>Microsoft.ThreadX.6.2.1+fsp.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="BSP" condition="" group="Board" subgroup="rza3ul_smarc_qspi" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="BSP" condition="" group="Board" subgroup="rza3ul_smarc_qspi" variant="" vendor="Renesas" version="3.0.0">
       <description>RZ/A3UL Evaluation Board Kit QSPI Edition (Exec with DDR SDRAM) Board Support Files</description>
-      <originalPack>Renesas.RZA_board_rza3ul_smarc_qspi.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA_board_rza3ul_smarc_qspi.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="Common" condition="" group="all" subgroup="fsp_common" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nxd" variant="" vendor="Microsoft" version="6.2.1+fsp.3.0.0">
+      <description>Azure RTOS NetX Duo</description>
+      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nx_crypto" variant="" vendor="Microsoft" version="6.2.1+fsp.3.0.0">
+      <description>Azure RTOS NetX Crypto</description>
+      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_netx_secure_crypto_sw_port" variant="" vendor="Renesas" version="6.2.1+fsp.3.0.0">
+      <description>NetX Secure Crypto Software Port</description>
+      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="nx_secure" variant="" vendor="Microsoft" version="6.2.1+fsp.3.0.0">
+      <description>Azure RTOS NetX Secure</description>
+      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Azure" condition="" group="NetX Duo" subgroup="azure_iot" variant="" vendor="Microsoft" version="6.2.1+fsp.3.0.0">
+      <description>Azure IoT Middleware for Azure RTOS</description>
+      <originalPack>Microsoft.NetXDuo.6.2.1+fsp.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="device" variant="R9A07G063U02GBG" vendor="Renesas" version="3.0.0">
+      <description>Board support package for R9A07G063U02GBG</description>
+      <originalPack>Renesas.RZA_mcu_rza3ul.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="device" variant="" vendor="Renesas" version="3.0.0">
+      <description>Board support package for RZA3UL</description>
+      <originalPack>Renesas.RZA_mcu_rza3ul.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rza3ul" subgroup="fsp" variant="" vendor="Renesas" version="3.0.0">
+      <description>Board support package for RZ/A3UL (RZ/A3UL) - FSP Data</description>
+      <originalPack>Renesas.RZA_mcu_rza3ul.3.0.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Common" condition="" group="all" subgroup="fsp_common" variant="" vendor="Renesas" version="3.0.0">
       <description>Board Support Package Common Files</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gether" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gether" variant="" vendor="Renesas" version="3.0.0">
       <description>Gigabit Ethernet</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gether_phy" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gether_phy" variant="" vendor="Renesas" version="3.0.0">
       <description>Gigabit Ethernet PHY</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gtm" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_gtm" variant="" vendor="Renesas" version="3.0.0">
       <description>General Timer</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ioport" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ioport" variant="" vendor="Renesas" version="3.0.0">
       <description>I/O Port</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_mmu" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_mmu" variant="" vendor="Renesas" version="3.0.0">
       <description>Memory Management Unit</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_scif_uart" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_scif_uart" variant="" vendor="Renesas" version="3.0.0">
       <description>SCIF UART</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_threadx_port" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_threadx_port" variant="" vendor="Renesas" version="3.0.0">
       <description>Azure RTOS ThreadX Port</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
-    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_netxduo_ether" variant="" vendor="Renesas" version="2.0.1">
+    <component apiversion="" class="Middleware" condition="" group="all" subgroup="rm_netxduo_ether" variant="" vendor="Renesas" version="3.0.0">
       <description>NetX Duo Ethernet Driver</description>
-      <originalPack>Renesas.RZA.2.0.1.pack</originalPack>
+      <originalPack>Renesas.RZA.3.0.0.pack</originalPack>
     </component>
   </raComponentSelection>
   <raElcConfiguration/>
@@ -296,6 +298,8 @@
       <property id="module.driver.ether_phy.phy_reset_wait_time" value="0x00020000"/>
       <property id="module.driver.ether_phy.mii_type" value="module.driver.mii_type.rmii"/>
       <property id="module.driver.ether_phy.phy_lsi_type" value="module.driver.ether_phy.phy_lsi_type.ksz9131rnxi"/>
+      <property id="module.driver.ether_phy.target_init" value="NULL"/>
+      <property id="module.driver.ether_phy.target_link_partner_ability_get" value="NULL"/>
       <property id="module.driver.ether_phy.mii_bit_access_wait_time" value="8"/>
       <property id="module.driver.ether_phy.voltage" value="module.driver.ether_phy.voltage.18"/>
       <property id="module.driver.ether_phy.flow_control" value="module.driver.ether_phy.flow_control.0"/>
@@ -455,6 +459,7 @@
       <property id="config.azure.nxd_src.tcp_info" value="config.azure.nxd_src.tcp_info.enabled"/>
       <property id="config.azure.nxd_src.udp_info" value="config.azure.nxd_src.udp_info.enabled"/>
       <property id="config.azure.nxd_src.extended_notify_support" value="config.azure.nxd_src.extended_notify_support.enabled"/>
+      <property id="config.azure.nxd_src.natd" value="config.azure.nxd_src.natd.disabled"/>
       <property id="config.azure.nxd_src.packet_header_pad_size" value=""/>
       <property id="config.azure.nxd_src.tcp_mss_minimum" value=""/>
       <property id="config.azure.nxd_src.source_address_check" value="config.azure.nxd_src.source_address_check.disabled"/>
@@ -670,6 +675,14 @@
       <property id="module.azure.nxd_mqtt_client.mqtt_keepalive_timer_rate" value="1"/>
       <property id="module.azure.nxd_mqtt_client.mqtt_ping_timeout_delay" value="1"/>
       <property id="config.azure.nxd_mqtt_client.mqtt_socket_timeout" value="0xFFFFFFFF"/>
+      <property id="config.azure.nxd_nat.min_entry_count" value="3"/>
+      <property id="config.azure.nxd_nat.entry_response_timeout" value="240"/>
+      <property id="config.azure.nxd_nat.start_tcp_port" value="20000"/>
+      <property id="config.azure.nxd_nat.end_tcp_port" value="30000"/>
+      <property id="config.azure.nxd_nat.start_udp_port" value="20000"/>
+      <property id="config.azure.nxd_nat.end_udp_port" value="30000"/>
+      <property id="config.azure.nxd_nat.start_icmp_query_id" value="20000"/>
+      <property id="config.azure.nxd_nat.end_icmp_query_id" value="30000"/>
       <property id="config.azure.nxd_ftp_common.control_tos" value="config.azure.nxd_ftp_common.control_tos.normal"/>
       <property id="config.azure.nxd_ftp_common.data_tos" value="config.azure.nxd_ftp_common.data_tos.normal"/>
       <property id="config.azure.nxd_ftp_common.fragment_option" value="config.azure.nxd_ftp_common.fragment_option.dont_fragment"/>
@@ -768,9 +781,10 @@
     </config>
     <config id="config.driver.ether_phy">
       <property id="config.driver.ether_phy.param_checking_enable" value="config.driver.ether_phy.param_checking_enable.bsp"/>
-      <property id="config.driver.ether_phy.use_phy" value="config.driver.ether_phy.use_phy.default"/>
+      <property id="config.driver.ether_phy.use_custom_phy_lsi" value="config.driver.ether_phy.use_custom_phy_lsi.disabled"/>
       <property id="config.driver.ether_phy.use_reference_clock" value="config.driver.ether_phy.use_reference_clock.default"/>
       <property id="config.driver.ether_phy.target_ksz9131rnxi" value="config.driver.ether_phy.target_ksz9131rnxi.enabled"/>
+      <property id="config.driver.ether_phy.init_phy_lsi_automatic" value="config.driver.ether_phy.init_phy_lsi_automatic.enabled"/>
     </config>
     <config id="config.driver.ether">
       <property id="config.driver.ether.param_checking_enable" value="config.driver.ether.param_checking_enable.bsp"/>
@@ -838,6 +852,7 @@
       <property id="config.azure.tx.iar_library_support" value="config.azure.tx.iar_library_support.disabled"/>
       <property id="config.azure.tx.bsd_support" value="config.azure.tx.bsd_support.disabled"/>
       <property id="config.azure.tx.filex_pointer" value="config.azure.tx.filex_pointer.enabled"/>
+      <property id="config.azure.tx.use_fpu" value="config.azure.tx.use_fpu.disabled"/>
     </config>
   </raModuleConfiguration>
   <raPinConfiguration>
