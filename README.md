@@ -58,9 +58,9 @@ License
 ### Development Environment  
 |Software|Version|
 |----|----|
-|e<sup>2</sup> studio|2024-04 (24.4.0)|
+|e<sup>2</sup> studio|2024-07 (24.7.0)|
 |GCC ARM A-Profile|13.2.1.20231009|
-|RZ/A FSP|3.0.0|  
+|RZ/A FSP|3.2.0|  
 
 For more information to set up your development environment, refer to the following document.   
 - ["Getting Started with RZ/A Flexible Software Package"](https://www.renesas.com/us/en/document/qsg/getting-started-rza-flexible-software-package-v202)  

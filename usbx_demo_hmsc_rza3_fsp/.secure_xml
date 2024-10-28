@@ -9,10 +9,10 @@
     <option key="#DeviceCommand#" value="R9A07G063U02GBG"/>
     <option key="#RTOS#" value="rtos.threadx"/>
     <option key="#pinconfiguration#" value="R9A07G063U02GBG.pincfg"/>
-    <option key="#FSPVersion#" value="3.0.0"/>
-    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##rza3ul_smarc_qspi##"/>
+    <option key="#FSPVersion#" value="3.2.0"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##rza3ul_smarc_qspi##|Renesas##BSP##Board##rza3ul_smarc_qspi_xip##"/>
     <option key="#SELECTED_TOOLCHAIN#" value="gcc-arm-a-profile-aarch64"/>
-    <option key="#ToolchainVersion#" value="10.3.1.20210621"/>
+    <option key="#ToolchainVersion#" value="13.2.1.20231009"/>
   </generalSettings>
   <raBspConfiguration/>
   <raClockConfiguration>

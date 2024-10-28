@@ -67,11 +67,11 @@ TODO`s: Configure core settings of application for your IoTHub.
    DEVICE_ID can be set to <device1>,
    DEVICE_SYMMETRIC_KEY can be set to <key1>.  */
 #ifndef HOST_NAME
-#define HOST_NAME                                   "rza3-iot-hub.azure-devices.net"
+#define HOST_NAME                                   ""
 #endif /* HOST_NAME */
 
 #ifndef DEVICE_ID
-#define DEVICE_ID                                   "RZA3UL"
+#define DEVICE_ID                                   ""
 #endif /* DEVICE_ID */
 
 #else /* !ENABLE_DPS_SAMPLE */
