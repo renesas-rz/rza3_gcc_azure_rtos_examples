@@ -45,7 +45,7 @@ License
 |No.|Program File|Descriptions|
 |----|----|----|
 |1|filex_demo_sdmmc_rza3_fsp|Sample project to check the function of FileX.
-|2|guix_demo_usbx_hhid_mouse_rza3_fsp|Sample project to check the function of GUIX and USBX.
+|2|guix_demo_home_automation_rza3_fsp<br> guix_demo_washing_machine_rza3_fsp<br> guix_demo_widget_types_rza3_fsp|Sample project to check the function of GUIX and USBX.
 |3|netx_demo_http_server_rza3_fsp|Sample project to check the function of NetX duo.
 |4|usbx_demo_hcdc_rza3_fsp|Sample project to check the function of USBX HCDC.
 |5|usbx_demo_hhid_rza3_fsp|Sample project to check the function of USBX HHID.
@@ -80,9 +80,9 @@ For more information to set up your development environment, refer to the follow
   ![BoardSetting_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/BoardSetting_sample1.png)  
   ![Output_sample1](https://github.com/Riku-Kiyokawa/images/blob/main/rza3_gcc_azure_rtos_examples/Output_sample1.png)
 
-- **demo_usbx_hhid_mouse_rza3_fsp**
+- **guix_demo_home_automation_rza3_fsp<br> guix_demo_washing_machine_rza3_fsp<br> guix_demo_widget_types_rza3_fsp**
 
-  The "demo_usbx_hhid_mouse_rza3_fsp" is a sample project of GUIX and USBX.  
+  The "guix_demo_xxx_rza3_fsp" is a sample project of GUIX and USBX.  
   This sample project displays the GUI on the HDMI monitor and can be operated with the USB mouse.  
   #### How to Excute
   1. Connect the HDMI monitor to CN5 connector on the board via Parallel to HDMI Conversion board.
