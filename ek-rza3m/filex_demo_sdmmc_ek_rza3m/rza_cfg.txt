@@ -1,0 +1,1466 @@
+FSP Configuration
+  Board "EK-RZ/A3M NOR Boot (Exec with DDR SDRAM)"
+  R9A07G066M04GBG
+    part_number: R9A07G066M04GBG
+    rom_size_bytes: 0
+    ram_size_bytes: 131072
+    package_style: LFBGA
+    package_pins: 361
+    
+  RZA3M
+    series: 2
+    
+  RZA3M Family
+    Clocks: MSTP Change Delays: Enabled
+    Clocks: Settling Delay (us): 150
+    
+  RZ/A FSP Common
+    Secure stack size (bytes): 0x200
+    Main stack size (bytes): 0x2000
+    Heap size (bytes): 0x2000
+    MCU Vcc (mV): 3300
+    Parameter checking: Disabled
+    Assert Failures: Return FSP_ERR_ASSERTION
+    Error Log: No Error Log
+    PFS Protect: Enabled
+    C Runtime Initialization : Enabled
+    
+  Clocks
+    ICLK Div /1
+    SD0CLK Sel: 400MHz
+    P0CLK Div /1
+    I2CLK Div /1
+    P1CLK Div /1
+    P2CLK Div /1
+    PLL3_3 Sel: 533MHz
+    PLL3_3 Div /2
+    PLL4 1600MHz
+    Sel: PLL4
+    PLL5: 750000000Hz
+    PLL5_4 Sel: PLL5
+    DSI_A Div /1
+    DSI_B Div /11
+    
+  Pin Configurations
+    RZA3M-REF-NOR -> g_bsp_pin_cfg
+      BSCANP Y19 - - - - - - - - - None - - 
+      CPUHOLD B17 - - - - - - - - - None - - 
+      DDR_CALIBRATION D20 - - - - - - - - - None - - 
+      DDR_CLK_N F19 - - - - - - - - - None - - 
+      DDR_CLK_P F20 - - - - - - - - - None - - 
+      DDR_CS_DRAM K15 - - - - - - - - - None - - 
+      DDR_CS_SOC J15 - - - - - - - - - None - - 
+      DDR_VDDQ1 H11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 P11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 N11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 M11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 L11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 K11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 J11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 H19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 M19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L20 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 K19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 J19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DEBUGEN V20 - - - - - - - - - None - - 
+      DSI_CLKN Y6 - - - - - - - - - None - - 
+      DSI_CLKP W6 - - - - - - - - - None - - 
+      DSI_DATA0_N W5 - - - - - - - - - None - - 
+      DSI_DATA0_P Y4 - - - - - - - - - None - - 
+      DSI_DATA1_N W8 - - - - - - - - - None - - 
+      DSI_DATA1_P Y7 - - - - - - - - - None - - 
+      DSI_DATA2_N Y3 - - - - - - - - - None - - 
+      DSI_DATA2_P W3 - - - - - - - - - None - - 
+      DSI_DATA3_N Y9 - - - - - - - - - None - - 
+      DSI_DATA3_P W9 - - - - - - - - - None - - 
+      DSI_VDD18 W2 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      DSI_VDD18 Y1 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      EXTAL Y16 "Power, System_EXTAL" - - - - - - - - IO "Read only" - 
+      JTAG_PVDD V2 "Power, System_JTAG_PVDD" - - - - - - - - IO "Read only" - 
+      NMI B20 - - - - - - - - - None - - 
+      OTP_VDD18 P2 "Power, System_OTP_VDD18" - - - - - - - - IO "Read only" - 
+      P0_0 E2 - - - - Disabled - - "Display: DISP_HSYNC; IRQ: IRQ0; MTU0: MTIOC0A; MTU1: MTIOC1A; MTU4: MTIOC4A" - None - - 
+      P0_1 E1 - - - - Disabled - - "Display: DISP_DE; IRQ: IRQ1; MTU0: MTIOC0B; MTU1: MTIOC1B; MTU4: MTIOC4B" - None - - 
+      P0_2 D2 - - - - Disabled - - "Display: DISP_CLK; MTU0: MTIOC0C; MTU4: MTIOC4C; RIIC1: RIIC1_SDA" - None - - 
+      P0_3 C2 - - - - Disabled - - "Display: DISP_VSYNC; MTU0: MTIOC0D; MTU4: MTIOC4D; RIIC1: RIIC1_SCL" - None - - 
+      P10_0 W19 - - - - Disabled - - "IRQ: IRQ0; MTU: MTCLKA; MTU0: MTIOC0A; SCI0: SCI0_CTS_N_RTS_N; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P10_1 W20 - - - - Disabled - - "IRQ: IRQ1; MTU: MTCLKB; MTU0: MTIOC0B; SCI0: SCI0_SCK; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P10_2 V19 - - - - Disabled - - "IRQ: IRQ2; MTU: MTCLKC; MTU0: MTIOC0C; SCIF0: SCIF0_SCK; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P10_3 U20 GPIO - - - "Input mode" - - "IRQ: IRQ3; MTU: MTCLKD; MTU0: MTIOC0D; SCIF0: SCIF0_CTS_N; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - IO - - 
+      P11_0 T19 - - - - Disabled - - "IRQ: IRQ4; SCIF0: SCIF0_RTS_N; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - None - - 
+      P11_1 T20 - - - - Disabled - - "IRQ: IRQ5; SCI1: SCI1_CTS_N_RTS_N; SSI: AUDIO_CLK2" - None - - 
+      P11_2 R19 - - - - Disabled - - "IRQ: IRQ6; MTU1: MTIOC1A; POE: POE0_N; RSPI0: RSPI0_CK; SCI1: SCI1_SCK; SD0: SD0_WP" - None - - 
+      P11_3 P19 - - - - Disabled - - "IRQ: IRQ7; MTU1: MTIOC1B; POE: POE4_N; RSPI0: RSPI0_MOSI; SCIF2: SCIF2_SCK; SD0: SD0_CD" - None - - 
+      P12_0 P20 - - - - Disabled - - "MTU2: MTIOC2A; POE: POE8_N; RSPI0: RSPI0_MISO; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P12_1 N19 - - - - Disabled - - "MTU2: MTIOC2B; POE: POE10_N; RSPI0: RSPI0_SSL; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P1_0 D1 - - - - Disabled - - "Display: DISP_DATA0; SCIF1: SCIF1_TXD" - None - - 
+      P1_1 B2 - - - - Disabled - - "Display: DISP_DATA1; MTU: MTCLKA; SCIF1: SCIF1_RXD" - None - - 
+      P1_2 C1 - - - - Disabled - - "Display: DISP_DATA2; MTU: MTCLKB; RSPI1: RSPI1_CK; SCIF1: SCIF1_SCK; SSI0: SSI0_BCK" - None - - 
+      P1_3 B1 - - - - Disabled - - "Display: DISP_DATA3; MTU: MTCLKC; RSPI1: RSPI1_MOSI; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RCK" - None - - 
+      P1_4 B3 - - - - Disabled - - "Display: DISP_DATA4; MTU: MTCLKD; MTU3: MTIOC3A; RSPI1: RSPI1_MISO; SCIF1: SCIF1_RTS_N; SSI0: SSI0_TXD" - None - - 
+      P20_0 A19 - - Middle - Disabled - - "RSPI1: RSPI1_CK; RST_BOOT: MD_BOOT0; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - I - - 
+      P20_1 B18 - - Middle - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; RST_BOOT: MD_BOOT1; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - I - - 
+      P20_2 A18 - - Middle - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; RST_BOOT: MD_BOOT2; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - I - - 
+      P20_3 A17 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; RST_BOOT: MD_CLKS; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P20_4 R20 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; RST_BOOT: MD_OSCDRV0; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P20_5 N20 - - Middle - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; RST_BOOT: MD_OSCDRV1; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - I - - 
+      P21_0 U2 - - - - Disabled - - "JTAG/SWD: TDI" - None - - 
+      P21_1 T2 - - - - Disabled - - "JTAG/SWD: TDO_SWO" - None - - 
+      P21_2 K6 - - - - Disabled - - "JTAG/SWD: TRST_N" - None - - 
+      P22_0 N1 - - High - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SD0: SD0_CMD; SSI0: SSI0_BCK" - IO - - 
+      P22_1 N2 - - High - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SD0: SD0_DATA0; SSI0: SSI0_RCK" - IO - - 
+      P22_2 R1 - - High - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SD0: SD0_DATA1; SSI0: SSI0_TXD" - IO - - 
+      P22_3 P1 - - High - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SD0: SD0_DATA2; SSI0: SSI0_RXD" - IO - - 
+      P22_4 L2 - - High - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SD0: SD0_DATA3; SSI: AUDIO_CLK1" - IO - - 
+      P23_0 F2 - - - - Disabled - - "SPIBSC: QSPI0_IO2" - None - - 
+      P23_1 G1 - - - - Disabled - - "SPIBSC: QSPI0_IO3" - None - - 
+      P2_0 A2 - - - - Disabled - - "Display: DISP_DATA5; MTU3: MTIOC3B; MTU5: MTIC5U; RSPI1: RSPI1_SSL; SCIF2: SCIF2_SCK; SSI0: SSI0_RXD" - None - - 
+      P2_1 B4 - - - - Disabled - - "Display: DISP_DATA6; MTU3: MTIOC3C; MTU5: MTIC5V; SCI1: SCI1_CTS_N_RTS_N; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P2_2 A3 - - - - Disabled - - "Display: DISP_DATA7; MTU3: MTIOC3D; MTU5: MTIC5W; SCI1: SCI1_SCK; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P2_3 B5 - - - - Disabled - - "Display: DISP_DATA8; RIIC1: RIIC1_SDA; SCI1: SCI1_TXD; SCIF2: SCIF2_TXD" - None - - 
+      P3_0 H6 - - - - Disabled - - "Display: DISP_DATA9; RIIC1: RIIC1_SCL; SCI1: SCI1_RXD; SCIF2: SCIF2_RXD" - None - - 
+      P3_1 G6 - - Middle - Disabled - - "Display: DISP_DATA10; IRQ: IRQ2; MTU6: MTIOC6A; SD0: SD0_CD; SSI: AUDIO_CLK1" - I - - 
+      P3_2 F9 - - - - Disabled - - "Display: DISP_DATA11; IRQ: IRQ3; MTU6: MTIOC6B; SD0: SD0_WP; SSI: AUDIO_CLK2" - None - - 
+      P3_3 F10 - - - - Disabled - - "Display: DISP_DATA12; IRQ: IRQ4; MTU6: MTIOC6C" - None - - 
+      P4_0 A4 - - - - Disabled - - "Display: DISP_DATA13; MTU6: MTIOC6D" - None - - 
+      P4_1 B6 - - - - Disabled - - "Display: DISP_DATA14; MTU7: MTIOC7A; SCI0: SCI0_CTS_N_RTS_N; SD0: SD0_CD" - None - - 
+      P4_2 A5 - - - - Disabled - - "Display: DISP_DATA15; MTU7: MTIOC7B; SCI0: SCI0_SCK; SCIF3: SCIF3_SCK; SD0: SD0_WP" - None - - 
+      P4_3 B7 - - - - Disabled - - "Display: DISP_DATA16; RIIC1: RIIC1_SDA; SCI0: SCI0_TXD; SCIF3: SCIF3_TXD" - None - - 
+      P4_4 A6 - - - - Disabled - - "Display: DISP_DATA17; RIIC1: RIIC1_SCL; SCI0: SCI0_RXD; SCIF3: SCIF3_RXD" - None - - 
+      P4_5 B8 - - - - Disabled - - "Display: DISP_DATA18; IRQ: IRQ5; MTU7: MTIOC7C; RSPI0: RSPI0_CK" - None - - 
+      P5_0 A7 - - - - Disabled - - "Display: DISP_DATA19; IRQ: IRQ6; MTU7: MTIOC7D; RSPI0: RSPI0_MOSI" - None - - 
+      P5_1 B10 - - - - Disabled - - "Display: DISP_DATA20; IRQ: IRQ7; MTU8: MTIOC8A; POE: POE0_N; RSPI0: RSPI0_MISO" - None - - 
+      P5_2 A8 - - - - Disabled - - "Display: DISP_DATA21; MTU8: MTIOC8B; POE: POE4_N; RSPI0: RSPI0_SSL; SCIF0: SCIF0_CTS_N; SSI: AUDIO_CLK1" - None - - 
+      P5_3 B11 - - - - Disabled - - "Display: DISP_DATA22; MTU2: MTIOC2A; MTU8: MTIOC8C; POE: POE8_N; RIIC1: RIIC1_SDA; SCIF0: SCIF0_RTS_N" - None - - 
+      P5_4 A9 - - - - Disabled - - "Display: DISP_DATA23; MTU2: MTIOC2B; MTU8: MTIOC8D; POE: POE10_N; RIIC1: RIIC1_SCL; SCIF0: SCIF0_SCK" - None - - 
+      P6_0 B9 SCIF0_SCIF0_TXD - Low - "Peripheral mode" - - "SCIF0: SCIF0_TXD" - O - - 
+      P6_1 F11 SCIF0_SCIF0_RXD - Low - "Peripheral mode" - - "SCIF0: SCIF0_RXD" - I - - 
+      P6_2 G11 - - - - Disabled - - "SCIF3: SCIF3_TXD; USB0: USB0_OVRCUR" - None - - 
+      P6_3 F12 - - - - Disabled - - "SCIF3: SCIF3_RXD; USB0: USB0_VBUSEN" - None - - 
+      P6_4 B12 - - - - Disabled - - "SCIF3: SCIF3_SCK; SSI: AUDIO_CLK2" - None - - 
+      P7_0 A10 - - - - Disabled - - "RSPI1: RSPI1_CK; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - None - - 
+      P7_1 B13 - - - - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - None - - 
+      P8_0 A11 - - - - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - None - - 
+      P8_1 A12 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P8_2 B14 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P8_3 B15 - - - - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - None - - 
+      P9_0 A13 - - - - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P9_1 A14 - - - - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P9_2 A15 - - - - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P9_3 A16 - - - - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - None - - 
+      P9_4 B16 - - Middle - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - IO - - 
+      PLL1_AVDD18 L1 "Power, System_PLL1_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_AVDD18 U1 "Power, System_PLL23_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_DVDD11 V1 "Power, System_PLL23_DVDD11" - - - - - - - - IO "Read only" - 
+      PLL4_AVDD18 K10 "Power, System_PLL4_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_AVDD18 N6 "Power, System_PLL5_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_DVDD11 P6 "Power, System_PLL5_DVDD11" - - - - - - - - IO "Read only" - 
+      PRST_N W18 - - - - - - - - - None - - 
+      PVDD1 R9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 P9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 R10 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD2 F6 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      PVDD2 F7 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      QSPI0_IO0 G2 - - - - - - - - - None - - 
+      QSPI0_IO1 H1 - - - - - - - - - None - - 
+      QSPI0_SPCLK J1 - - - - - - - - - None - - 
+      QSPI0_SSL H2 - - - - - - - - - None - - 
+      RIIC0_SCL C19 - - - - - - - - - None - - 
+      RIIC0_SDA C20 - - - - - - - - - None - - 
+      SD0_CLK M2 - - - - - - - - - None - - 
+      SD0_PVDD K2 "Power, System_SD0_PVDD" - - - - - - - - IO "Read only" - 
+      SPI_PVDD K1 "Power, System_SPI_PVDD" - - - - - - - - IO "Read only" - 
+      SWD_JTAG B19 - - - - - - - - - None - - 
+      TCK_SWDCLK L7 - - - - - - - - - None - - 
+      TMS_SWDIO L6 - - - - - - - - - None - - 
+      TS_AVDD18 R2 "Power, System_TS_AVDD18" - - - - - - - - IO "Read only" - 
+      USB0_DM W12 - - - - - - - - - None - - 
+      USB0_DP Y13 - - - - - - - - - None - - 
+      USB0_VBUSIN Y18 - - - - - - - - - None - - 
+      USB_AVDD18 W14 "Power, System_USB_AVDD18" - - - - - - - - IO "Read only" - 
+      USB_RREF W11 "Power, System_USB_RREF" - - - - - - - - IO "Read only" - 
+      USB_VDD18 Y14 "Power, System_USB_VDD18" - - - - - - - - IO "Read only" - 
+      USB_VDD33 Y11 "Power, System_USB_VDD33" - - - - - - - - IO "Read only" - 
+      USB_VSS Y10 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y12 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y15 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS W13 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      VDD G7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD G8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H9 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M6 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VREF K20 - - - - - - - - - None - - 
+      VSS J20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS T1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W17 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W4 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y5 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS D19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R11 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      WDTOVF_PERROUT U19 - - - - - - - - - None - - 
+      XIN W16 "Power, System_XIN" - - - - - - - - IO "Read only" - 
+      XOUT Y17 "Power, System_XOUT" - - - - - - - - IO "Read only" - 
+      ZQ H20 - - - - - - - - - None - - 
+    RZA3M-REF-NOR.pincfg -> g_bsp_pin_cfg
+      BSCANP Y19 - - - - - - - - - None - - 
+      CPUHOLD B17 - - - - - - - - - None - - 
+      DDR_CALIBRATION D20 - - - - - - - - - None - - 
+      DDR_CLK_N F19 - - - - - - - - - None - - 
+      DDR_CLK_P F20 - - - - - - - - - None - - 
+      DDR_CS_DRAM K15 - - - - - - - - - None - - 
+      DDR_CS_SOC J15 - - - - - - - - - None - - 
+      DDR_VDDQ1 H11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 P11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 N11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 M11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 L11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 K11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 J11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 H19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 M19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L20 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 K19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 J19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DEBUGEN V20 - - - - - - - - - None - - 
+      DSI_CLKN Y6 - - - - - - - - - None - - 
+      DSI_CLKP W6 - - - - - - - - - None - - 
+      DSI_DATA0_N W5 - - - - - - - - - None - - 
+      DSI_DATA0_P Y4 - - - - - - - - - None - - 
+      DSI_DATA1_N W8 - - - - - - - - - None - - 
+      DSI_DATA1_P Y7 - - - - - - - - - None - - 
+      DSI_DATA2_N Y3 - - - - - - - - - None - - 
+      DSI_DATA2_P W3 - - - - - - - - - None - - 
+      DSI_DATA3_N Y9 - - - - - - - - - None - - 
+      DSI_DATA3_P W9 - - - - - - - - - None - - 
+      DSI_VDD18 W2 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      DSI_VDD18 Y1 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      EXTAL Y16 "Power, System_EXTAL" - - - - - - - - IO "Read only" - 
+      JTAG_PVDD V2 "Power, System_JTAG_PVDD" - - - - - - - - IO "Read only" - 
+      NMI B20 - - - - - - - - - None - - 
+      OTP_VDD18 P2 "Power, System_OTP_VDD18" - - - - - - - - IO "Read only" - 
+      P0_0 E2 - - - - Disabled - - "Display: DISP_HSYNC; IRQ: IRQ0; MTU0: MTIOC0A; MTU1: MTIOC1A; MTU4: MTIOC4A" - None - - 
+      P0_1 E1 - - - - Disabled - - "Display: DISP_DE; IRQ: IRQ1; MTU0: MTIOC0B; MTU1: MTIOC1B; MTU4: MTIOC4B" - None - - 
+      P0_2 D2 - - - - Disabled - - "Display: DISP_CLK; MTU0: MTIOC0C; MTU4: MTIOC4C; RIIC1: RIIC1_SDA" - None - - 
+      P0_3 C2 - - - - Disabled - - "Display: DISP_VSYNC; MTU0: MTIOC0D; MTU4: MTIOC4D; RIIC1: RIIC1_SCL" - None - - 
+      P10_0 W19 - - - - Disabled - - "IRQ: IRQ0; MTU: MTCLKA; MTU0: MTIOC0A; SCI0: SCI0_CTS_N_RTS_N; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P10_1 W20 - - - - Disabled - - "IRQ: IRQ1; MTU: MTCLKB; MTU0: MTIOC0B; SCI0: SCI0_SCK; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P10_2 V19 - - - - Disabled - - "IRQ: IRQ2; MTU: MTCLKC; MTU0: MTIOC0C; SCIF0: SCIF0_SCK; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P10_3 U20 - - - - Disabled - - "IRQ: IRQ3; MTU: MTCLKD; MTU0: MTIOC0D; SCIF0: SCIF0_CTS_N; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - IO - - 
+      P11_0 T19 - - - - Disabled - - "IRQ: IRQ4; SCIF0: SCIF0_RTS_N; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - None - - 
+      P11_1 T20 - - - - Disabled - - "IRQ: IRQ5; SCI1: SCI1_CTS_N_RTS_N; SSI: AUDIO_CLK2" - None - - 
+      P11_2 R19 - - - - Disabled - - "IRQ: IRQ6; MTU1: MTIOC1A; POE: POE0_N; RSPI0: RSPI0_CK; SCI1: SCI1_SCK; SD0: SD0_WP" - None - - 
+      P11_3 P19 - - - - Disabled - - "IRQ: IRQ7; MTU1: MTIOC1B; POE: POE4_N; RSPI0: RSPI0_MOSI; SCIF2: SCIF2_SCK; SD0: SD0_CD" - None - - 
+      P12_0 P20 - - - - Disabled - - "MTU2: MTIOC2A; POE: POE8_N; RSPI0: RSPI0_MISO; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P12_1 N19 - - - - Disabled - - "MTU2: MTIOC2B; POE: POE10_N; RSPI0: RSPI0_SSL; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P1_0 D1 - - - - Disabled - - "Display: DISP_DATA0; SCIF1: SCIF1_TXD" - None - - 
+      P1_1 B2 - - - - Disabled - - "Display: DISP_DATA1; MTU: MTCLKA; SCIF1: SCIF1_RXD" - None - - 
+      P1_2 C1 - - - - Disabled - - "Display: DISP_DATA2; MTU: MTCLKB; RSPI1: RSPI1_CK; SCIF1: SCIF1_SCK; SSI0: SSI0_BCK" - None - - 
+      P1_3 B1 - - - - Disabled - - "Display: DISP_DATA3; MTU: MTCLKC; RSPI1: RSPI1_MOSI; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RCK" - None - - 
+      P1_4 B3 - - - - Disabled - - "Display: DISP_DATA4; MTU: MTCLKD; MTU3: MTIOC3A; RSPI1: RSPI1_MISO; SCIF1: SCIF1_RTS_N; SSI0: SSI0_TXD" - None - - 
+      P20_0 A19 - - Middle - "Peripheral mode" - - "RSPI1: RSPI1_CK; RST_BOOT: MD_BOOT0; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - I - - 
+      P20_1 B18 - - Middle - "Peripheral mode" - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; RST_BOOT: MD_BOOT1; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - I - - 
+      P20_2 A18 - - Middle - "Peripheral mode" - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; RST_BOOT: MD_BOOT2; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - I - - 
+      P20_3 A17 - - - - "Peripheral mode" - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; RST_BOOT: MD_CLKS; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P20_4 R20 - - - - "Peripheral mode" - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; RST_BOOT: MD_OSCDRV0; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P20_5 N20 - - Middle - "Peripheral mode" - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; RST_BOOT: MD_OSCDRV1; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - I - - 
+      P21_0 U2 - - - - "Peripheral mode" - - "JTAG/SWD: TDI" - None - - 
+      P21_1 T2 - - - - "Peripheral mode" - - "JTAG/SWD: TDO_SWO" - None - - 
+      P21_2 K6 - - - - "Peripheral mode" - - "JTAG/SWD: TRST_N" - None - - 
+      P22_0 N1 - - High - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SD0: SD0_CMD; SSI0: SSI0_BCK" - IO - - 
+      P22_1 N2 - - High - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SD0: SD0_DATA0; SSI0: SSI0_RCK" - IO - - 
+      P22_2 R1 - - High - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SD0: SD0_DATA1; SSI0: SSI0_TXD" - IO - - 
+      P22_3 P1 - - High - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SD0: SD0_DATA2; SSI0: SSI0_RXD" - IO - - 
+      P22_4 L2 - - High - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SD0: SD0_DATA3; SSI: AUDIO_CLK1" - IO - - 
+      P23_0 F2 - - - - Disabled - - "SPIBSC: QSPI0_IO2" - None - - 
+      P23_1 G1 - - - - Disabled - - "SPIBSC: QSPI0_IO3" - None - - 
+      P2_0 A2 - - - - Disabled - - "Display: DISP_DATA5; MTU3: MTIOC3B; MTU5: MTIC5U; RSPI1: RSPI1_SSL; SCIF2: SCIF2_SCK; SSI0: SSI0_RXD" - None - - 
+      P2_1 B4 - - - - Disabled - - "Display: DISP_DATA6; MTU3: MTIOC3C; MTU5: MTIC5V; SCI1: SCI1_CTS_N_RTS_N; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P2_2 A3 - - - - Disabled - - "Display: DISP_DATA7; MTU3: MTIOC3D; MTU5: MTIC5W; SCI1: SCI1_SCK; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P2_3 B5 - - - - Disabled - - "Display: DISP_DATA8; RIIC1: RIIC1_SDA; SCI1: SCI1_TXD; SCIF2: SCIF2_TXD" - None - - 
+      P3_0 H6 - - - - Disabled - - "Display: DISP_DATA9; RIIC1: RIIC1_SCL; SCI1: SCI1_RXD; SCIF2: SCIF2_RXD" - None - - 
+      P3_1 G6 - - Middle - Disabled - - "Display: DISP_DATA10; IRQ: IRQ2; MTU6: MTIOC6A; SD0: SD0_CD; SSI: AUDIO_CLK1" - I - - 
+      P3_2 F9 - - - - Disabled - - "Display: DISP_DATA11; IRQ: IRQ3; MTU6: MTIOC6B; SD0: SD0_WP; SSI: AUDIO_CLK2" - None - - 
+      P3_3 F10 - - - - Disabled - - "Display: DISP_DATA12; IRQ: IRQ4; MTU6: MTIOC6C" - None - - 
+      P4_0 A4 - - - - Disabled - - "Display: DISP_DATA13; MTU6: MTIOC6D" - None - - 
+      P4_1 B6 - - - - Disabled - - "Display: DISP_DATA14; MTU7: MTIOC7A; SCI0: SCI0_CTS_N_RTS_N; SD0: SD0_CD" - None - - 
+      P4_2 A5 - - - - Disabled - - "Display: DISP_DATA15; MTU7: MTIOC7B; SCI0: SCI0_SCK; SCIF3: SCIF3_SCK; SD0: SD0_WP" - None - - 
+      P4_3 B7 - - - - Disabled - - "Display: DISP_DATA16; RIIC1: RIIC1_SDA; SCI0: SCI0_TXD; SCIF3: SCIF3_TXD" - None - - 
+      P4_4 A6 - - - - Disabled - - "Display: DISP_DATA17; RIIC1: RIIC1_SCL; SCI0: SCI0_RXD; SCIF3: SCIF3_RXD" - None - - 
+      P4_5 B8 - - - - Disabled - - "Display: DISP_DATA18; IRQ: IRQ5; MTU7: MTIOC7C; RSPI0: RSPI0_CK" - None - - 
+      P5_0 A7 - - - - Disabled - - "Display: DISP_DATA19; IRQ: IRQ6; MTU7: MTIOC7D; RSPI0: RSPI0_MOSI" - None - - 
+      P5_1 B10 - - - - Disabled - - "Display: DISP_DATA20; IRQ: IRQ7; MTU8: MTIOC8A; POE: POE0_N; RSPI0: RSPI0_MISO" - None - - 
+      P5_2 A8 - - - - Disabled - - "Display: DISP_DATA21; MTU8: MTIOC8B; POE: POE4_N; RSPI0: RSPI0_SSL; SCIF0: SCIF0_CTS_N; SSI: AUDIO_CLK1" - None - - 
+      P5_3 B11 - - - - Disabled - - "Display: DISP_DATA22; MTU2: MTIOC2A; MTU8: MTIOC8C; POE: POE8_N; RIIC1: RIIC1_SDA; SCIF0: SCIF0_RTS_N" - None - - 
+      P5_4 A9 - - - - Disabled - - "Display: DISP_DATA23; MTU2: MTIOC2B; MTU8: MTIOC8D; POE: POE10_N; RIIC1: RIIC1_SCL; SCIF0: SCIF0_SCK" - None - - 
+      P6_0 B9 - - Middle - Disabled - - "SCIF0: SCIF0_TXD" - O - - 
+      P6_1 F11 - - Middle - Disabled - - "SCIF0: SCIF0_RXD" - I - - 
+      P6_2 G11 - - - - Disabled - - "SCIF3: SCIF3_TXD; USB0: USB0_OVRCUR" - None - - 
+      P6_3 F12 - - - - Disabled - - "SCIF3: SCIF3_RXD; USB0: USB0_VBUSEN" - None - - 
+      P6_4 B12 - - - - Disabled - - "SCIF3: SCIF3_SCK; SSI: AUDIO_CLK2" - None - - 
+      P7_0 A10 - - - - Disabled - - "RSPI1: RSPI1_CK; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - None - - 
+      P7_1 B13 - - - - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - None - - 
+      P8_0 A11 - - - - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - None - - 
+      P8_1 A12 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P8_2 B14 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P8_3 B15 - - - - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - None - - 
+      P9_0 A13 - - - - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P9_1 A14 - - - - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P9_2 A15 - - - - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P9_3 A16 - - - - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - None - - 
+      P9_4 B16 - - Middle - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - IO - - 
+      PLL1_AVDD18 L1 "Power, System_PLL1_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_AVDD18 U1 "Power, System_PLL23_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_DVDD11 V1 "Power, System_PLL23_DVDD11" - - - - - - - - IO "Read only" - 
+      PLL4_AVDD18 K10 "Power, System_PLL4_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_AVDD18 N6 "Power, System_PLL5_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_DVDD11 P6 "Power, System_PLL5_DVDD11" - - - - - - - - IO "Read only" - 
+      PRST_N W18 - - - - - - - - - None - - 
+      PVDD1 R9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 P9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 R10 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD2 F6 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      PVDD2 F7 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      QSPI0_IO0 G2 - - - - - - - - - None - - 
+      QSPI0_IO1 H1 - - - - - - - - - None - - 
+      QSPI0_SPCLK J1 - - - - - - - - - None - - 
+      QSPI0_SSL H2 - - - - - - - - - None - - 
+      RIIC0_SCL C19 - - - - - - - - - None - - 
+      RIIC0_SDA C20 - - - - - - - - - None - - 
+      SD0_CLK M2 - - - - - - - - - None - - 
+      SD0_PVDD K2 "Power, System_SD0_PVDD" - - - - - - - - IO "Read only" - 
+      SPI_PVDD K1 "Power, System_SPI_PVDD" - - - - - - - - IO "Read only" - 
+      SWD_JTAG B19 - - - - - - - - - None - - 
+      TCK_SWDCLK L7 - - - - - - - - - None - - 
+      TMS_SWDIO L6 - - - - - - - - - None - - 
+      TS_AVDD18 R2 "Power, System_TS_AVDD18" - - - - - - - - IO "Read only" - 
+      USB0_DM W12 - - - - - - - - - None - - 
+      USB0_DP Y13 - - - - - - - - - None - - 
+      USB0_VBUSIN Y18 - - - - - - - - - None - - 
+      USB_AVDD18 W14 "Power, System_USB_AVDD18" - - - - - - - - IO "Read only" - 
+      USB_RREF W11 "Power, System_USB_RREF" - - - - - - - - IO "Read only" - 
+      USB_VDD18 Y14 "Power, System_USB_VDD18" - - - - - - - - IO "Read only" - 
+      USB_VDD33 Y11 "Power, System_USB_VDD33" - - - - - - - - IO "Read only" - 
+      USB_VSS Y10 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y12 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y15 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS W13 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      VDD G7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD G8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H9 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M6 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VREF K20 - - - - - - - - - None - - 
+      VSS J20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS T1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W17 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W4 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y5 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS D19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R11 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      WDTOVF_PERROUT U19 - - - - - - - - - None - - 
+      XIN W16 "Power, System_XIN" - - - - - - - - IO "Read only" - 
+      XOUT Y17 "Power, System_XOUT" - - - - - - - - IO "Read only" - 
+      ZQ H20 - - - - - - - - - None - - 
+    R9A07G066M04GBG.pincfg -> 
+      BSCANP Y19 - - - - - - - - - None - - 
+      CPUHOLD B17 - - - - - - - - - None - - 
+      DDR_CALIBRATION D20 - - - - - - - - - None - - 
+      DDR_CLK_N F19 - - - - - - - - - None - - 
+      DDR_CLK_P F20 - - - - - - - - - None - - 
+      DDR_CS_DRAM K15 - - - - - - - - - None - - 
+      DDR_CS_SOC J15 - - - - - - - - - None - - 
+      DDR_VDDQ1 H11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 P11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 N11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 M11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 L11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 K11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 J11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 H19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 M19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L20 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 K19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 J19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DEBUGEN V20 - - - - - - - - - None - - 
+      DSI_CLKN Y6 - - - - - - - - - None - - 
+      DSI_CLKP W6 - - - - - - - - - None - - 
+      DSI_DATA0_N W5 - - - - - - - - - None - - 
+      DSI_DATA0_P Y4 - - - - - - - - - None - - 
+      DSI_DATA1_N W8 - - - - - - - - - None - - 
+      DSI_DATA1_P Y7 - - - - - - - - - None - - 
+      DSI_DATA2_N Y3 - - - - - - - - - None - - 
+      DSI_DATA2_P W3 - - - - - - - - - None - - 
+      DSI_DATA3_N Y9 - - - - - - - - - None - - 
+      DSI_DATA3_P W9 - - - - - - - - - None - - 
+      DSI_VDD18 W2 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      DSI_VDD18 Y1 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      EXTAL Y16 "Power, System_EXTAL" - - - - - - - - IO "Read only" - 
+      JTAG_PVDD V2 "Power, System_JTAG_PVDD" - - - - - - - - IO "Read only" - 
+      NMI B20 - - - - - - - - - None - - 
+      OTP_VDD18 P2 "Power, System_OTP_VDD18" - - - - - - - - IO "Read only" - 
+      P0_0 E2 - - - - Disabled - - "Display: DISP_HSYNC; IRQ: IRQ0; MTU0: MTIOC0A; MTU1: MTIOC1A; MTU4: MTIOC4A" - None - - 
+      P0_1 E1 - - - - Disabled - - "Display: DISP_DE; IRQ: IRQ1; MTU0: MTIOC0B; MTU1: MTIOC1B; MTU4: MTIOC4B" - None - - 
+      P0_2 D2 - - - - Disabled - - "Display: DISP_CLK; MTU0: MTIOC0C; MTU4: MTIOC4C; RIIC1: RIIC1_SDA" - None - - 
+      P0_3 C2 - - - - Disabled - - "Display: DISP_VSYNC; MTU0: MTIOC0D; MTU4: MTIOC4D; RIIC1: RIIC1_SCL" - None - - 
+      P10_0 W19 - - - - Disabled - - "IRQ: IRQ0; MTU: MTCLKA; MTU0: MTIOC0A; SCI0: SCI0_CTS_N_RTS_N; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P10_1 W20 - - - - Disabled - - "IRQ: IRQ1; MTU: MTCLKB; MTU0: MTIOC0B; SCI0: SCI0_SCK; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P10_2 V19 - - - - Disabled - - "IRQ: IRQ2; MTU: MTCLKC; MTU0: MTIOC0C; SCIF0: SCIF0_SCK; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P10_3 U20 - - - - Disabled - - "IRQ: IRQ3; MTU: MTCLKD; MTU0: MTIOC0D; SCIF0: SCIF0_CTS_N; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - IO - - 
+      P11_0 T19 - - - - Disabled - - "IRQ: IRQ4; SCIF0: SCIF0_RTS_N; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - None - - 
+      P11_1 T20 - - - - Disabled - - "IRQ: IRQ5; SCI1: SCI1_CTS_N_RTS_N; SSI: AUDIO_CLK2" - None - - 
+      P11_2 R19 - - - - Disabled - - "IRQ: IRQ6; MTU1: MTIOC1A; POE: POE0_N; RSPI0: RSPI0_CK; SCI1: SCI1_SCK; SD0: SD0_WP" - None - - 
+      P11_3 P19 - - - - Disabled - - "IRQ: IRQ7; MTU1: MTIOC1B; POE: POE4_N; RSPI0: RSPI0_MOSI; SCIF2: SCIF2_SCK; SD0: SD0_CD" - None - - 
+      P12_0 P20 - - - - Disabled - - "MTU2: MTIOC2A; POE: POE8_N; RSPI0: RSPI0_MISO; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P12_1 N19 - - - - Disabled - - "MTU2: MTIOC2B; POE: POE10_N; RSPI0: RSPI0_SSL; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P1_0 D1 - - - - Disabled - - "Display: DISP_DATA0; SCIF1: SCIF1_TXD" - None - - 
+      P1_1 B2 - - - - Disabled - - "Display: DISP_DATA1; MTU: MTCLKA; SCIF1: SCIF1_RXD" - None - - 
+      P1_2 C1 - - - - Disabled - - "Display: DISP_DATA2; MTU: MTCLKB; RSPI1: RSPI1_CK; SCIF1: SCIF1_SCK; SSI0: SSI0_BCK" - None - - 
+      P1_3 B1 - - - - Disabled - - "Display: DISP_DATA3; MTU: MTCLKC; RSPI1: RSPI1_MOSI; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RCK" - None - - 
+      P1_4 B3 - - - - Disabled - - "Display: DISP_DATA4; MTU: MTCLKD; MTU3: MTIOC3A; RSPI1: RSPI1_MISO; SCIF1: SCIF1_RTS_N; SSI0: SSI0_TXD" - None - - 
+      P20_0 A19 - - Middle - "Peripheral mode" - - "RSPI1: RSPI1_CK; RST_BOOT: MD_BOOT0; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - I - - 
+      P20_1 B18 - - Middle - "Peripheral mode" - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; RST_BOOT: MD_BOOT1; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - I - - 
+      P20_2 A18 - - Middle - "Peripheral mode" - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; RST_BOOT: MD_BOOT2; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - I - - 
+      P20_3 A17 - - - - "Peripheral mode" - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; RST_BOOT: MD_CLKS; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P20_4 R20 - - - - "Peripheral mode" - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; RST_BOOT: MD_OSCDRV0; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P20_5 N20 - - Middle - "Peripheral mode" - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; RST_BOOT: MD_OSCDRV1; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - I - - 
+      P21_0 U2 - - - - "Peripheral mode" - - "JTAG/SWD: TDI" - None - - 
+      P21_1 T2 - - - - "Peripheral mode" - - "JTAG/SWD: TDO_SWO" - None - - 
+      P21_2 K6 - - - - "Peripheral mode" - - "JTAG/SWD: TRST_N" - None - - 
+      P22_0 N1 - - High - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SD0: SD0_CMD; SSI0: SSI0_BCK" - IO - - 
+      P22_1 N2 - - High - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SD0: SD0_DATA0; SSI0: SSI0_RCK" - IO - - 
+      P22_2 R1 - - High - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SD0: SD0_DATA1; SSI0: SSI0_TXD" - IO - - 
+      P22_3 P1 - - High - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SD0: SD0_DATA2; SSI0: SSI0_RXD" - IO - - 
+      P22_4 L2 - - High - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SD0: SD0_DATA3; SSI: AUDIO_CLK1" - IO - - 
+      P23_0 F2 - - - - Disabled - - "SPIBSC: QSPI0_IO2" - None - - 
+      P23_1 G1 - - - - Disabled - - "SPIBSC: QSPI0_IO3" - None - - 
+      P2_0 A2 - - - - Disabled - - "Display: DISP_DATA5; MTU3: MTIOC3B; MTU5: MTIC5U; RSPI1: RSPI1_SSL; SCIF2: SCIF2_SCK; SSI0: SSI0_RXD" - None - - 
+      P2_1 B4 - - - - Disabled - - "Display: DISP_DATA6; MTU3: MTIOC3C; MTU5: MTIC5V; SCI1: SCI1_CTS_N_RTS_N; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P2_2 A3 - - - - Disabled - - "Display: DISP_DATA7; MTU3: MTIOC3D; MTU5: MTIC5W; SCI1: SCI1_SCK; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P2_3 B5 - - - - Disabled - - "Display: DISP_DATA8; RIIC1: RIIC1_SDA; SCI1: SCI1_TXD; SCIF2: SCIF2_TXD" - None - - 
+      P3_0 H6 - - - - Disabled - - "Display: DISP_DATA9; RIIC1: RIIC1_SCL; SCI1: SCI1_RXD; SCIF2: SCIF2_RXD" - None - - 
+      P3_1 G6 - - Middle - Disabled - - "Display: DISP_DATA10; IRQ: IRQ2; MTU6: MTIOC6A; SD0: SD0_CD; SSI: AUDIO_CLK1" - I - - 
+      P3_2 F9 - - - - Disabled - - "Display: DISP_DATA11; IRQ: IRQ3; MTU6: MTIOC6B; SD0: SD0_WP; SSI: AUDIO_CLK2" - None - - 
+      P3_3 F10 - - - - Disabled - - "Display: DISP_DATA12; IRQ: IRQ4; MTU6: MTIOC6C" - None - - 
+      P4_0 A4 - - - - Disabled - - "Display: DISP_DATA13; MTU6: MTIOC6D" - None - - 
+      P4_1 B6 - - - - Disabled - - "Display: DISP_DATA14; MTU7: MTIOC7A; SCI0: SCI0_CTS_N_RTS_N; SD0: SD0_CD" - None - - 
+      P4_2 A5 - - - - Disabled - - "Display: DISP_DATA15; MTU7: MTIOC7B; SCI0: SCI0_SCK; SCIF3: SCIF3_SCK; SD0: SD0_WP" - None - - 
+      P4_3 B7 - - - - Disabled - - "Display: DISP_DATA16; RIIC1: RIIC1_SDA; SCI0: SCI0_TXD; SCIF3: SCIF3_TXD" - None - - 
+      P4_4 A6 - - - - Disabled - - "Display: DISP_DATA17; RIIC1: RIIC1_SCL; SCI0: SCI0_RXD; SCIF3: SCIF3_RXD" - None - - 
+      P4_5 B8 - - - - Disabled - - "Display: DISP_DATA18; IRQ: IRQ5; MTU7: MTIOC7C; RSPI0: RSPI0_CK" - None - - 
+      P5_0 A7 - - - - Disabled - - "Display: DISP_DATA19; IRQ: IRQ6; MTU7: MTIOC7D; RSPI0: RSPI0_MOSI" - None - - 
+      P5_1 B10 - - - - Disabled - - "Display: DISP_DATA20; IRQ: IRQ7; MTU8: MTIOC8A; POE: POE0_N; RSPI0: RSPI0_MISO" - None - - 
+      P5_2 A8 - - - - Disabled - - "Display: DISP_DATA21; MTU8: MTIOC8B; POE: POE4_N; RSPI0: RSPI0_SSL; SCIF0: SCIF0_CTS_N; SSI: AUDIO_CLK1" - None - - 
+      P5_3 B11 - - - - Disabled - - "Display: DISP_DATA22; MTU2: MTIOC2A; MTU8: MTIOC8C; POE: POE8_N; RIIC1: RIIC1_SDA; SCIF0: SCIF0_RTS_N" - None - - 
+      P5_4 A9 - - - - Disabled - - "Display: DISP_DATA23; MTU2: MTIOC2B; MTU8: MTIOC8D; POE: POE10_N; RIIC1: RIIC1_SCL; SCIF0: SCIF0_SCK" - None - - 
+      P6_0 B9 - - Middle - Disabled - - "SCIF0: SCIF0_TXD" - O - - 
+      P6_1 F11 - - Middle - Disabled - - "SCIF0: SCIF0_RXD" - I - - 
+      P6_2 G11 - - - - Disabled - - "SCIF3: SCIF3_TXD; USB0: USB0_OVRCUR" - None - - 
+      P6_3 F12 - - - - Disabled - - "SCIF3: SCIF3_RXD; USB0: USB0_VBUSEN" - None - - 
+      P6_4 B12 - - - - Disabled - - "SCIF3: SCIF3_SCK; SSI: AUDIO_CLK2" - None - - 
+      P7_0 A10 - - - - Disabled - - "RSPI1: RSPI1_CK; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - None - - 
+      P7_1 B13 - - - - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - None - - 
+      P8_0 A11 - - - - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - None - - 
+      P8_1 A12 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P8_2 B14 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P8_3 B15 - - - - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - None - - 
+      P9_0 A13 - - - - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P9_1 A14 - - - - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P9_2 A15 - - - - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P9_3 A16 - - - - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - None - - 
+      P9_4 B16 - - Middle - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - IO - - 
+      PLL1_AVDD18 L1 "Power, System_PLL1_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_AVDD18 U1 "Power, System_PLL23_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_DVDD11 V1 "Power, System_PLL23_DVDD11" - - - - - - - - IO "Read only" - 
+      PLL4_AVDD18 K10 "Power, System_PLL4_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_AVDD18 N6 "Power, System_PLL5_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_DVDD11 P6 "Power, System_PLL5_DVDD11" - - - - - - - - IO "Read only" - 
+      PRST_N W18 - - - - - - - - - None - - 
+      PVDD1 R9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 P9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 R10 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD2 F6 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      PVDD2 F7 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      QSPI0_IO0 G2 - - - - - - - - - None - - 
+      QSPI0_IO1 H1 - - - - - - - - - None - - 
+      QSPI0_SPCLK J1 - - - - - - - - - None - - 
+      QSPI0_SSL H2 - - - - - - - - - None - - 
+      RIIC0_SCL C19 - - - - - - - - - None - - 
+      RIIC0_SDA C20 - - - - - - - - - None - - 
+      SD0_CLK M2 - - - - - - - - - None - - 
+      SD0_PVDD K2 "Power, System_SD0_PVDD" - - - - - - - - IO "Read only" - 
+      SPI_PVDD K1 "Power, System_SPI_PVDD" - - - - - - - - IO "Read only" - 
+      SWD_JTAG B19 - - - - - - - - - None - - 
+      TCK_SWDCLK L7 - - - - - - - - - None - - 
+      TMS_SWDIO L6 - - - - - - - - - None - - 
+      TS_AVDD18 R2 "Power, System_TS_AVDD18" - - - - - - - - IO "Read only" - 
+      USB0_DM W12 - - - - - - - - - None - - 
+      USB0_DP Y13 - - - - - - - - - None - - 
+      USB0_VBUSIN Y18 - - - - - - - - - None - - 
+      USB_AVDD18 W14 "Power, System_USB_AVDD18" - - - - - - - - IO "Read only" - 
+      USB_RREF W11 "Power, System_USB_RREF" - - - - - - - - IO "Read only" - 
+      USB_VDD18 Y14 "Power, System_USB_VDD18" - - - - - - - - IO "Read only" - 
+      USB_VDD33 Y11 "Power, System_USB_VDD33" - - - - - - - - IO "Read only" - 
+      USB_VSS Y10 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y12 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y15 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS W13 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      VDD G7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD G8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H9 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M6 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VREF K20 - - - - - - - - - None - - 
+      VSS J20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS T1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W17 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W4 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y5 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS D19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R11 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      WDTOVF_PERROUT U19 - - - - - - - - - None - - 
+      XIN W16 "Power, System_XIN" - - - - - - - - IO "Read only" - 
+      XOUT Y17 "Power, System_XOUT" - - - - - - - - IO "Read only" - 
+      ZQ H20 - - - - - - - - - None - - 
+    R9A07G066M04GBG -> g_bsp_pin_cfg
+      BSCANP Y19 - - - - - - - - - None - - 
+      CPUHOLD B17 - - - - - - - - - None - - 
+      DDR_CALIBRATION D20 - - - - - - - - - None - - 
+      DDR_CLK_N F19 - - - - - - - - - None - - 
+      DDR_CLK_P F20 - - - - - - - - - None - - 
+      DDR_CS_DRAM K15 - - - - - - - - - None - - 
+      DDR_CS_SOC J15 - - - - - - - - - None - - 
+      DDR_VDDQ1 H11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 P11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 N11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 M11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 L11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 K11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 J11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 H19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 M19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L20 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 K19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 J19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DEBUGEN V20 - - - - - - - - - None - - 
+      DSI_CLKN Y6 - - - - - - - - - None - - 
+      DSI_CLKP W6 - - - - - - - - - None - - 
+      DSI_DATA0_N W5 - - - - - - - - - None - - 
+      DSI_DATA0_P Y4 - - - - - - - - - None - - 
+      DSI_DATA1_N W8 - - - - - - - - - None - - 
+      DSI_DATA1_P Y7 - - - - - - - - - None - - 
+      DSI_DATA2_N Y3 - - - - - - - - - None - - 
+      DSI_DATA2_P W3 - - - - - - - - - None - - 
+      DSI_DATA3_N Y9 - - - - - - - - - None - - 
+      DSI_DATA3_P W9 - - - - - - - - - None - - 
+      DSI_VDD18 W2 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      DSI_VDD18 Y1 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      EXTAL Y16 "Power, System_EXTAL" - - - - - - - - IO "Read only" - 
+      JTAG_PVDD V2 "Power, System_JTAG_PVDD" - - - - - - - - IO "Read only" - 
+      NMI B20 - - - - - - - - - None - - 
+      OTP_VDD18 P2 "Power, System_OTP_VDD18" - - - - - - - - IO "Read only" - 
+      P0_0 E2 - - - - Disabled - - "Display: DISP_HSYNC; IRQ: IRQ0; MTU0: MTIOC0A; MTU1: MTIOC1A; MTU4: MTIOC4A" - None - - 
+      P0_1 E1 - - - - Disabled - - "Display: DISP_DE; IRQ: IRQ1; MTU0: MTIOC0B; MTU1: MTIOC1B; MTU4: MTIOC4B" - None - - 
+      P0_2 D2 - - - - Disabled - - "Display: DISP_CLK; MTU0: MTIOC0C; MTU4: MTIOC4C; RIIC1: RIIC1_SDA" - None - - 
+      P0_3 C2 - - - - Disabled - - "Display: DISP_VSYNC; MTU0: MTIOC0D; MTU4: MTIOC4D; RIIC1: RIIC1_SCL" - None - - 
+      P10_0 W19 - - - - Disabled - - "IRQ: IRQ0; MTU: MTCLKA; MTU0: MTIOC0A; SCI0: SCI0_CTS_N_RTS_N; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P10_1 W20 - - - - Disabled - - "IRQ: IRQ1; MTU: MTCLKB; MTU0: MTIOC0B; SCI0: SCI0_SCK; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P10_2 V19 - - - - Disabled - - "IRQ: IRQ2; MTU: MTCLKC; MTU0: MTIOC0C; SCIF0: SCIF0_SCK; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P10_3 U20 GPIO - - - "Input mode" - - "IRQ: IRQ3; MTU: MTCLKD; MTU0: MTIOC0D; SCIF0: SCIF0_CTS_N; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - IO - - 
+      P11_0 T19 - - - - Disabled - - "IRQ: IRQ4; SCIF0: SCIF0_RTS_N; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - None - - 
+      P11_1 T20 - - - - Disabled - - "IRQ: IRQ5; SCI1: SCI1_CTS_N_RTS_N; SSI: AUDIO_CLK2" - None - - 
+      P11_2 R19 - - - - Disabled - - "IRQ: IRQ6; MTU1: MTIOC1A; POE: POE0_N; RSPI0: RSPI0_CK; SCI1: SCI1_SCK; SD0: SD0_WP" - None - - 
+      P11_3 P19 - - - - Disabled - - "IRQ: IRQ7; MTU1: MTIOC1B; POE: POE4_N; RSPI0: RSPI0_MOSI; SCIF2: SCIF2_SCK; SD0: SD0_CD" - None - - 
+      P12_0 P20 - - - - Disabled - - "MTU2: MTIOC2A; POE: POE8_N; RSPI0: RSPI0_MISO; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P12_1 N19 - - - - Disabled - - "MTU2: MTIOC2B; POE: POE10_N; RSPI0: RSPI0_SSL; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P1_0 D1 - - - - Disabled - - "Display: DISP_DATA0; SCIF1: SCIF1_TXD" - None - - 
+      P1_1 B2 - - - - Disabled - - "Display: DISP_DATA1; MTU: MTCLKA; SCIF1: SCIF1_RXD" - None - - 
+      P1_2 C1 - - - - Disabled - - "Display: DISP_DATA2; MTU: MTCLKB; RSPI1: RSPI1_CK; SCIF1: SCIF1_SCK; SSI0: SSI0_BCK" - None - - 
+      P1_3 B1 - - - - Disabled - - "Display: DISP_DATA3; MTU: MTCLKC; RSPI1: RSPI1_MOSI; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RCK" - None - - 
+      P1_4 B3 - - - - Disabled - - "Display: DISP_DATA4; MTU: MTCLKD; MTU3: MTIOC3A; RSPI1: RSPI1_MISO; SCIF1: SCIF1_RTS_N; SSI0: SSI0_TXD" - None - - 
+      P20_0 A19 RST_BOOT_MD_BOOT0 - Middle - "Peripheral mode" - - "RSPI1: RSPI1_CK; RST_BOOT: MD_BOOT0; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - I - - 
+      P20_1 B18 RST_BOOT_MD_BOOT1 - Middle - "Peripheral mode" - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; RST_BOOT: MD_BOOT1; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - I - - 
+      P20_2 A18 RST_BOOT_MD_BOOT2 - Middle - "Peripheral mode" - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; RST_BOOT: MD_BOOT2; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - I - - 
+      P20_3 A17 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; RST_BOOT: MD_CLKS; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P20_4 R20 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; RST_BOOT: MD_OSCDRV0; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P20_5 N20 RST_BOOT_MD_OSCDRV1 - Middle - "Peripheral mode" - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; RST_BOOT: MD_OSCDRV1; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - I - - 
+      P21_0 U2 - - - - Disabled - - "JTAG/SWD: TDI" - None - - 
+      P21_1 T2 - - - - Disabled - - "JTAG/SWD: TDO_SWO" - None - - 
+      P21_2 K6 - - - - Disabled - - "JTAG/SWD: TRST_N" - None - - 
+      P22_0 N1 SD0_SD0_CMD - High - "Peripheral mode" - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SD0: SD0_CMD; SSI0: SSI0_BCK" - IO - - 
+      P22_1 N2 SD0_SD0_DATA0 - High - "Peripheral mode" - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SD0: SD0_DATA0; SSI0: SSI0_RCK" - IO - - 
+      P22_2 R1 SD0_SD0_DATA1 - High - "Peripheral mode" - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SD0: SD0_DATA1; SSI0: SSI0_TXD" - IO - - 
+      P22_3 P1 SD0_SD0_DATA2 - High - "Peripheral mode" - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SD0: SD0_DATA2; SSI0: SSI0_RXD" - IO - - 
+      P22_4 L2 SD0_SD0_DATA3 - High - "Peripheral mode" - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SD0: SD0_DATA3; SSI: AUDIO_CLK1" - IO - - 
+      P23_0 F2 - - - - Disabled - - "SPIBSC: QSPI0_IO2" - None - - 
+      P23_1 G1 - - - - Disabled - - "SPIBSC: QSPI0_IO3" - None - - 
+      P2_0 A2 - - - - Disabled - - "Display: DISP_DATA5; MTU3: MTIOC3B; MTU5: MTIC5U; RSPI1: RSPI1_SSL; SCIF2: SCIF2_SCK; SSI0: SSI0_RXD" - None - - 
+      P2_1 B4 - - - - Disabled - - "Display: DISP_DATA6; MTU3: MTIOC3C; MTU5: MTIC5V; SCI1: SCI1_CTS_N_RTS_N; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P2_2 A3 - - - - Disabled - - "Display: DISP_DATA7; MTU3: MTIOC3D; MTU5: MTIC5W; SCI1: SCI1_SCK; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P2_3 B5 - - - - Disabled - - "Display: DISP_DATA8; RIIC1: RIIC1_SDA; SCI1: SCI1_TXD; SCIF2: SCIF2_TXD" - None - - 
+      P3_0 H6 - - - - Disabled - - "Display: DISP_DATA9; RIIC1: RIIC1_SCL; SCI1: SCI1_RXD; SCIF2: SCIF2_RXD" - None - - 
+      P3_1 G6 SD0_SD0_CD - Middle - "Peripheral mode" - - "Display: DISP_DATA10; IRQ: IRQ2; MTU6: MTIOC6A; SD0: SD0_CD; SSI: AUDIO_CLK1" - I - - 
+      P3_2 F9 - - - - Disabled - - "Display: DISP_DATA11; IRQ: IRQ3; MTU6: MTIOC6B; SD0: SD0_WP; SSI: AUDIO_CLK2" - None - - 
+      P3_3 F10 - - - - Disabled - - "Display: DISP_DATA12; IRQ: IRQ4; MTU6: MTIOC6C" - None - - 
+      P4_0 A4 - - - - Disabled - - "Display: DISP_DATA13; MTU6: MTIOC6D" - None - - 
+      P4_1 B6 - - - - Disabled - - "Display: DISP_DATA14; MTU7: MTIOC7A; SCI0: SCI0_CTS_N_RTS_N; SD0: SD0_CD" - None - - 
+      P4_2 A5 - - - - Disabled - - "Display: DISP_DATA15; MTU7: MTIOC7B; SCI0: SCI0_SCK; SCIF3: SCIF3_SCK; SD0: SD0_WP" - None - - 
+      P4_3 B7 - - - - Disabled - - "Display: DISP_DATA16; RIIC1: RIIC1_SDA; SCI0: SCI0_TXD; SCIF3: SCIF3_TXD" - None - - 
+      P4_4 A6 - - - - Disabled - - "Display: DISP_DATA17; RIIC1: RIIC1_SCL; SCI0: SCI0_RXD; SCIF3: SCIF3_RXD" - None - - 
+      P4_5 B8 - - - - Disabled - - "Display: DISP_DATA18; IRQ: IRQ5; MTU7: MTIOC7C; RSPI0: RSPI0_CK" - None - - 
+      P5_0 A7 - - - - Disabled - - "Display: DISP_DATA19; IRQ: IRQ6; MTU7: MTIOC7D; RSPI0: RSPI0_MOSI" - None - - 
+      P5_1 B10 - - - - Disabled - - "Display: DISP_DATA20; IRQ: IRQ7; MTU8: MTIOC8A; POE: POE0_N; RSPI0: RSPI0_MISO" - None - - 
+      P5_2 A8 - - - - Disabled - - "Display: DISP_DATA21; MTU8: MTIOC8B; POE: POE4_N; RSPI0: RSPI0_SSL; SCIF0: SCIF0_CTS_N; SSI: AUDIO_CLK1" - None - - 
+      P5_3 B11 - - - - Disabled - - "Display: DISP_DATA22; MTU2: MTIOC2A; MTU8: MTIOC8C; POE: POE8_N; RIIC1: RIIC1_SDA; SCIF0: SCIF0_RTS_N" - None - - 
+      P5_4 A9 - - - - Disabled - - "Display: DISP_DATA23; MTU2: MTIOC2B; MTU8: MTIOC8D; POE: POE10_N; RIIC1: RIIC1_SCL; SCIF0: SCIF0_SCK" - None - - 
+      P6_0 B9 SCIF0_SCIF0_TXD - Low - "Peripheral mode" - - "SCIF0: SCIF0_TXD" - O - - 
+      P6_1 F11 SCIF0_SCIF0_RXD - Low - "Peripheral mode" - - "SCIF0: SCIF0_RXD" - I - - 
+      P6_2 G11 - - - - Disabled - - "SCIF3: SCIF3_TXD; USB0: USB0_OVRCUR" - None - - 
+      P6_3 F12 - - - - Disabled - - "SCIF3: SCIF3_RXD; USB0: USB0_VBUSEN" - None - - 
+      P6_4 B12 - - - - Disabled - - "SCIF3: SCIF3_SCK; SSI: AUDIO_CLK2" - None - - 
+      P7_0 A10 - - - - Disabled - - "RSPI1: RSPI1_CK; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - None - - 
+      P7_1 B13 - - - - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - None - - 
+      P8_0 A11 - - - - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - None - - 
+      P8_1 A12 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P8_2 B14 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P8_3 B15 - - - - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - None - - 
+      P9_0 A13 - - - - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P9_1 A14 - - - - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P9_2 A15 - - - - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P9_3 A16 - - - - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - None - - 
+      P9_4 B16 GPIO - Middle - "Output mode (Low & Not Into Input)" - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - IO - - 
+      PLL1_AVDD18 L1 "Power, System_PLL1_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_AVDD18 U1 "Power, System_PLL23_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_DVDD11 V1 "Power, System_PLL23_DVDD11" - - - - - - - - IO "Read only" - 
+      PLL4_AVDD18 K10 "Power, System_PLL4_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_AVDD18 N6 "Power, System_PLL5_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_DVDD11 P6 "Power, System_PLL5_DVDD11" - - - - - - - - IO "Read only" - 
+      PRST_N W18 - - - - - - - - - None - - 
+      PVDD1 R9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 P9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 R10 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD2 F6 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      PVDD2 F7 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      QSPI0_IO0 G2 - - - - - - - - - None - - 
+      QSPI0_IO1 H1 - - - - - - - - - None - - 
+      QSPI0_SPCLK J1 - - - - - - - - - None - - 
+      QSPI0_SSL H2 - - - - - - - - - None - - 
+      RIIC0_SCL C19 - - - - - - - - - None - - 
+      RIIC0_SDA C20 - - - - - - - - - None - - 
+      SD0_CLK M2 - - - - - - - - - None - - 
+      SD0_PVDD K2 "Power, System_SD0_PVDD" - - - - - - - - IO "Read only" - 
+      SPI_PVDD K1 "Power, System_SPI_PVDD" - - - - - - - - IO "Read only" - 
+      SWD_JTAG B19 - - - - - - - - - None - - 
+      TCK_SWDCLK L7 - - - - - - - - - None - - 
+      TMS_SWDIO L6 - - - - - - - - - None - - 
+      TS_AVDD18 R2 "Power, System_TS_AVDD18" - - - - - - - - IO "Read only" - 
+      USB0_DM W12 - - - - - - - - - None - - 
+      USB0_DP Y13 - - - - - - - - - None - - 
+      USB0_VBUSIN Y18 - - - - - - - - - None - - 
+      USB_AVDD18 W14 "Power, System_USB_AVDD18" - - - - - - - - IO "Read only" - 
+      USB_RREF W11 "Power, System_USB_RREF" - - - - - - - - IO "Read only" - 
+      USB_VDD18 Y14 "Power, System_USB_VDD18" - - - - - - - - IO "Read only" - 
+      USB_VDD33 Y11 "Power, System_USB_VDD33" - - - - - - - - IO "Read only" - 
+      USB_VSS Y10 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y12 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y15 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS W13 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      VDD G7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD G8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H9 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M6 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VREF K20 - - - - - - - - - None - - 
+      VSS J20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS T1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W17 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W4 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y5 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS D19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R11 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      WDTOVF_PERROUT U19 - - - - - - - - - None - - 
+      XIN W16 "Power, System_XIN" - - - - - - - - IO "Read only" - 
+      XOUT Y17 "Power, System_XOUT" - - - - - - - - IO "Read only" - 
+      ZQ H20 - - - - - - - - - None - - 
+    RZA3M-EK-NOR.pincfg -> 
+      BSCANP Y19 - - - - - - - - - None - - 
+      CPUHOLD B17 - - - - - - - - - None - - 
+      DDR_CALIBRATION D20 - - - - - - - - - None - - 
+      DDR_CLK_N F19 - - - - - - - - - None - - 
+      DDR_CLK_P F20 - - - - - - - - - None - - 
+      DDR_CS_DRAM K15 - - - - - - - - - None - - 
+      DDR_CS_SOC J15 - - - - - - - - - None - - 
+      DDR_VDDQ1 H11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 P11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 N11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 M11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 L11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 K11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ1 J11 "Power, System_DDR_VDDQ1" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 H19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 M19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 L20 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 K19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DDR_VDDQ2 J19 "Power, System_DDR_VDDQ2" - - - - - - - - IO "Read only" - 
+      DEBUGEN V20 - - - - - - - - - None - - 
+      DSI_CLKN Y6 - - - - - - - - - None - - 
+      DSI_CLKP W6 - - - - - - - - - None - - 
+      DSI_DATA0_N W5 - - - - - - - - - None - - 
+      DSI_DATA0_P Y4 - - - - - - - - - None - - 
+      DSI_DATA1_N W8 - - - - - - - - - None - - 
+      DSI_DATA1_P Y7 - - - - - - - - - None - - 
+      DSI_DATA2_N Y3 - - - - - - - - - None - - 
+      DSI_DATA2_P W3 - - - - - - - - - None - - 
+      DSI_DATA3_N Y9 - - - - - - - - - None - - 
+      DSI_DATA3_P W9 - - - - - - - - - None - - 
+      DSI_VDD18 W2 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      DSI_VDD18 Y1 "Power, System_DSI_VDD18" - - - - - - - - IO "Read only" - 
+      EXTAL Y16 "Power, System_EXTAL" - - - - - - - - IO "Read only" - 
+      JTAG_PVDD V2 "Power, System_JTAG_PVDD" - - - - - - - - IO "Read only" - 
+      NMI B20 - - - - - - - - - None - - 
+      OTP_VDD18 P2 "Power, System_OTP_VDD18" - - - - - - - - IO "Read only" - 
+      P0_0 E2 - - - - Disabled - - "Display: DISP_HSYNC; IRQ: IRQ0; MTU0: MTIOC0A; MTU1: MTIOC1A; MTU4: MTIOC4A" - None - - 
+      P0_1 E1 - - - - Disabled - - "Display: DISP_DE; IRQ: IRQ1; MTU0: MTIOC0B; MTU1: MTIOC1B; MTU4: MTIOC4B" - None - - 
+      P0_2 D2 - - - - Disabled - - "Display: DISP_CLK; MTU0: MTIOC0C; MTU4: MTIOC4C; RIIC1: RIIC1_SDA" - None - - 
+      P0_3 C2 - - - - Disabled - - "Display: DISP_VSYNC; MTU0: MTIOC0D; MTU4: MTIOC4D; RIIC1: RIIC1_SCL" - None - - 
+      P10_0 W19 - - - - Disabled - - "IRQ: IRQ0; MTU: MTCLKA; MTU0: MTIOC0A; SCI0: SCI0_CTS_N_RTS_N; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P10_1 W20 GPIO - - - "Output mode (Low & Not Into Input)" - - "IRQ: IRQ1; MTU: MTCLKB; MTU0: MTIOC0B; SCI0: SCI0_SCK; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P10_2 V19 - - - - Disabled - - "IRQ: IRQ2; MTU: MTCLKC; MTU0: MTIOC0C; SCIF0: SCIF0_SCK; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P10_3 U20 - - - - Disabled - - "IRQ: IRQ3; MTU: MTCLKD; MTU0: MTIOC0D; SCIF0: SCIF0_CTS_N; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - IO - - 
+      P11_0 T19 - - - - Disabled - - "IRQ: IRQ4; SCIF0: SCIF0_RTS_N; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - None - - 
+      P11_1 T20 - - - - Disabled - - "IRQ: IRQ5; SCI1: SCI1_CTS_N_RTS_N; SSI: AUDIO_CLK2" - None - - 
+      P11_2 R19 - - - - Disabled - - "IRQ: IRQ6; MTU1: MTIOC1A; POE: POE0_N; RSPI0: RSPI0_CK; SCI1: SCI1_SCK; SD0: SD0_WP" - None - - 
+      P11_3 P19 - - - - Disabled - - "IRQ: IRQ7; MTU1: MTIOC1B; POE: POE4_N; RSPI0: RSPI0_MOSI; SCIF2: SCIF2_SCK; SD0: SD0_CD" - None - - 
+      P12_0 P20 - - - - Disabled - - "MTU2: MTIOC2A; POE: POE8_N; RSPI0: RSPI0_MISO; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P12_1 N19 - - - - Disabled - - "MTU2: MTIOC2B; POE: POE10_N; RSPI0: RSPI0_SSL; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P1_0 D1 - - - - Disabled - - "Display: DISP_DATA0; SCIF1: SCIF1_TXD" - None - - 
+      P1_1 B2 - - - - Disabled - - "Display: DISP_DATA1; MTU: MTCLKA; SCIF1: SCIF1_RXD" - None - - 
+      P1_2 C1 - - - - Disabled - - "Display: DISP_DATA2; MTU: MTCLKB; RSPI1: RSPI1_CK; SCIF1: SCIF1_SCK; SSI0: SSI0_BCK" - None - - 
+      P1_3 B1 - - - - Disabled - - "Display: DISP_DATA3; MTU: MTCLKC; RSPI1: RSPI1_MOSI; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RCK" - None - - 
+      P1_4 B3 - - - - Disabled - - "Display: DISP_DATA4; MTU: MTCLKD; MTU3: MTIOC3A; RSPI1: RSPI1_MISO; SCIF1: SCIF1_RTS_N; SSI0: SSI0_TXD" - None - - 
+      P20_0 A19 RST_BOOT_MD_BOOT0 - Middle - "Peripheral mode" - - "RSPI1: RSPI1_CK; RST_BOOT: MD_BOOT0; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - I - - 
+      P20_1 B18 RST_BOOT_MD_BOOT1 - Middle - "Peripheral mode" - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; RST_BOOT: MD_BOOT1; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - I - - 
+      P20_2 A18 RST_BOOT_MD_BOOT2 - Middle - "Peripheral mode" - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; RST_BOOT: MD_BOOT2; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - I - - 
+      P20_3 A17 GPIO - - - "Output mode (Low & Not Into Input)" - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; RST_BOOT: MD_CLKS; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P20_4 R20 GPIO - - - "Output mode (Low & Not Into Input)" - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; RST_BOOT: MD_OSCDRV0; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P20_5 N20 RST_BOOT_MD_OSCDRV1 - Middle - "Peripheral mode" - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; RST_BOOT: MD_OSCDRV1; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - I - - 
+      P21_0 U2 JTAG/SWD_TDI - - - "Peripheral mode" - - "JTAG/SWD: TDI" - None - - 
+      P21_1 T2 JTAG/SWD_TDO_SWO - - - "Peripheral mode" - - "JTAG/SWD: TDO_SWO" - None - - 
+      P21_2 K6 JTAG/SWD_TRST_N - - - "Peripheral mode" - - "JTAG/SWD: TRST_N" - None - - 
+      P22_0 N1 - - High - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SD0: SD0_CMD; SSI0: SSI0_BCK" - IO - - 
+      P22_1 N2 - - High - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SD0: SD0_DATA0; SSI0: SSI0_RCK" - IO - - 
+      P22_2 R1 - - High - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SD0: SD0_DATA1; SSI0: SSI0_TXD" - IO - - 
+      P22_3 P1 - - High - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SD0: SD0_DATA2; SSI0: SSI0_RXD" - IO - - 
+      P22_4 L2 - - High - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SD0: SD0_DATA3; SSI: AUDIO_CLK1" - IO - - 
+      P23_0 F2 - - - - Disabled - - "SPIBSC: QSPI0_IO2" - None - - 
+      P23_1 G1 - - - - Disabled - - "SPIBSC: QSPI0_IO3" - None - - 
+      P2_0 A2 - - - - Disabled - - "Display: DISP_DATA5; MTU3: MTIOC3B; MTU5: MTIC5U; RSPI1: RSPI1_SSL; SCIF2: SCIF2_SCK; SSI0: SSI0_RXD" - None - - 
+      P2_1 B4 - - - - Disabled - - "Display: DISP_DATA6; MTU3: MTIOC3C; MTU5: MTIC5V; SCI1: SCI1_CTS_N_RTS_N; SCIF2: SCIF2_CTS_N; USB0: USB0_OVRCUR" - None - - 
+      P2_2 A3 - - - - Disabled - - "Display: DISP_DATA7; MTU3: MTIOC3D; MTU5: MTIC5W; SCI1: SCI1_SCK; SCIF2: SCIF2_RTS_N; USB0: USB0_VBUSEN" - None - - 
+      P2_3 B5 - - - - Disabled - - "Display: DISP_DATA8; RIIC1: RIIC1_SDA; SCI1: SCI1_TXD; SCIF2: SCIF2_TXD" - None - - 
+      P3_0 H6 - - - - Disabled - - "Display: DISP_DATA9; RIIC1: RIIC1_SCL; SCI1: SCI1_RXD; SCIF2: SCIF2_RXD" - None - - 
+      P3_1 G6 - - Middle - Disabled - - "Display: DISP_DATA10; IRQ: IRQ2; MTU6: MTIOC6A; SD0: SD0_CD; SSI: AUDIO_CLK1" - I - - 
+      P3_2 F9 - - - - Disabled - - "Display: DISP_DATA11; IRQ: IRQ3; MTU6: MTIOC6B; SD0: SD0_WP; SSI: AUDIO_CLK2" - None - - 
+      P3_3 F10 - - - - Disabled - - "Display: DISP_DATA12; IRQ: IRQ4; MTU6: MTIOC6C" - None - - 
+      P4_0 A4 - - - - Disabled - - "Display: DISP_DATA13; MTU6: MTIOC6D" - None - - 
+      P4_1 B6 - - - - Disabled - - "Display: DISP_DATA14; MTU7: MTIOC7A; SCI0: SCI0_CTS_N_RTS_N; SD0: SD0_CD" - None - - 
+      P4_2 A5 - - - - Disabled - - "Display: DISP_DATA15; MTU7: MTIOC7B; SCI0: SCI0_SCK; SCIF3: SCIF3_SCK; SD0: SD0_WP" - None - - 
+      P4_3 B7 - - - - Disabled - - "Display: DISP_DATA16; RIIC1: RIIC1_SDA; SCI0: SCI0_TXD; SCIF3: SCIF3_TXD" - None - - 
+      P4_4 A6 - - - - Disabled - - "Display: DISP_DATA17; RIIC1: RIIC1_SCL; SCI0: SCI0_RXD; SCIF3: SCIF3_RXD" - None - - 
+      P4_5 B8 - - - - Disabled - - "Display: DISP_DATA18; IRQ: IRQ5; MTU7: MTIOC7C; RSPI0: RSPI0_CK" - None - - 
+      P5_0 A7 - - - - Disabled - - "Display: DISP_DATA19; IRQ: IRQ6; MTU7: MTIOC7D; RSPI0: RSPI0_MOSI" - None - - 
+      P5_1 B10 - - - - Disabled - - "Display: DISP_DATA20; IRQ: IRQ7; MTU8: MTIOC8A; POE: POE0_N; RSPI0: RSPI0_MISO" - None - - 
+      P5_2 A8 - - - - Disabled - - "Display: DISP_DATA21; MTU8: MTIOC8B; POE: POE4_N; RSPI0: RSPI0_SSL; SCIF0: SCIF0_CTS_N; SSI: AUDIO_CLK1" - None - - 
+      P5_3 B11 - - - - Disabled - - "Display: DISP_DATA22; MTU2: MTIOC2A; MTU8: MTIOC8C; POE: POE8_N; RIIC1: RIIC1_SDA; SCIF0: SCIF0_RTS_N" - None - - 
+      P5_4 A9 - - - - Disabled - - "Display: DISP_DATA23; MTU2: MTIOC2B; MTU8: MTIOC8D; POE: POE10_N; RIIC1: RIIC1_SCL; SCIF0: SCIF0_SCK" - None - - 
+      P6_0 B9 - - Middle - Disabled - - "SCIF0: SCIF0_TXD" - O - - 
+      P6_1 F11 - - Middle - Disabled - - "SCIF0: SCIF0_RXD" - I - - 
+      P6_2 G11 - - - - Disabled - - "SCIF3: SCIF3_TXD; USB0: USB0_OVRCUR" - None - - 
+      P6_3 F12 - - - - Disabled - - "SCIF3: SCIF3_RXD; USB0: USB0_VBUSEN" - None - - 
+      P6_4 B12 - - - - Disabled - - "SCIF3: SCIF3_SCK; SSI: AUDIO_CLK2" - None - - 
+      P7_0 A10 - - - - Disabled - - "RSPI1: RSPI1_CK; SCIF4: SCIF4_TXD; SSI0: SSI0_BCK; USB0: USB0_OVRCUR" - None - - 
+      P7_1 B13 - - - - Disabled - - "MTU1: MTIOC1A; RSPI1: RSPI1_MOSI; SCIF4: SCIF4_RXD; SSI0: SSI0_RCK; USB0: USB0_VBUSEN" - None - - 
+      P8_0 A11 - - - - Disabled - - "IRQ: IRQ0; MTU1: MTIOC1B; RSPI1: RSPI1_MISO; SCIF4: SCIF4_SCK; SSI0: SSI0_TXD" - None - - 
+      P8_1 A12 - - - - Disabled - - "IRQ: IRQ1; MTU2: MTIOC2A; RSPI1: RSPI1_SSL; SCIF3: SCIF3_SCK; SSI0: SSI0_RXD" - None - - 
+      P8_2 B14 - - - - Disabled - - "IRQ: IRQ2; MTU2: MTIOC2B; RIIC1: RIIC1_SDA; SCIF3: SCIF3_TXD; SSI: AUDIO_CLK1" - None - - 
+      P8_3 B15 - - - - Disabled - - "IRQ: IRQ3; RIIC1: RIIC1_SCL; SCIF3: SCIF3_RXD; SSI: AUDIO_CLK2" - None - - 
+      P9_0 A13 - - - - Disabled - - "RSPI0: RSPI0_CK; SCIF1: SCIF1_TXD; SSI0: SSI0_BCK" - None - - 
+      P9_1 A14 - - - - Disabled - - "IRQ: IRQ4; RSPI0: RSPI0_MOSI; SCIF1: SCIF1_RXD; SSI0: SSI0_RCK" - None - - 
+      P9_2 A15 - - - - Disabled - - "IRQ: IRQ5; RSPI0: RSPI0_MISO; SCIF1: SCIF1_SCK; SSI0: SSI0_TXD" - None - - 
+      P9_3 A16 - - - - Disabled - - "IRQ: IRQ6; RSPI0: RSPI0_SSL; SCIF1: SCIF1_CTS_N; SSI0: SSI0_RXD" - None - - 
+      P9_4 B16 - - Middle - Disabled - - "IRQ: IRQ7; SCIF1: SCIF1_RTS_N; SSI: AUDIO_CLK1" - IO - - 
+      PLL1_AVDD18 L1 "Power, System_PLL1_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_AVDD18 U1 "Power, System_PLL23_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL23_DVDD11 V1 "Power, System_PLL23_DVDD11" - - - - - - - - IO "Read only" - 
+      PLL4_AVDD18 K10 "Power, System_PLL4_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_AVDD18 N6 "Power, System_PLL5_AVDD18" - - - - - - - - IO "Read only" - 
+      PLL5_DVDD11 P6 "Power, System_PLL5_DVDD11" - - - - - - - - IO "Read only" - 
+      PRST_N W18 - - - - - - - - - None - - 
+      PVDD1 R9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 P9 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD1 R10 "Power, System_PVDD1" - - - - - - - - IO "Read only" - 
+      PVDD2 F6 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      PVDD2 F7 "Power, System_PVDD2" - - - - - - - - IO "Read only" - 
+      QSPI0_IO0 G2 - - - - - - - - - None - - 
+      QSPI0_IO1 H1 - - - - - - - - - None - - 
+      QSPI0_SPCLK J1 - - - - - - - - - None - - 
+      QSPI0_SSL H2 - - - - - - - - - None - - 
+      RIIC0_SCL C19 - - - - - - - - - None - - 
+      RIIC0_SDA C20 - - - - - - - - - None - - 
+      SD0_CLK M2 - - - - - - - - - None - - 
+      SD0_PVDD K2 "Power, System_SD0_PVDD" - - - - - - - - IO "Read only" - 
+      SPI_PVDD K1 "Power, System_SPI_PVDD" - - - - - - - - IO "Read only" - 
+      SWD_JTAG B19 - - - - - - - - - None - - 
+      TCK_SWDCLK L7 JTAG/SWD_TCK_SWDCLK - - - - - - - - None - - 
+      TMS_SWDIO L6 JTAG/SWD_TMS_SWDIO - - - - - - - - None - - 
+      TS_AVDD18 R2 "Power, System_TS_AVDD18" - - - - - - - - IO "Read only" - 
+      USB0_DM W12 - - - - - - - - - None - - 
+      USB0_DP Y13 - - - - - - - - - None - - 
+      USB0_VBUSIN Y18 - - - - - - - - - None - - 
+      USB_AVDD18 W14 "Power, System_USB_AVDD18" - - - - - - - - IO "Read only" - 
+      USB_RREF W11 "Power, System_USB_RREF" - - - - - - - - IO "Read only" - 
+      USB_VDD18 Y14 "Power, System_USB_VDD18" - - - - - - - - IO "Read only" - 
+      USB_VDD33 Y11 "Power, System_USB_VDD33" - - - - - - - - IO "Read only" - 
+      USB_VSS Y10 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y12 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS Y15 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      USB_VSS W13 "Power, System_USB_VSS" - - - - - - - - IO "Read only" - 
+      VDD G7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD G8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD H9 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M6 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD M8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N7 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VDD N8 "Power, System_VDD" - - - - - - - - IO "Read only" - 
+      VREF K20 - - - - - - - - - None - - 
+      VSS J20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS A20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS T1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS H15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W17 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W4 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS W7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS G9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS F15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y5 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS Y8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J2 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J6 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS E20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M20 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS D19 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS L15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M1 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS M9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS N9 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS K14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P7 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS P8 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J10 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS J13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R12 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R11 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R14 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R13 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      VSS R15 "Power, System_VSS" - - - - - - - - IO "Read only" - 
+      WDTOVF_PERROUT U19 - - - - - - - - - None - - 
+      XIN W16 "Power, System_XIN" - - - - - - - - IO "Read only" - 
+      XOUT Y17 "Power, System_XOUT" - - - - - - - - IO "Read only" - 
+      ZQ H20 - - - - - - - - - None - - 
+    
+  User Events
+    
+  Module "I/O Port (r_ioport)"
+    Parameter Checking: Default (BSP)
+    
+  Module "MMU Driver on r_mmu"
+    Parameter Checking: Default (BSP)
+    
+  Module "Timer (r_gtm)"
+    Parameter Checking: Default (BSP)
+    
+  Module "Azure RTOS ThreadX Port (rm_threadx_port)"
+  Module "UART Driver on r_scif_uart"
+    Parameter Checking: Default (BSP)
+    DMAC Support: Disable
+    RS485 Flow (Driver Enable) Control Support: Disable
+    
+  Module "Azure RTOS FileX on Block Media"
+    Error Checking: Enabled (default)
+    Common: Max Long Name Len: 
+    Common: Max Last Name Len: 
+    Common: Max Sector Cache: 
+    Common: Fat Map Size: 
+    Common: Max Fat Cache: 
+    Threading: Update Rate (Seconds): 
+    Threading: No Timer: Disabled (default)
+    Threading: Single Thread: Disabled (default)
+    Threading: Standalone: Disabled (default)
+    Extra Features: Don't Update Open Files: Disabled (default)
+    Extra Features: Media Search Cache: Enabled (default)
+    Extra Features: Direct Data Read Cache Fill: Enabled (default)
+    Extra Features: Media Statistics: Enabled (default)
+    Extra Features: Single Open Legacy: Disabled (default)
+    Extra Features: Rename Path Inherit: Disabled (default)
+    Extra Features: No Local Path: Disabled (default)
+    Extra Features: 64-bit LBA: Disabled (default)
+    Extra Features: Cache: Enabled (default)
+    Extra Features: File Close: Enabled (default)
+    Extra Features: Fast Close: Enabled (default)
+    Extra Features: Force Memory Operation: Enabled (default)
+    Extra Features: Build Options: Enabled (default)
+    Extra Features: One Line Function: Enabled (default)
+    Extra Features: FAT Entry Refresh: Enabled (default)
+    Extra Features: Consecutive Detect: Enabled (default)
+    Fault Tolerant: Fault Tolerant Service: Disabled (default)
+    Fault Tolerant: Fault Tolerant Data: Disabled (default)
+    Fault Tolerant: Fault Tolerant: Disabled (default)
+    Fault Tolerant: Fault Tolerant Boot Index: 
+    Extra Features: Enable exFAT: Disabled (default)
+    
+  Module "FileX I/O (rm_filex_block_media)"
+    Parameter Checking: Default (BSP)
+    
+  Module "Block Media SD/MMC (rm_block_media_sdmmc)"
+    Parameter Checking: Default (BSP)
+    
+  Module "SD/MMC (r_sdhi)"
+    Parameter Checking: Default (BSP)
+    Unaligned Access Support: Enabled
+    SD Support: Enabled
+    SDIO Support: Disabled
+    
+  Azure RTOS ThreadX
+    General: Custom tx_user.h: 
+    General: Error Checking: Enabled
+    Timer: Timer Ticks Per Second: 1000
+    General: Max Priorities: 32
+    General: Minimum Stack: 200
+    Timer: Timer Thread Stack Size: 1024
+    Timer: Timer Thread Priority: 0
+    Timer: Timer Process In ISR: Enabled
+    Timer: Reactivate Inline: Disabled
+    General: Stack Filling: Enabled
+    General: Preemption Threshold: Disabled
+    Timer: Timer: Enabled
+    General: Notify Callbacks: Disabled
+    General: Inline Thread Resume Suspend: Disabled
+    General: Not Interruptable: Disabled
+    Trace: Event Trace: Disabled
+    Trace: Trace Buffer Name: g_tx_trace_buffer
+    Trace: Memory section for Trace Buffer: .bss
+    Trace: Trace Buffer Size: 65536
+    Trace: Trace Buffer Number of Registries: 30
+    Performance: Block Pool Performance Info: Disabled
+    Performance: Byte Pool Performance Info: Disabled
+    Performance: Event Flags Performance Info: Disabled
+    Performance: Mutex Performance Info: Disabled
+    Performance: Queue Performance Info: Disabled
+    Performance: Semaphore Performance Info: Disabled
+    Performance: Thread Performance Info: Disabled
+    Performance: Timer Performance Info: Disabled
+    Interrupts: SysTick Interrupt Priority: Priority 0 (highest)
+    Interrupts: Maximum Interrupt Priority: Priority 0 (highest)
+    General: IAR Library Support: Disabled
+    General: BSD Support: Disabled
+    General: FileX Pointer: Enabled
+    General: Use FPU: Disabled
+    
+  HAL
+    Instance "g_ioport I/O Port (r_ioport)"
+      Name: g_ioport
+      Pin Configuration Name: g_bsp_pin_cfg
+      
+    Instance "Azure RTOS ThreadX Port (rm_threadx_port)"
+      Instance "g_timer0 Timer (r_gtm)"
+        General: Name: g_timer0
+        General: Channel: 0
+        General: Mode: Periodic
+        General: Period: 1000
+        General: Period Unit: Hertz
+        General: Count Source: P0CLK
+        Interrupts: Callback: NULL
+        Interrupts: Underflow Interrupt Priority: 30
+        Interrupts: Generate at Start: Disable
+        Extra Features: GTM Mode: Interval timer mode
+        
+    Instance "g_mmu MMU Driver on r_mmu"
+      Name: g_mmu
+      
+    Instance "g_uart0 UART Driver on r_scif_uart"
+      General: Name: g_uart0
+      General: Channel: 0
+      General: Data Bits: 8bits
+      General: Parity: None
+      General: Stop Bits: 1bit
+      Baud: Baud Rate: 115200
+      Baud: Baud Rate Modulation: Disabled
+      Baud: Max Error (%): 5
+      Flow Control: UART Communication Mode: RS232
+      Flow Control: RS485 Driver Enable Pin Polarity: Active High
+      Flow Control: RS485 Driver Enable Port: Disabled
+      Flow Control: RS485 Driver Enable Pin: Disabled
+      Flow Control: RS232C Automatic Flow Control: Disabled
+      Extra: Clock Source: Internal Clock
+      Extra: Noise Filter: Disable
+      Extra: Receive FIFO Trigger Level: Max
+      Extra: Receive FIFO RTS Trigger Level: 14
+      Interrupts: Callback: uart0_cb_stdio
+      Interrupts: Error Interrupt (ERI) Priority: 24
+      Interrupts: Error Interrupt (BRI) Priority: 24
+      Interrupts: Receive Interrupt Priority: 24
+      Interrupts: Transmit Data Empty Interrupt Priority: 24
+      
+  Thread "New Thread"
+    Symbol: filex_test_thread
+    Name: New Thread
+    Stack size (bytes): 4096
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_fx_media0 Azure RTOS FileX on Block Media"
+      Name: g_fx_media0
+      Volume Name: Volume 1
+      Number of FATs: 2
+      Directory Entries: 64000
+      Hidden Sectors: 0
+      Total Sectors: 30375936
+      Bytes per Sector: 512
+      Sectors per Cluster: 32
+      Volume Serial Number (exFAT only): 12345
+      Boundary Unit (exFAT only): 128
+      Working media memory size: 1024
+      
+      Instance "g_rm_filex_block_media_0 FileX I/O (rm_filex_block_media)"
+        Name: g_rm_filex_block_media_0
+        Callback: g_rm_filex_block_media_0_callback
+        Partition Number: 0
+        
+        Instance "g_rm_block_media0 Block Media SD/MMC (rm_block_media_sdmmc)"
+          Name: g_rm_block_media0
+          Callback: rm_filex_block_media_memory_callback
+          
+          Instance "g_sdmmc0 SD/MMC (r_sdhi)"
+            Name: g_sdmmc0
+            Channel: 0
+            Bus Width: 4 Bits
+            Block Size: 512
+            Card Detection: CD Pin
+            Write Protection: WP Pin
+            Callback: rm_block_media_sdmmc_callback
+            OXMN Interrupt Priority: 24
+            OXASIO Interrupt Priority: 24
+            
+  Thread "Card Detection Thread"
+    Symbol: sd_card_detection_thread
+    Name: Card Detection Thread
+    Stack size (bytes): 1024
+    Priority: 24
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+  Object "g_media_event_flags Event Flags"
+    Name: New Event Flags
+    Symbol: g_media_event_flags
+    

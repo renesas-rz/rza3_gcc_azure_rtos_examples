@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<raConfiguration version="10">
+  <generalSettings>
+    <option key="#Board#" value="board.rza3m_ek_nor"/>
+    <option key="CPU" value="RZA3M"/>
+    <option key="Core" value="CA55_0"/>
+    <option key="#TargetName#" value="R9A07G066M04GBG"/>
+    <option key="#TargetARCHITECTURE#" value="cortex-a55"/>
+    <option key="#DeviceCommand#" value="R9A07G066M04GBG"/>
+    <option key="#RTOS#" value="rtos.threadx"/>
+    <option key="#pinconfiguration#" value="R9A07G066M04GBG.pincfg"/>
+    <option key="#FSPVersion#" value="3.5.0"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##rza3m_ref_nor##|Renesas##BSP##Board##rza3m_ek_nor##"/>
+    <option key="#SELECTED_TOOLCHAIN#" value="gcc-arm-a-profile-aarch64"/>
+    <option key="#ToolchainVersion#" value="13.2.1.20231009"/>
+  </generalSettings>
+  <raBspConfiguration/>
+  <raClockConfiguration>
+    <node id="board.clock.osc.freq" option="board.clock.osc.freq.value"/>
+    <node id="board.clock.pll1" option="board.clock.pll1.value"/>
+    <node id="board.clock.iclk.div" option="board.clock.iclk.div.1"/>
+    <node id="board.clock.iclk.display" option="board.clock.iclk.display.value"/>
+    <node id="board.clock.pll2_1600" option="board.clock.pll2_1600.value"/>
+    <node id="board.clock.pll2_1600.div1" option="board.clock.pll2_1600.div1.2"/>
+    <node id="board.clock.pll2_1600.div2" option="board.clock.pll2_1600.div2.2"/>
+    <node id="board.clock.pll2_533" option="board.clock.pll2_533.value"/>
+    <node id="board.clock.sd0clk.sel" option="board.clock.sd0clk.sel.400"/>
+    <node id="board.clock.sd0clk.display" option="board.clock.sd0clk.display.value"/>
+    <node id="board.clock.pll2_533.div1" option="board.clock.pll2_533.div1.2"/>
+    <node id="board.clock.pll2_1600.div3" option="board.clock.pll2_1600.div3.8"/>
+    <node id="board.clock.p0clk.div" option="board.clock.p0clk.div.1"/>
+    <node id="board.clock.p0clk.display" option="board.clock.p0clk.display.value"/>
+    <node id="board.clock.pll2_1600.div4" option="board.clock.pll2_1600.div4.10"/>
+    <node id="board.clock.tsuclk.display" option="board.clock.tsuclk.display.value"/>
+    <node id="board.clock.pll3_1600" option="board.clock.pll3_1600.value"/>
+    <node id="board.clock.pll3_1600.div1" option="board.clock.pll3_1600.div1.2"/>
+    <node id="board.clock.pll3_1600.div2" option="board.clock.pll3_1600.div2.2"/>
+    <node id="board.clock.atclk.display" option="board.clock.atclk.display.value"/>
+    <node id="board.clock.pll3_1600.div3" option="board.clock.pll3_1600.div3.4"/>
+    <node id="board.clock.i2clk.div" option="board.clock.i2clk.div.1"/>
+    <node id="board.clock.i2clk.display" option="board.clock.i2clk.display.value"/>
+    <node id="board.clock.p1clk.div" option="board.clock.p1clk.div.1"/>
+    <node id="board.clock.p1clk.display" option="board.clock.p1clk.display.value"/>
+    <node id="board.clock.m0clk.display" option="board.clock.m0clk.display.value"/>
+    <node id="board.clock.pll3_1600.div4" option="board.clock.pll3_1600.div4.2"/>
+    <node id="board.clock.ztclk.display" option="board.clock.ztclk.display.value"/>
+    <node id="board.clock.p2clk.div" option="board.clock.p2clk.div.1"/>
+    <node id="board.clock.p2clk.display" option="board.clock.p2clk.display.value"/>
+    <node id="board.clock.pll3_533" option="board.clock.pll3_533.value"/>
+    <node id="board.clock.sel_pll3_3.sel" option="board.clock.sel_pll3_3.sel.533"/>
+    <node id="board.clock.div_pll3_c.div" option="board.clock.div_pll3_c.div.2"/>
+    <node id="board.clock.div_pll3_c.div.div1" option="board.clock.div_pll3_c.div.div1.2"/>
+    <node id="board.clock.spi0clk.display" option="board.clock.spi0clk.display.value"/>
+    <node id="board.clock.spi0clk.qspi0spclk.display" option="board.clock.spi0clk.qspi0spclk.display.value"/>
+    <node id="board.clock.pll3_400" option="board.clock.pll3_400.value"/>
+    <node id="board.clock.div_pll3_c.div.div2" option="board.clock.div_pll3_c.div.div2.2"/>
+    <node id="board.clock.spi1clk.display" option="board.clock.spi1clk.display.value"/>
+    <node id="board.clock.pll3_533.div1" option="board.clock.pll3_533.div1.2"/>
+    <node id="board.clock.m2clk.display" option="board.clock.m2clk.display.value"/>
+    <node id="board.clock.osc.div" option="board.clock.osc.div.1000"/>
+    <node id="board.clock.pll4" option="board.clock.pll4.1600"/>
+    <node id="board.clock.sel_pll4.sel" option="board.clock.sel_pll4.sel.1600"/>
+    <node id="board.clock.sel_pll4.div" option="board.clock.sel_pll4.div.2"/>
+    <node id="board.clock.s0clk.display" option="board.clock.s0clk.display.value"/>
+    <node id="board.clock.pll5_fout1ph0" option="board.clock.pll5_fout1ph0.value"/>
+    <node id="board.clock.pll5_foutpostdiv_set" mul="750000000" option="_edit"/>
+    <node id="board.clock.pll5_refdiv" option="board.clock.pll5_refdiv.value"/>
+    <node id="board.clock.pll5_intin" option="board.clock.pll5_intin.value"/>
+    <node id="board.clock.pll5_fracin" option="board.clock.pll5_fracin.value"/>
+    <node id="board.clock.pll5_postdiv1" option="board.clock.pll5_postdiv1.value"/>
+    <node id="board.clock.pll5_postdiv2" option="board.clock.pll5_postdiv2.value"/>
+    <node id="board.clock.pll5_foutpostdiv" option="board.clock.pll5_foutpostdiv.value"/>
+    <node id="board.clock.sel_pll5_4.sel" option="board.clock.sel_pll5_4.sel.foutpostdiv"/>
+    <node id="board.clock.div_dsi_a.div" option="board.clock.div_dsi_a.div.1"/>
+    <node id="board.clock.div_dsi_b.div" option="board.clock.div_dsi_b.div.11"/>
+    <node id="board.clock.m3clk.display" option="board.clock.m3clk.display.value"/>
+    <node id="board.clock.m1clk.display" option="board.clock.m3clk.display.value"/>
+  </raClockConfiguration>
+  <raPinConfiguration>
+    <pincfg active="true" name="" symbol="">
+      <configSetting altId="display.disp_clk.p0_2" configurationId="display.disp_clk" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data0.p1_0" configurationId="display.disp_data0" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data1.p1_1" configurationId="display.disp_data1" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data10.p3_1" configurationId="display.disp_data10" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data11.p3_2" configurationId="display.disp_data11" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data12.p3_3" configurationId="display.disp_data12" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data13.p4_0" configurationId="display.disp_data13" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data14.p4_1" configurationId="display.disp_data14" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data15.p4_2" configurationId="display.disp_data15" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data16.p4_3" configurationId="display.disp_data16" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data17.p4_4" configurationId="display.disp_data17" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data18.p4_5" configurationId="display.disp_data18" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data19.p5_0" configurationId="display.disp_data19" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data2.p1_2" configurationId="display.disp_data2" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data20.p5_1" configurationId="display.disp_data20" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data21.p5_2" configurationId="display.disp_data21" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data22.p5_3" configurationId="display.disp_data22" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data23.p5_4" configurationId="display.disp_data23" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data3.p1_3" configurationId="display.disp_data3" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data4.p1_4" configurationId="display.disp_data4" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data5.p2_0" configurationId="display.disp_data5" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data6.p2_1" configurationId="display.disp_data6" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data7.p2_2" configurationId="display.disp_data7" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data8.p2_3" configurationId="display.disp_data8" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_data9.p3_0" configurationId="display.disp_data9" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_de.p0_1" configurationId="display.disp_de" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_hsync.p0_0" configurationId="display.disp_hsync" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="display.disp_vsync.p0_3" configurationId="display.disp_vsync" isUsedByDriver="true" peripheral="Display"/>
+      <configSetting altId="irq.irq1.p8_1" configurationId="irq.irq1" isUsedByDriver="true" peripheral="IRQ"/>
+      <configSetting altId="mipi.dsi_clkn.dsi_clkn" configurationId="mipi.dsi_clkn" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_clkp.dsi_clkp" configurationId="mipi.dsi_clkp" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data0_n.dsi_data0_n" configurationId="mipi.dsi_data0_n" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data0_p.dsi_data0_p" configurationId="mipi.dsi_data0_p" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data1_n.dsi_data1_n" configurationId="mipi.dsi_data1_n" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data1_p.dsi_data1_p" configurationId="mipi.dsi_data1_p" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data2_n.dsi_data2_n" configurationId="mipi.dsi_data2_n" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data2_p.dsi_data2_p" configurationId="mipi.dsi_data2_p" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data3_n.dsi_data3_n" configurationId="mipi.dsi_data3_n" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mipi.dsi_data3_p.dsi_data3_p" configurationId="mipi.dsi_data3_p" isUsedByDriver="true" peripheral="MIPI"/>
+      <configSetting altId="mtu0.mtioc0c.p10_2" configurationId="mtu0.mtioc0c" isUsedByDriver="true" peripheral="MTU0"/>
+      <configSetting altId="riic0.riic0_scl.riic0_scl" configurationId="riic0.riic0_scl" isUsedByDriver="true" peripheral="RIIC0"/>
+      <configSetting altId="riic0.riic0_sda.riic0_sda" configurationId="riic0.riic0_sda" isUsedByDriver="true" peripheral="RIIC0"/>
+      <configSetting altId="riic1.riic1_scl.p8_3" configurationId="riic1.riic1_scl" isUsedByDriver="true" peripheral="RIIC1"/>
+      <configSetting altId="riic1.riic1_sda.p8_2" configurationId="riic1.riic1_sda" isUsedByDriver="true" peripheral="RIIC1"/>
+      <configSetting altId="ssi0.ssi0_bck.p9_0" configurationId="ssi0.ssi0_bck" peripheral="SSI0"/>
+      <configSetting altId="ssi0.ssi0_rck.p9_1" configurationId="ssi0.ssi0_rck" peripheral="SSI0"/>
+      <configSetting altId="ssi0.ssi0_rxd.p9_3" configurationId="ssi0.ssi0_rxd" peripheral="SSI0"/>
+      <configSetting altId="ssi0.ssi0_txd.p9_2" configurationId="ssi0.ssi0_txd" peripheral="SSI0"/>
+      <configSetting altId="usb0.usb0_dm.usb0_dm" configurationId="usb0.usb0_dm" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_dp.usb0_dp" configurationId="usb0.usb0_dp" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_ovrcur.p6_2" configurationId="usb0.usb0_ovrcur" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_vbusen.p6_3" configurationId="usb0.usb0_vbusen" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_vbusin.usb0_vbusin" configurationId="usb0.usb0_vbusin" peripheral="USB0"/>
+    </pincfg>
+  </raPinConfiguration>
+</raConfiguration>

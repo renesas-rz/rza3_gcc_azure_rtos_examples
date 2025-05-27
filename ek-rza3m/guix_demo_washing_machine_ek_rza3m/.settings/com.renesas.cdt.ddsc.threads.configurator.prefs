@@ -1,0 +1,12 @@
+collapse/module.azure.gx.1566154249=false
+collapse/module.azure.usbx_driver.419093447=false
+collapse/module.azure.usbx_port.1073672393=false
+collapse/module.driver.display_on_lcdc.361809343=false
+collapse/module.driver.i2c_on_iic_master.849725019=false
+collapse/module.driver.i2c_on_iic_master.984828281=false
+collapse/module.driver.mipi_dsi.497562153=false
+collapse/module.driver.uart_on_scif_uart.1716703581=false
+collapse/module.driver.usbx_hhid.282244852=false
+collapse/module.middleware.rm_guix_port.187506410=false
+collapse/module.middleware.rm_threadx_port.0=false
+eclipse.preferences.version=1

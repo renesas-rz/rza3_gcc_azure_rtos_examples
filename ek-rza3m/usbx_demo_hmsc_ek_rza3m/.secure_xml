@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<raConfiguration version="10">
+  <generalSettings>
+    <option key="#Board#" value="board.rza3m_ek_nor"/>
+    <option key="CPU" value="RZA3M"/>
+    <option key="Core" value="CA55_0"/>
+    <option key="#TargetName#" value="R9A07G066M04GBG"/>
+    <option key="#TargetARCHITECTURE#" value="cortex-a55"/>
+    <option key="#DeviceCommand#" value="R9A07G066M04GBG"/>
+    <option key="#RTOS#" value="rtos.threadx"/>
+    <option key="#pinconfiguration#" value="R9A07G063U02GBG.pincfg"/>
+    <option key="#FSPVersion#" value="3.5.0"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##rza3ul_smarc_qspi##|Renesas##BSP##Board##rza3m_ref_nor##|Renesas##BSP##Board##rza3m_ek_nor##"/>
+    <option key="#SELECTED_TOOLCHAIN#" value="gcc-arm-a-profile-aarch64"/>
+    <option key="#ToolchainVersion#" value="13.2.1.20231009"/>
+  </generalSettings>
+  <raBspConfiguration/>
+  <raClockConfiguration>
+    <node id="board.clock.osc.freq" option="board.clock.osc.freq.value"/>
+    <node id="board.clock.pll1" option="board.clock.pll1.value"/>
+    <node id="board.clock.iclk.div" option="board.clock.iclk.div.1"/>
+    <node id="board.clock.iclk.display" option="board.clock.iclk.display.value"/>
+    <node id="board.clock.pll2_1600" option="board.clock.pll2_1600.value"/>
+    <node id="board.clock.pll2_1600.div1" option="board.clock.pll2_1600.div1.2"/>
+    <node id="board.clock.pll2_1600.div2" option="board.clock.pll2_1600.div2.2"/>
+    <node id="board.clock.pll2_533" option="board.clock.pll2_533.value"/>
+    <node id="board.clock.sd0clk.sel" option="board.clock.sd0clk.sel.400"/>
+    <node id="board.clock.sd0clk.display" option="board.clock.sd0clk.display.value"/>
+    <node id="board.clock.pll2_533.div1" option="board.clock.pll2_533.div1.2"/>
+    <node id="board.clock.pll2_1600.div3" option="board.clock.pll2_1600.div3.8"/>
+    <node id="board.clock.p0clk.div" option="board.clock.p0clk.div.1"/>
+    <node id="board.clock.p0clk.display" option="board.clock.p0clk.display.value"/>
+    <node id="board.clock.pll2_1600.div4" option="board.clock.pll2_1600.div4.10"/>
+    <node id="board.clock.tsuclk.display" option="board.clock.tsuclk.display.value"/>
+    <node id="board.clock.pll3_1600" option="board.clock.pll3_1600.value"/>
+    <node id="board.clock.pll3_1600.div1" option="board.clock.pll3_1600.div1.2"/>
+    <node id="board.clock.pll3_1600.div2" option="board.clock.pll3_1600.div2.2"/>
+    <node id="board.clock.atclk.display" option="board.clock.atclk.display.value"/>
+    <node id="board.clock.pll3_1600.div3" option="board.clock.pll3_1600.div3.4"/>
+    <node id="board.clock.i2clk.div" option="board.clock.i2clk.div.1"/>
+    <node id="board.clock.i2clk.display" option="board.clock.i2clk.display.value"/>
+    <node id="board.clock.p1clk.div" option="board.clock.p1clk.div.1"/>
+    <node id="board.clock.p1clk.display" option="board.clock.p1clk.display.value"/>
+    <node id="board.clock.m0clk.display" option="board.clock.m0clk.display.value"/>
+    <node id="board.clock.pll3_1600.div4" option="board.clock.pll3_1600.div4.2"/>
+    <node id="board.clock.ztclk.display" option="board.clock.ztclk.display.value"/>
+    <node id="board.clock.p2clk.div" option="board.clock.p2clk.div.1"/>
+    <node id="board.clock.p2clk.display" option="board.clock.p2clk.display.value"/>
+    <node id="board.clock.pll3_533" option="board.clock.pll3_533.value"/>
+    <node id="board.clock.sel_pll3_3.sel" option="board.clock.sel_pll3_3.sel.533"/>
+    <node id="board.clock.div_pll3_c.div" option="board.clock.div_pll3_c.div.2"/>
+    <node id="board.clock.div_pll3_c.div.div1" option="board.clock.div_pll3_c.div.div1.2"/>
+    <node id="board.clock.spi0clk.display" option="board.clock.spi0clk.display.value"/>
+    <node id="board.clock.spi0clk.qspi0spclk.display" option="board.clock.spi0clk.qspi0spclk.display.value"/>
+    <node id="board.clock.pll3_400" option="board.clock.pll3_400.value"/>
+    <node id="board.clock.div_pll3_c.div.div2" option="board.clock.div_pll3_c.div.div2.2"/>
+    <node id="board.clock.spi1clk.display" option="board.clock.spi1clk.display.value"/>
+    <node id="board.clock.pll3_533.div1" option="board.clock.pll3_533.div1.2"/>
+    <node id="board.clock.m2clk.display" option="board.clock.m2clk.display.value"/>
+    <node id="board.clock.osc.div" option="board.clock.osc.div.1000"/>
+    <node id="board.clock.pll4" option="board.clock.pll4.1600"/>
+    <node id="board.clock.sel_pll4.sel" option="board.clock.sel_pll4.sel.1600"/>
+    <node id="board.clock.sel_pll4.div" option="board.clock.sel_pll4.div.2"/>
+    <node id="board.clock.s0clk.display" option="board.clock.s0clk.display.value"/>
+    <node id="board.clock.pll5_fout1ph0" option="board.clock.pll5_fout1ph0.value"/>
+    <node id="board.clock.pll5_foutpostdiv_set" mul="750000000" option="_edit"/>
+    <node id="board.clock.pll5_refdiv" option="board.clock.pll5_refdiv.value"/>
+    <node id="board.clock.pll5_intin" option="board.clock.pll5_intin.value"/>
+    <node id="board.clock.pll5_fracin" option="board.clock.pll5_fracin.value"/>
+    <node id="board.clock.pll5_postdiv1" option="board.clock.pll5_postdiv1.value"/>
+    <node id="board.clock.pll5_postdiv2" option="board.clock.pll5_postdiv2.value"/>
+    <node id="board.clock.pll5_foutpostdiv" option="board.clock.pll5_foutpostdiv.value"/>
+    <node id="board.clock.sel_pll5_4.sel" option="board.clock.sel_pll5_4.sel.foutpostdiv"/>
+    <node id="board.clock.div_dsi_a.div" option="board.clock.div_dsi_a.div.1"/>
+    <node id="board.clock.div_dsi_b.div" option="board.clock.div_dsi_b.div.11"/>
+    <node id="board.clock.m3clk.display" option="board.clock.m3clk.display.value"/>
+    <node id="board.clock.m1clk.display" option="board.clock.m3clk.display.value"/>
+  </raClockConfiguration>
+  <raPinConfiguration>
+    <pincfg active="true" name="" symbol="">
+      <configSetting altId="scif0.scif0_rxd.p6_1" configurationId="scif0.scif0_rxd" isUsedByDriver="true" peripheral="SCIF0"/>
+      <configSetting altId="scif0.scif0_txd.p6_0" configurationId="scif0.scif0_txd" isUsedByDriver="true" peripheral="SCIF0"/>
+      <configSetting altId="usb0.usb0_dm.usb0_dm" configurationId="usb0.usb0_dm" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_dp.usb0_dp" configurationId="usb0.usb0_dp" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_ovrcur.p6_2" configurationId="usb0.usb0_ovrcur" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_vbusen.p6_3" configurationId="usb0.usb0_vbusen" peripheral="USB0"/>
+      <configSetting altId="usb0.usb0_vbusin.usb0_vbusin" configurationId="usb0.usb0_vbusin" peripheral="USB0"/>
+    </pincfg>
+  </raPinConfiguration>
+</raConfiguration>
