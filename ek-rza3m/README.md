@@ -29,7 +29,7 @@ This is the RZ/A3M Software Development Kit with Microsoft Azure Support. The SD
 
 
 For more information to set up your development environment, refer to the following document.   
-- [Getting Started with RZ/A Flexible Software Package](https://www.renesas.com/us/en/document/qsg/getting-started-rza-flexible-software-package)
+- [Getting Started with RZ/A Flexible Software Package](https://www.renesas.com/document/apn/rza-getting-started-flexible-software-package)
 - [EK-RZ/A3M User's Manual](https://www.renesas.com/ja/document/mah/rza3m-group-users-manual-hardware?r=25572905)  
 
 ## Microsoft Azure Demos
