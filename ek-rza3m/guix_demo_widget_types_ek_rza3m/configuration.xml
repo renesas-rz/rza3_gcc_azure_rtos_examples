@@ -105,10 +105,6 @@
     <node id="board.clock.m1clk.display" option="board.clock.m3clk.display.value"/>
   </raClockConfiguration>
   <raComponentSelection>
-    <component apiversion="" class="Common" condition="" group="all" subgroup="config" variant="" vendor="Renesas" version="3.4.0">
-      <description>RZA Configuration Template File</description>
-      <originalPack>Renesas.RZA_config.3.4.0.pack</originalPack>
-    </component>
     <component apiversion="" class="Azure" condition="" group="USBX" subgroup="hhid" variant="" vendor="Microsoft" version="6.4.0+fsp.3.5.0">
       <description>Azure RTOS USBX HHID</description>
       <originalPack>Microsoft.USBX.6.4.0+fsp.3.5.0.pack</originalPack>
@@ -200,6 +196,10 @@
     <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="rm_usbx_port" variant="" vendor="Renesas" version="3.5.0">
       <description>Porting layer for USBX</description>
       <originalPack>Renesas.RZA.3.5.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Common" condition="" group="all" subgroup="config" variant="" vendor="Renesas" version="3.5.0">
+      <description>RZA Configuration Template File</description>
+      <originalPack>Renesas.RZA_config.3.5.0.pack</originalPack>
     </component>
   </raComponentSelection>
   <raElcConfiguration/>
