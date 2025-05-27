@@ -1,43 +1,8 @@
 # RZ/A3UL Microsoft Azure SDK
 
 This is the RZ/A3UL Software Development Kit with Microsoft Azure Support. The SDK contains the RZ/A3UL Board Support Package and drivers for the RZ/A3UL target Processors, the Asure RTOS ( ThreadX ), Azure middleware ( FileX, GUIX, NetX duo, USBX ). In driver GPIO code generation has been integrated with the RZ/A3UL Flexible Software Package (FSP).
-
-## Microsoft Azure Libraries
-
-The [Microsoft Azure software](https://azure.microsoft.com/en-us/free/search/?&ef_id=EAIaIQobChMIo6et7eiu8AIVAh-tBh2tygWBEAAYAiAAEgIHcPD_BwE:G:s&OCID=AID2100131_SEM_EAIaIQobChMIo6et7eiu8AIVAh-tBh2tygWBEAAYAiAAEgIHcPD_BwE:G:s&gclid=EAIaIQobChMIo6et7eiu8AIVAh-tBh2tygWBEAAYAiAAEgIHcPD_BwE) is supported by the Azure Microsoft Team.  This repository includes the library debug binaries. The full source code for the listed libraries can be found [here](https://github.com/azure-rtos/).
-
-License
-
-- **Threadx**  
-  
-  This is the Microsoft Azure RTOS.  
-  To learn more about [Azure RTOS ThreadX](https://docs.microsoft.com/azure/rtos/threadx/).
-
-- **USBx**  
-
-  This is the USB middleware. It support both Host and Device. USB Class support include HID, MSC, CDC,   HUB, UVC, Audio, and printer.  
-  To learn more about [Azure RTOS USBX](https://docs.microsoft.com/azure/rtos/usbx/).  
-
-- **GUIx**  
-
-  This the GUI middleware. It supports 16, 24 and 32 bit color space. Resolution is dependent on the amount of internal memory ( i.e. 4MB RZ/A3UL ) or external memory.  
-  To learn more about [Azure RTOS GUIX](https://docs.microsoft.com/azure/rtos/guix/).  
-
-- **FileX**  
-
-  This is the RTOS file system. Supports RAM disk, USB and SD.  
-  To learn more about [Azure RTOS FileX](https://docs.microsoft.com/azure/rtos/filex/).  
-
-- **NetXDuo**  
-
-  This middware supports the network for IP4, Ip6, TCP, UDP, HTTP, Secure Socket Layer, Crypto libraries, and many more.  
-  To learn more about [Azure RTOS NetX Duo](https://docs.microsoft.com/azure/rtos/netx-duo/).  
-
-
-- **Azure IoT**  
-
-  As part of the NetxDuo the Azure IoT Cloud connectivity is included.  
-
+> **Notice: Microsoft AzureRTOS to be transitioned to Eclipse**  
+> See [LICENSE.md](https://github.com/renesas-rz/rza3_gcc_azure_rtos_examples/blob/main/LICENSE.md)
 
 
 ## Getting Started
