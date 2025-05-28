@@ -21,6 +21,12 @@ This is the RZ/A3UL Software Development Kit with Microsoft Azure Support. The S
 
 
 ### Development Environment  
+|Hardware|Version|
+|----|----|
+|[RZ/A3UL-EVKIT](https://www.renesas.com/products/microcontrollers-microprocessors/rz-mpus/rza3ul-evkit-rza3ul-evaluation-board-kit)|QSPI Eddition|
+|[Segger J-link](https://www.segger.com/products/debug-probes/j-link/)| - |
+> Note: RZ/A3UL-EVKIT Octal-SPI Eddition is not supported.
+
 |Software|Version|
 |----|----|
 |e<sup>2</sup> studio|2024-07 (24.7.0)|

@@ -18,7 +18,8 @@ This is the RZ/A3M Software Development Kit with Microsoft Azure Support. The SD
 ### Development Environment  
 |Hardware|
 |----|
-|EK-RZA3M|  
+|[EK-RZA3M](https://www.renesas.com/products/microcontrollers-microprocessors/rz-mpus/ek-rza3m-evaluation-kit-rza3m-mpu)|  
+|[Segger J-link](https://www.segger.com/products/debug-probes/j-link/)|  
 
 |Software|Version|
 |----|----|
