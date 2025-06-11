@@ -128,7 +128,7 @@ For more information to set up your development environment, refer to the follow
 
   The "usbx_demo_pcdc_rza3_fsp" is a sample project of USBX PCDC.  
   This sample project echoes back the input characters on the terminal.  
-  > This sample project works on RZ/A FSP v3.0.0.
+  > Note: This sample project works on RZ/A FSP v3.0.0.
   #### How to Excute
   1. Connect the PC and CN11 connector on the board.
   2. Download the project and start debugging.
