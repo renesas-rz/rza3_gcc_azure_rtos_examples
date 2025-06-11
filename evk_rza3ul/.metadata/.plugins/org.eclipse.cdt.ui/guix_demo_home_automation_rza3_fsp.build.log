@@ -1,8 +1,0 @@
-15:38:03 **** Incremental Build of configuration Debug for project guix_demo_home_automation_rza3_fsp ****
-make -r --output-sync -j8 all 
-aarch64-none-elf-size --format=berkeley "guix_demo_home_automation_rza3_fsp.elf"
-   text	   data	    bss	    dec	    hex	filename
-2043116	  24520	28729568	30797204	1d5ed94	guix_demo_home_automation_rza3_fsp.elf
-
-15:38:06 Build Finished. 0 errors, 0 warnings. (took 3s.797ms)
-

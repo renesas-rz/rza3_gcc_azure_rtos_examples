@@ -1,8 +1,0 @@
-15:39:34 **** Incremental Build of configuration Debug for project usbx_demo_huvc_netx_http_server_rza3_fsp ****
-make -r --output-sync -j8 all 
-aarch64-none-elf-size --format=berkeley "usbx_demo_huvc_netx_http_server_rza3_fsp.elf"
-   text	   data	    bss	    dec	    hex	filename
- 246764	  14824	5827536	6089124	 5ce9a4	usbx_demo_huvc_netx_http_server_rza3_fsp.elf
-
-15:39:36 Build Finished. 0 errors, 0 warnings. (took 2s.192ms)
-

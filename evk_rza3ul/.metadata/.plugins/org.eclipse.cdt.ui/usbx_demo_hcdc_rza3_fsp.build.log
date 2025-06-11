@@ -1,8 +1,0 @@
-15:39:01 **** Incremental Build of configuration Debug for project usbx_demo_hcdc_rza3_fsp ****
-make -r --output-sync -j8 all 
-aarch64-none-elf-size --format=berkeley "usbx_demo_hcdc_rza3_fsp.elf"
-   text	   data	    bss	    dec	    hex	filename
- 122092	  13496	3123200	3258788	 31b9a4	usbx_demo_hcdc_rza3_fsp.elf
-
-15:39:02 Build Finished. 0 errors, 0 warnings. (took 1s.271ms)
-
