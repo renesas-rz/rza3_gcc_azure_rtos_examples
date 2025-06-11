@@ -1,0 +1,8 @@
+15:38:53 **** Incremental Build of configuration Debug for project netx_demo_http_server_rza3_fsp ****
+make -r --output-sync -j8 all 
+aarch64-none-elf-size --format=berkeley "netx_demo_http_server_rza3_fsp.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 200684	  11736	2892192	3104612	 2f5f64	netx_demo_http_server_rza3_fsp.elf
+
+15:38:55 Build Finished. 0 errors, 0 warnings. (took 1s.754ms)
+

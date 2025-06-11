@@ -1,0 +1,8 @@
+15:38:24 **** Incremental Build of configuration Debug for project guix_demo_washing_machine_rza3_fsp ****
+make -r --output-sync -j8 all 
+aarch64-none-elf-size --format=berkeley "guix_demo_washing_machine_rza3_fsp.elf"
+   text	   data	    bss	    dec	    hex	filename
+3148012	  15808	29342576	32506396	1f0021c	guix_demo_washing_machine_rza3_fsp.elf
+
+15:38:27 Build Finished. 0 errors, 0 warnings. (took 3s.350ms)
+

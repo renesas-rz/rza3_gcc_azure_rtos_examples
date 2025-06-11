@@ -1,0 +1,15 @@
+Microsoft\#\#Azure\#\#USBX\#\#pcdc\#\#\#\#6.2.1+fsp.2.0.2/libraries=
+Microsoft\#\#RTOS\#\#Azure\#\#ThreadX\#\#\#\#6.2.1+fsp.2.0.2/libraries=
+Renesas\#\#BSP\#\#Board\#\#rza3ul_smarc_qspi\#\#\#\#2.0.2/libraries=
+Renesas\#\#BSP\#\#rza3ul\#\#device\#\#\#\#2.0.2/libraries=
+Renesas\#\#BSP\#\#rza3ul\#\#device\#\#R9A07G063U02GBG\#\#2.0.2/libraries=
+Renesas\#\#BSP\#\#rza3ul\#\#fsp\#\#\#\#2.0.2/libraries=
+Renesas\#\#Common\#\#all\#\#fsp_common\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#r_gtm\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#r_ioport\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#r_mmu\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#r_scif_uart\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#r_usb_basic\#\#\#\#2.0.2/libraries=
+Renesas\#\#HAL\ Drivers\#\#all\#\#rm_usbx_port\#\#\#\#2.0.2/libraries=
+Renesas\#\#Middleware\#\#all\#\#rm_threadx_port\#\#\#\#2.0.2/libraries=
+eclipse.preferences.version=1

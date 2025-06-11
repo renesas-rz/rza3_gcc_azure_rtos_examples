@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1749619237711" defaultVMConnector\="">\r\n    <vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n        <vm id\="1749619237711" name\="jre" path\="C\:\\Renesas\\e2_studio_2025-01\\eclipse\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\\jre"/>\r\n    </vmType>\r\n</vmSettings>\r\n

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rzone>
+    <device Dvendor="Renesas" Dname="R9A07G063U">
+        <processor Pname="CA55_0" Dcore="Cortex-A55" Dfpu="1" Dmpu="1" Dtz="NO_TZ" Ddsp="1" Dendian="Little-endian" Dclock="1000000000" DcoreVersion="r2p0" DnumInterrupts="512" DnumSauRegions="0" info="Core 0"/>
+    </device>
+    <resources>
+        <memories>
+            <memory name="SRAM" type="RAM" start="0x00010000" size="0x00020000" security=""/>
+            <memory name="FLASH" type="RAM" start="0x20000000" size="0x10000000" security=""/>
+            <memory name="DDR" type="RAM" start="0x40000040" size="0x3FFFFFC0" security=""/>
+            <memory name="OCTA_FLASH" type="RAM" start="0x20000000" size="0x08000000" security=""/>
+            <memory name="OCTA_RAM" type="RAM" start="0x28000000" size="0x04000000" security=""/>
+        </memories>
+        <peripherals/>
+    </resources>
+</rzone>

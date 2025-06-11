@@ -1,0 +1,597 @@
+14:24:28 **** Build of configuration Debug for project filex_demo_sdmmc_rza3_fsp ****
+make -r --output-sync -j8 all 
+Building file: ../src/sections.c
+Building file: ../src/filex_test_thread_entry.c
+In file included from ../src/filex_test_thread_entry.c:2:
+../src/filex_test_thread_entry.c: In function 'filex_test_thread_entry':
+../src/nonstdio.h:9:26: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+Building file: ../src/hal_entry.c
+    9 | #define io_thread_printf printf
+Building file: ../src/circular_buffer.c
+Building file: ../src/mmu_page_table.c
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:63:5: note: in expansion of macro 'io_thread_printf'
+   63 |     io_thread_printf("Waiting for media insert...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/filex_test_thread_entry.c:3:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    2 | #include "nonstdio.h"
+  +++ |+#include <stdio.h>
+    3 | 
+../src/nonstdio.h:9:26: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:63:5: note: in expansion of macro 'io_thread_printf'
+   63 |     io_thread_printf("Waiting for media insert...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/nonstdio.h:9:26: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:63:5: note: in expansion of macro 'io_thread_printf'
+Building file: ../src/syscalls.c
+   63 |     io_thread_printf("Waiting for media insert...\r\n");
+Building file: ../src/stdio_uart0.c
+      |     ^~~~~~~~~~~~~~~~
+../src/filex_test_thread_entry.c: In function 'filex_testing':
+../src/nonstdio.h:9:26: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:103:5: note: in expansion of macro 'io_thread_printf'
+  103 |     io_thread_printf("Initializing FileX...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/nonstdio.h:9:26: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:103:5: note: in expansion of macro 'io_thread_printf'
+  103 |     io_thread_printf("Initializing FileX...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/filex_test_thread_entry.c: In function 'format_media':
+../src/nonstdio.h:9:26: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:181:5: note: in expansion of macro 'io_thread_printf'
+  181 |     io_thread_printf("Formatting media\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/nonstdio.h:9:26: note: include '<stdio.h>' or provide a declaration of 'printf'
+Building file: ../rza_gen/common_data.c
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:181:5: note: in expansion of macro 'io_thread_printf'
+  181 |     io_thread_printf("Formatting media\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/filex_test_thread_entry.c: In function 'g_fx_media0_quick_setup':
+../src/nonstdio.h:9:26: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:209:5: note: in expansion of macro 'io_thread_printf'
+  209 |     io_thread_printf("opening media...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/nonstdio.h:9:26: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:209:5: note: in expansion of macro 'io_thread_printf'
+  209 |     io_thread_printf("opening media...\r\n");
+      |     ^~~~~~~~~~~~~~~~
+../src/filex_test_thread_entry.c: In function 'error_handler':
+../src/nonstdio.h:9:26: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:264:9: note: in expansion of macro 'io_thread_printf'
+  264 |         io_thread_printf("%s failed with error code: 0x%x\r\n", function_name, error_code);
+      |         ^~~~~~~~~~~~~~~~
+../src/nonstdio.h:9:26: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #define io_thread_printf printf
+      |                          ^~~~~~
+../src/filex_test_thread_entry.c:264:9: note: in expansion of macro 'io_thread_printf'
+  264 |         io_thread_printf("%s failed with error code: 0x%x\r\n", function_name, error_code);
+      |         ^~~~~~~~~~~~~~~~
+../src/stdio_uart0.c:53:17: warning: type defaults to 'int' in declaration of 'wait_tx' [-Wimplicit-int]
+   53 | static volatile wait_tx = 0;
+      |                 ^~~~~~~
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_create.c
+../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_create.c: In function '_tx_block_pool_create':
+../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_create.c:111:21: warning: conversion from 'long unsigned int' to 'ULONG' {aka 'unsigned int'} may change value [-Wconversion]
+  111 |     total_blocks =  pool_size/(block_size + (sizeof(UCHAR *)));
+      |                     ^~~~~~~~~
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_allocate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_cleanup.c
+Building file: ../rza_gen/main.c
+Building file: ../rza_gen/hal_data.c
+Building file: ../rza_gen/pin_data.c
+Building file: ../rza_gen/vector_data.c
+Building file: ../rza_gen/filex_test_thread.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_pool_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_allocate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_block_release.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_cleanup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_create.c
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_create.c: In function '_tx_byte_pool_create':
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_create.c:111:44: warning: conversion from 'long unsigned int' to 'ULONG' {aka 'unsigned int'} may change value [-Wconversion]
+  111 |     pool_ptr -> tx_byte_pool_available =   pool_size - ((sizeof(VOID *)) + (sizeof(ALIGN_TYPE)));
+      |                                            ^~~~~~~~~
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_search.c
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_search.c: In function '_tx_byte_pool_search':
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_search.c:110:35: warning: conversion from 'long unsigned int' to 'ULONG' {aka 'unsigned int'} may change value [-Wconversion]
+  110 |     total_theoretical_available = pool_ptr -> tx_byte_pool_available + ((pool_ptr -> tx_byte_pool_fragments - 2) * ((sizeof(UCHAR *)) + (sizeof(ALIGN_TYPE))));
+      |                                   ^~~~~~~~
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_search.c:171:37: warning: conversion from 'long unsigned int' to 'ULONG' {aka 'unsigned int'} may change value [-Wconversion]
+  171 |                 available_bytes =   available_bytes - ((sizeof(UCHAR *)) + (sizeof(ALIGN_TYPE)));
+      |                                     ^~~~~~~~~~~~~~~
+../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_pool_search.c:322:51: warning: conversion from 'long unsigned int' to 'ULONG' {aka 'unsigned int'} may change value [-Wconversion]
+  322 |             pool_ptr -> tx_byte_pool_available =  (pool_ptr -> tx_byte_pool_available - available_bytes) - ((sizeof(UCHAR *)) + (sizeof(ALIGN_TYPE)));
+      |                                                   ^
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_cleanup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_byte_release.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_set.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_event_flags_set_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_initialize_high_level.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_initialize_kernel_enter.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_initialize_kernel_setup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_cleanup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_priority_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_cleanup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_mutex_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_flush.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_front_send.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_send_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_receive.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_queue_send.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_ceiling_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_cleanup.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_semaphore_put_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_identify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_entry_exit_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_priority_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_preemption_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_relinquish.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_reset.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_resume.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_shell_entry.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_sleep.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_stack_analyze.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_stack_error_handler.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_suspend.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_system_resume.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_stack_error_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_system_preempt_check.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_system_suspend.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_terminate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_time_slice.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_time_slice_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_timeout.c
+../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_timeout.c: In function '_tx_thread_timeout':
+../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_timeout.c:79:32: warning: unused parameter 'timeout_input' [-Wunused-parameter]
+   79 | VOID  _tx_thread_timeout(ULONG timeout_input)
+      |                          ~~~~~~^~~~~~~~~~~~~
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_thread_wait_abort.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_time_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_time_set.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_activate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_deactivate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_expiration_process.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_performance_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_performance_system_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_system_activate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_system_deactivate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_timer_thread_entry.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_buffer_full_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_disable.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_enable.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_event_filter.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_initialize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_event_unfilter.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_interrupt_control.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_isr_enter_insert.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_object_register.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_isr_exit_insert.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_object_unregister.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/tx_trace_user_event_insert.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_allocate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_pool_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_pool_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_pool_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_pool_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_block_release.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_allocate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_pool_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_pool_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_pool_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_pool_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_byte_release.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_set.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_event_flags_set_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_mutex_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_flush.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_front_send.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_receive.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_send.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_ceiling_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_queue_send_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_prioritize.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_put.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_semaphore_put_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_delete.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_entry_exit_notify.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_priority_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_preemption_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_relinquish.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_reset.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_resume.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_suspend.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_terminate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_wait_abort.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_thread_time_slice_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_change.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_activate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_create.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_info_get.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_deactivate.c
+Building file: ../rza/microsoft/azure-rtos/threadx/common/src/txe_timer_delete.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_attributes_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_attributes_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_default_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_default_get_copy.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_entry_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_default_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_delete.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_exFAT_entry_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_entry_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_exFAT_entry_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_exFAT_free_search.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_first_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_exFAT_unicode_entry_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_first_full_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_free_search.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_information_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_local_path_clear.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_local_path_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_local_path_get_copy.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_local_path_restore.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_local_path_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_long_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_long_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_name_extract.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_name_test.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_next_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_next_full_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_search.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_short_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_add_FAT_log.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_directory_short_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_add_checksum_log.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_add_bitmap_log.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_add_dir_log.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_apply_logs.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_calculate_checksum.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_cleanup_FAT_chain.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_create_log_file.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_read_FAT.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_enable.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_read_directory_sector.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_read_log_file.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_reset_log_file.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_set_FAT_chain.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_recover.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_transaction_end.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_transaction_fail.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_transaction_start.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_fault_tolerant_write_log_file.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_attributes_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_attributes_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_best_effort_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_close.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_date_time_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_delete.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_relative_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_best_effort_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_truncate_release.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_extended_truncate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_open.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_relative_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_truncate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_truncate_release.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_write_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_file_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_abort.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_boot_info_extract.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_cache_invalidate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_check_FAT_chain_check.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_check.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_check_lost_cluster_check.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_close_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_close.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_exFAT_format.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_extended_space_available.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_format_oem_name_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_format.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_format_volume_id_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_format_type_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_open.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_open_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_space_available.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_volume_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_volume_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_media_volume_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_partition_offset_calculate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_ram_driver.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_date_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_date_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_initialize.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_time_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_timer_entry.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_system_time_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_trace_event_insert.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_trace_event_update.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_trace_object_register.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_trace_object_unregister.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_directory_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_directory_entry_change.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_directory_entry_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_directory_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_file_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_file_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_directory_search.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_length_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_length_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_short_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_unicode_short_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_16_unsigned_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_16_unsigned_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_32_unsigned_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_32_unsigned_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_64_unsigned_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_64_unsigned_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_FAT_entry_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_FAT_entry_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_FAT_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_absolute_path_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_FAT_map_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_FAT_sector_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_allocate_new_cluster.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_cache_prepare.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_cache_update.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_free_cluster_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_initialize.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_cluster_free.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_cluster_state_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_bitmap_start_sector_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_cluster_state_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_geometry_check.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_name_hash_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_size_calculate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_system_area_checksum_verify.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_system_area_format.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_unicode_name_hash_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_system_sector_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_system_area_checksum_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_exFAT_upcase_table.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_logical_sector_cache_entry_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_logical_sector_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_logical_sector_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_logical_sector_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_memory_copy.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_memory_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_string_length_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fx_utility_token_length_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_attributes_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_attributes_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_default_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_default_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_default_get_copy.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_delete.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_first_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_first_full_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_information_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_local_path_clear.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_local_path_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_local_path_restore.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_local_path_get_copy.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_long_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_long_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_local_path_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_next_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_name_test.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_next_full_entry_find.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_short_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_directory_short_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_fault_tolerant_enable.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_best_effort_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_attributes_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_attributes_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_close.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_date_time_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_delete.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_best_effort_allocate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_truncate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_relative_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_extended_truncate_release.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_open.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_relative_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_truncate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_seek.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_truncate_release.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_abort.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_file_write_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_cache_invalidate.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_check.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_exFAT_format.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_close.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_close_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_extended_space_available.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_format.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_flush.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_open.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_read.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_space_available.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_open_notify_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_volume_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_volume_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_write.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_media_volume_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_system_date_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_system_time_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_system_date_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_system_time_set.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_file_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_directory_create.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_directory_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_file_rename.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_name_get_extended.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_short_name_get.c
+Building file: ../rza/microsoft/azure-rtos/filex/common/src/fxe_unicode_short_name_get_extended.c
+Building file: ../rza/fsp/src/rm_threadx_port/tx_initialize_low_level.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_isr_start.c
+Building file: ../rza/fsp/src/rm_threadx_port/tx_isr_end.c
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_context_restore.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_context_save.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_fp_disable.c
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_fp_enable.c
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_interrupt_control.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_interrupt_disable.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_interrupt_restore.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_stack_build.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_system_return.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_thread_schedule.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_timer_interrupt.asm
+Building file: ../rza/fsp/src/rm_threadx_port/tx_vector_table.asm
+Building file: ../rza/fsp/src/rm_filex_block_media/rm_filex_block_media.c
+Building file: ../rza/fsp/src/rm_block_media_sdmmc/rm_block_media_sdmmc.c
+Building file: ../rza/fsp/src/r_mmu/r_mmu.c
+Building file: ../rza/fsp/src/r_sdhi/r_sdhi.c
+Building file: ../rza/fsp/src/r_ioport/r_ioport.c
+Building file: ../rza/fsp/src/r_scif_uart/r_scif_uart.c
+Building file: ../rza/fsp/src/bsp/mcu/rza3ul/bsp_clocks_setup.c
+Building file: ../rza/fsp/src/r_gtm/r_gtm.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_delay_asm.asm
+Building file: ../rza/fsp/src/bsp/mcu/rza3ul/bsp_irq_sense.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_clocks.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_delay.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_common.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_group_irq.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_guard.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_gicv3.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_io.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_irq.c
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/cache.asm
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_rom_registers.c
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/initsect.asm
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/irq.asm
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_sbrk.c
+Building file: ../rza/fsp/src/bsp/mcu/all/bsp_security.c
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/irqfiq_handler.asm
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/mmu.asm
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/program_entry.asm
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.asm
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/default_handler.c
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/vector_table.asm
+Building file: ../rza/board/rza3ul_smarc_qspi/board_leds.c
+Building file: ../rza/board/rza3ul_smarc_qspi/board_init.c
+Building file: ../rza/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.c
+Building target: filex_demo_sdmmc_rza3_fsp.elf
+aarch64-none-elf-size --format=berkeley "filex_demo_sdmmc_rza3_fsp.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 121836	  13400	10170896	10306132	 9d4254	filex_demo_sdmmc_rza3_fsp.elf
+aarch64-none-elf-objcopy -O srec "filex_demo_sdmmc_rza3_fsp.elf"  "filex_demo_sdmmc_rza3_fsp.srec"
+
+14:25:35 Build Finished. 0 errors, 13 warnings. (took 1m:6s.964ms)
+
+**** Post-build Processing for project filex_demo_sdmmc_rza3_fsp ****
+Post build script started
+Post build script complete
+Processing finished

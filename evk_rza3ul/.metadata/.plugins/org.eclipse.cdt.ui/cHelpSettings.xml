@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cHelpSettings>
+                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="filex_demo_sdmmc_rza3_fsp">
+                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                                
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="usbx_demo_hhid_rza3_fsp">
+                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                                                                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                                                                            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="RZA3UL_demo_azure_iot_pnp">
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="guix_demo_home_automation_rza3_fsp">
+                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                                
+        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                                        
+            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                                                    
+        
+        
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                                            
+    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    <project name="guix_demo_washing_machine_rza3_fsp">
+                                                                        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                        
+        
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                                    
+    
+    
+    
+    
+    
+    
+    
+    </project>
+                                
+    
+    
+    
+    
+    
+    
+    
+    <project name="guix_demo_widget_types_rza3_fsp">
+                                                                
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                                
+        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                                
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                                
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                                
+            
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                            
+        
+        
+        
+        
+        
+        
+        </provider>
+                                                            
+    
+    
+    
+    
+    
+    
+    </project>
+                            
+    
+    
+    
+    
+    
+    
+    <project name="netx_demo_http_server_rza3_fsp">
+                                                        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                        
+        
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                                    
+            
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                                    
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                                    
+            
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                                
+        
+        
+        
+        
+        
+        </provider>
+                                                    
+    
+    
+    
+    
+    
+    </project>
+                        
+    
+    
+    
+    
+    
+    <project name="usbx_demo_hcdc_rza3_fsp">
+                                                
+        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                                
+        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                                        
+            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                                        
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                                        
+            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                                    
+        
+        
+        
+        
+        </provider>
+                                            
+    
+    
+    
+    
+    </project>
+                    
+    
+    
+    
+    
+    <project name="usbx_demo_hmsc_rza3_fsp">
+                                        
+        
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                        
+        
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                            
+            
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                            
+            
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                                        
+        
+        
+        
+        </provider>
+                                    
+    
+    
+    
+    </project>
+                
+    
+    
+    
+    <project name="usbx_demo_huvc_netx_http_server_rza3_fsp">
+                                
+        
+        
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+                                
+        
+        
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+                                                
+            
+            
+            <book enabled="false" title="RX RX64M FIT en"/>
+                                                
+            
+            
+            <book enabled="false" title="RZ/T1 CG en"/>
+                                                
+            
+            
+            <book enabled="false" title="RZ/T1 CG ja"/>
+                                            
+        
+        
+        </provider>
+                            
+    
+    
+    </project>
+            
+    
+    
+    <project name="usbx_demo_pcdc_rza3_fsp">
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+        <provider id="org.eclipse.linuxtools.cdt.libhover.provider">
+            <book enabled="false" title="RX RX64M FIT en"/>
+            <book enabled="false" title="RZ/T1 CG en"/>
+            <book enabled="false" title="RZ/T1 CG ja"/>
+        </provider>
+    </project>
+        
+
+</cHelpSettings>

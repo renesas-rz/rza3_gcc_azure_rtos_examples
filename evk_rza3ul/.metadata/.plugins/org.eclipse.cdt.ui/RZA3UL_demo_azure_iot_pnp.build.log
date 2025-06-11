@@ -1,0 +1,8 @@
+15:37:42 **** Incremental Build of configuration Debug for project RZA3UL_demo_azure_iot_pnp ****
+make -r --output-sync -j8 all 
+aarch64-none-elf-size --format=berkeley "RZA3UL_demo_azure_iot_pnp.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 385516	  29064	3759640	4174220	 3fb18c	RZA3UL_demo_azure_iot_pnp.elf
+
+15:37:44 Build Finished. 0 errors, 0 warnings. (took 2s.206ms)
+
